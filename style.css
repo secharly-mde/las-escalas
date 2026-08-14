@@ -360,6 +360,13 @@ body.invert .bg-layer.soc-data { mix-blend-mode: screen; }
     }
     
     .text-block { box-shadow: 6px 6px 0px var(--text-color); padding: 1.5rem; }
+    
+    .text-block.expanded {
+        width: 92vw;
+        height: 95vh;
+        padding: 1.5rem;
+        box-shadow: 8px 8px 0px var(--text-color);
+    }
 }
 
 /* READING MODE (MICRO SCALE) */
