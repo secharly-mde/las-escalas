@@ -348,7 +348,17 @@ body.invert .bg-layer.soc-data { mix-blend-mode: screen; }
 
 @media (max-width: 768px) {
     .step p { font-size: 1.1rem; }
-    .ui-overlay { display: none; }
+    
+    /* Hide decorative UI elements but keep navigation */
+    .ui-top-left, .ui-bottom-left, .ui-bottom-right {
+        display: none;
+    }
+    
+    .ui-top-right {
+        top: 1rem;
+        right: 1rem;
+    }
+    
     .text-block { box-shadow: 6px 6px 0px var(--text-color); padding: 1.5rem; }
 }
 
