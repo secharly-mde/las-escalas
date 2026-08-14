@@ -1,0 +1,422 @@
+:root {
+    --bg-color: #e5e5e5;
+    --text-color: #111111;
+    --accent: #ff3300;
+    --mono-font: 'JetBrains Mono', monospace;
+    --sans-font: 'Inter', sans-serif;
+    --grid-color: rgba(0,0,0,0.1);
+}
+
+body.invert {
+    --bg-color: #111111;
+    --text-color: #e5e5e5;
+    --grid-color: rgba(255,255,255,0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--sans-font);
+    line-height: 1.5;
+    overflow-x: hidden;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+/* NOISE OVERLAY */
+.noise {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.25;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* UI OVERLAY */
+.ui-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 50;
+    padding: 2rem;
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ui-overlay > div {
+    position: absolute;
+    background: var(--bg-color);
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    transition: all 0.8s ease;
+}
+.ui-top-left { top: 2rem; left: 2rem; }
+.ui-top-right { top: 2rem; right: 2rem; text-align: right; }
+.ui-bottom-left { bottom: 2rem; left: 2rem; }
+.ui-bottom-right { bottom: 2rem; right: 2rem; text-align: right; }
+
+/* DROPDOWN MENU */
+.ui-top-right.dropdown {
+    cursor: pointer;
+    pointer-events: auto; /* Ensure hover works even if overlay pointer-events are none, though overlay doesn't have none */
+}
+.dropdown-trigger {
+    padding: 0.5rem;
+    margin: -0.5rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.ui-top-right.dropdown:hover .dropdown-trigger,
+.ui-top-right.dropdown.is-open .dropdown-trigger {
+    border-color: var(--text-color);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    min-width: 260px;
+    text-align: left;
+}
+.ui-top-right.dropdown.is-open .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+.dropdown-content a:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Invert logic for dropdown */
+body.invert .dropdown-content {
+    background: var(--text-color);
+    border-color: var(--bg-color);
+}
+body.invert .dropdown-content a {
+    color: var(--bg-color);
+}
+body.invert .dropdown-content a:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* VISUAL BACKGROUND */
+.visual-container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BACKGROUND LAYERS */
+.bg-layer {
+    position: absolute;
+    /* Make the canvas huge so panning/scaling doesn't show edges */
+    top: -50vh; left: -50vw; right: -50vw; bottom: -50vh;
+    opacity: 0; /* All layers hidden by default */
+    transition: opacity 1.5s ease, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center center;
+    background-position: center center;
+}
+
+.bg-layer.is-active {
+    opacity: 0.5; /* Show active layer with transparency */
+}
+
+body.invert .bg-layer.is-active {
+    opacity: 0.2; /* In dark mode, lower opacity for better contrast with text */
+}
+
+/* Grid Layer */
+.bg-layer.grid {
+    background-size: 50px 50px;
+    background-image: 
+        linear-gradient(to right, var(--text-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--text-color) 1px, transparent 1px);
+}
+
+/* Map Layer */
+.bg-layer.map {
+    background-image: url('mapa_montevideo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Bio Layer */
+.bg-layer.bio {
+    background-image: url('textura_celular.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.bio {
+    mix-blend-mode: screen;
+}
+
+/* Space Layer */
+.bg-layer.space {
+    background-color: transparent;
+    background-image: 
+        radial-gradient(circle at center, var(--text-color) 1px, transparent 1px),
+        radial-gradient(circle at center, var(--text-color) 2px, transparent 2px);
+    background-size: 100px 100px, 300px 300px;
+    background-position: 0 0, 50px 50px;
+}
+
+/* --- TIME LAYERS --- */
+.bg-layer.geology {
+    background-image: url('tex_geology.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.geology { mix-blend-mode: screen; }
+
+.bg-layer.frequency {
+    background-image: url('tex_frequency.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.frequency { mix-blend-mode: screen; }
+
+.bg-layer.decay {
+    background-image: url('tex_decay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.decay { mix-blend-mode: screen; }
+
+.bg-layer.entropy {
+    background-image: url('tex_entropy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.entropy { mix-blend-mode: screen; }
+
+/* --- SOCIETY LAYERS --- */
+.bg-layer.soc-individual {
+    background-image: url('tex_soc_individual.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.soc-individual { mix-blend-mode: screen; }
+
+.bg-layer.soc-crowd {
+    background-image: url('tex_soc_crowd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.soc-crowd { mix-blend-mode: screen; }
+
+.bg-layer.soc-network {
+    background-image: url('tex_soc_network.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.soc-network { mix-blend-mode: screen; }
+
+.bg-layer.soc-data {
+    background-image: url('tex_soc_data.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+}
+body.invert .bg-layer.soc-data { mix-blend-mode: screen; }
+
+/* SCALE OBJECT */
+.scale-object {
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--text-color);
+    transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center center;
+}
+
+.scale-object.circle { border-radius: 50%; }
+.scale-object.dot { border-radius: 50%; width: 8px; height: 8px; background: var(--text-color); }
+.scale-object.square { border-radius: 0; }
+.scale-object.line { height: 4px; width: 200vw; background: var(--text-color); border: none; }
+
+/* SCROLL CONTENT */
+.content-scroll {
+    position: relative;
+    z-index: 10;
+}
+
+.step {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0.15;
+    transition: opacity 0.8s ease;
+}
+
+.step.is-active {
+    opacity: 1;
+}
+
+.text-block {
+    max-width: 600px;
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border: 1px solid var(--text-color);
+    box-shadow: 12px 12px 0px var(--text-color);
+    transition: all 0.8s ease;
+}
+
+.step.hero h1 {
+    font-size: 8vw;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    text-align: center;
+    font-weight: 900;
+    background: var(--bg-color);
+    padding: 2rem;
+    border: 2px solid var(--text-color);
+    box-shadow: 12px 12px 0px var(--text-color);
+    transition: all 0.8s ease;
+}
+
+.step h2 {
+    font-family: var(--mono-font);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 0.5rem;
+}
+
+.step p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.step p:last-child {
+    margin-bottom: 0;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--mono-font);
+    font-weight: bold;
+    background: var(--bg-color);
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 0px var(--text-color);
+}
+.nav-button:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0px 0px 0px var(--text-color);
+    transform: translate(6px, 6px);
+}
+
+@media (max-width: 768px) {
+    .step p { font-size: 1.1rem; }
+    .ui-overlay { display: none; }
+    .text-block { box-shadow: 6px 6px 0px var(--text-color); padding: 1.5rem; }
+}
+
+/* READING MODE (MICRO SCALE) */
+.full-text {
+    display: none;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.text-block.expanded {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    max-width: 800px;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 3rem;
+    box-shadow: 20px 20px 0px var(--text-color);
+}
+
+.text-block.expanded .summary-text {
+    display: none;
+}
+
+.text-block.expanded .full-text {
+    display: block;
+}
+
+.action-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-family: var(--mono-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.action-btn:hover {
+    transform: translate(2px, 2px);
+    opacity: 0.8;
+}
+
+.action-btn.collapse-btn {
+    display: none;
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;
+    z-index: 10;
+    width: 100%;
+}
+
+.text-block.expanded .action-btn.collapse-btn {
+    display: block;
+}
+
+/* Dim backgrounds and disable scroll when reading */
+body.is-reading-mode {
+    overflow: hidden;
+}
+body.is-reading-mode .bg-layer {
+    opacity: 0.05 !important;
+}
