@@ -95,6 +95,20 @@ body {
 .ui-top-right.dropdown.is-open .dropdown-content {
     display: block;
 }
+
+.dropdown-content .menu-part {
+    display: block;
+    color: var(--text-color);
+    padding: 0.8rem 1rem 0.3rem 1rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    opacity: 0.5;
+}
+body.invert .dropdown-content .menu-part {
+    color: var(--bg-color);
+}
+
 .dropdown-content a {
     display: block;
     color: var(--text-color);
@@ -113,7 +127,21 @@ body.invert .dropdown-content {
     background: var(--text-color);
     border-color: var(--bg-color);
 }
-body.invert .dropdown-content a {
+body.invert 
+.dropdown-content .menu-part {
+    display: block;
+    color: var(--text-color);
+    padding: 0.8rem 1rem 0.3rem 1rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    opacity: 0.5;
+}
+body.invert .dropdown-content .menu-part {
+    color: var(--bg-color);
+}
+
+.dropdown-content a {
     color: var(--bg-color);
 }
 body.invert .dropdown-content a:hover {
