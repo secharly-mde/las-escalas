@@ -309,6 +309,30 @@ body.invert .bg-layer.word-noise { mix-blend-mode: screen; }
 }
 body.invert .bg-layer.word-fragment { mix-blend-mode: screen; }
 
+.bg-layer.music-notation {
+    background-image: url('images/tex_music_notation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.music-notation { mix-blend-mode: screen; }
+
+.bg-layer.music-waveform {
+    background-image: url('images/tex_music_waveform.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.music-waveform { mix-blend-mode: screen; }
+
+.bg-layer.music-resonance {
+    background-image: url('images/tex_music_resonance.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.music-resonance { mix-blend-mode: screen; }
+
 /* --- SPACE LAYERS --- */
 .bg-layer.space-void {
     background-image: url('images/tex_space_void.jpg');
