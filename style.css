@@ -283,6 +283,32 @@ body.invert .bg-layer.soc-data { mix-blend-mode: screen; }
 .scale-object.line { height: 4px; width: 200vw; background: var(--text-color); border: none; }
 
 
+
+/* --- WORD LAYERS (PROLOGUE) --- */
+.bg-layer.word-matrix {
+    background-image: url('images/tex_word_matrix.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.word-matrix { mix-blend-mode: screen; }
+
+.bg-layer.word-noise {
+    background-image: url('images/tex_word_noise.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.word-noise { mix-blend-mode: screen; }
+
+.bg-layer.word-fragment {
+    background-image: url('images/tex_word_fragment.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.word-fragment { mix-blend-mode: screen; }
+
 /* --- SPACE LAYERS --- */
 .bg-layer.space-void {
     background-image: url('images/tex_space_void.jpg');
