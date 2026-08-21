@@ -175,14 +175,14 @@ body.invert .bg-layer.is-active {
 
 /* Map Layer */
 .bg-layer.map {
-    background-image: url('mapa_montevideo.jpg');
+    background-image: url('images/mapa_montevideo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* Bio Layer */
 .bg-layer.bio {
-    background-image: url('textura_celular.jpg');
+    background-image: url('images/textura_celular.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -203,7 +203,7 @@ body.invert .bg-layer.bio {
 
 /* --- TIME LAYERS --- */
 .bg-layer.geology {
-    background-image: url('tex_geology.jpg');
+    background-image: url('images/tex_geology.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -211,7 +211,7 @@ body.invert .bg-layer.bio {
 body.invert .bg-layer.geology { mix-blend-mode: screen; }
 
 .bg-layer.frequency {
-    background-image: url('tex_frequency.jpg');
+    background-image: url('images/tex_frequency.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -219,7 +219,7 @@ body.invert .bg-layer.geology { mix-blend-mode: screen; }
 body.invert .bg-layer.frequency { mix-blend-mode: screen; }
 
 .bg-layer.decay {
-    background-image: url('tex_decay.jpg');
+    background-image: url('images/tex_decay.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -227,7 +227,7 @@ body.invert .bg-layer.frequency { mix-blend-mode: screen; }
 body.invert .bg-layer.decay { mix-blend-mode: screen; }
 
 .bg-layer.entropy {
-    background-image: url('tex_entropy.jpg');
+    background-image: url('images/tex_entropy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -236,7 +236,7 @@ body.invert .bg-layer.entropy { mix-blend-mode: screen; }
 
 /* --- SOCIETY LAYERS --- */
 .bg-layer.soc-individual {
-    background-image: url('tex_soc_individual.jpg');
+    background-image: url('images/tex_soc_individual.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -244,7 +244,7 @@ body.invert .bg-layer.entropy { mix-blend-mode: screen; }
 body.invert .bg-layer.soc-individual { mix-blend-mode: screen; }
 
 .bg-layer.soc-crowd {
-    background-image: url('tex_soc_crowd.jpg');
+    background-image: url('images/tex_soc_crowd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -252,7 +252,7 @@ body.invert .bg-layer.soc-individual { mix-blend-mode: screen; }
 body.invert .bg-layer.soc-crowd { mix-blend-mode: screen; }
 
 .bg-layer.soc-network {
-    background-image: url('tex_soc_network.jpg');
+    background-image: url('images/tex_soc_network.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -260,7 +260,7 @@ body.invert .bg-layer.soc-crowd { mix-blend-mode: screen; }
 body.invert .bg-layer.soc-network { mix-blend-mode: screen; }
 
 .bg-layer.soc-data {
-    background-image: url('tex_soc_data.jpg');
+    background-image: url('images/tex_soc_data.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -281,6 +281,107 @@ body.invert .bg-layer.soc-data { mix-blend-mode: screen; }
 .scale-object.dot { border-radius: 50%; width: 8px; height: 8px; background: var(--text-color); }
 .scale-object.square { border-radius: 0; }
 .scale-object.line { height: 4px; width: 200vw; background: var(--text-color); border: none; }
+
+
+/* --- SPACE LAYERS --- */
+.bg-layer.space-void {
+    background-image: url('images/tex_space_void.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.space-void { mix-blend-mode: screen; }
+
+.bg-layer.space-orbit {
+    background-image: url('images/tex_space_orbit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.space-orbit { mix-blend-mode: screen; }
+
+.bg-layer.space-dust {
+    background-image: url('images/tex_space_dust.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.space-dust { mix-blend-mode: screen; }
+
+/* --- COMPLEXITY LAYERS --- */
+.bg-layer.complex-fractal {
+    background-image: url('images/tex_complex_fractal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.complex-fractal { mix-blend-mode: screen; }
+
+.bg-layer.complex-chaos {
+    background-image: url('images/tex_complex_chaos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.complex-chaos { mix-blend-mode: screen; }
+
+.bg-layer.complex-emergence {
+    background-image: url('images/tex_complex_emergence.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.complex-emergence { mix-blend-mode: screen; }
+
+/* --- INFORMATION LAYERS --- */
+.bg-layer.info-noise {
+    background-image: url('images/tex_info_noise.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.info-noise { mix-blend-mode: screen; }
+
+.bg-layer.info-signal {
+    background-image: url('images/tex_info_signal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.info-signal { mix-blend-mode: screen; }
+
+.bg-layer.info-library {
+    background-image: url('images/tex_info_library.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.info-library { mix-blend-mode: screen; }
+
+/* --- ENERGY LAYERS --- */
+.bg-layer.energy-plasma {
+    background-image: url('images/tex_energy_plasma.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.energy-plasma { mix-blend-mode: screen; }
+
+.bg-layer.energy-fusion {
+    background-image: url('images/tex_energy_fusion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.energy-fusion { mix-blend-mode: screen; }
+
+.bg-layer.energy-dissipation {
+    background-image: url('images/tex_energy_dissipation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.energy-dissipation { mix-blend-mode: screen; }
 
 /* SCROLL CONTENT */
 .content-scroll {
