@@ -357,6 +357,30 @@ body.invert .bg-layer.visual-brushstroke { mix-blend-mode: screen; }
 }
 body.invert .bg-layer.visual-landscape { mix-blend-mode: screen; }
 
+.bg-layer.narr-page {
+    background-image: url('images/tex_narr_page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.narr-page { mix-blend-mode: screen; }
+
+.bg-layer.narr-ink {
+    background-image: url('images/tex_narr_ink.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.narr-ink { mix-blend-mode: screen; }
+
+.bg-layer.narr-library {
+    background-image: url('images/tex_narr_library.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.narr-library { mix-blend-mode: screen; }
+
 /* --- SPACE LAYERS --- */
 .bg-layer.space-void {
     background-image: url('images/tex_space_void.jpg');
