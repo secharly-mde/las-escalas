@@ -333,6 +333,30 @@ body.invert .bg-layer.music-waveform { mix-blend-mode: screen; }
 }
 body.invert .bg-layer.music-resonance { mix-blend-mode: screen; }
 
+.bg-layer.visual-miniature {
+    background-image: url('images/tex_visual_miniature.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.visual-miniature { mix-blend-mode: screen; }
+
+.bg-layer.visual-brushstroke {
+    background-image: url('images/tex_visual_brushstroke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.visual-brushstroke { mix-blend-mode: screen; }
+
+.bg-layer.visual-landscape {
+    background-image: url('images/tex_visual_landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.visual-landscape { mix-blend-mode: screen; }
+
 /* --- SPACE LAYERS --- */
 .bg-layer.space-void {
     background-image: url('images/tex_space_void.jpg');
