@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS ESCALAS — NOTA DEL AUTOR</title>
+    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise"></div>
+    
+    <div class="visual-container">
+        <!-- Usamos la grilla abstracta para la nota del autor -->
+        <div class="bg-layer grid is-active" id="bg-grid"></div>
+        <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="ui-overlay">
+        <div class="ui-top-left">PRELIMINARES<br>V.0.1.0</div>
+        <div class="ui-top-right dropdown">
+            <div class="dropdown-trigger">NOTA DEL AUTOR ▾</div>
+            <div class="dropdown-content">
+                <a href="nota_del_autor.html">Nota del autor</a>
+                <div class="menu-part">PARTE I: EL OJO QUE ENCUADRA</div>
+                <a href="index.html">La palabra</a>
+                <a href="capitulo_01.html">La mirada</a>
+                
+                <div class="menu-part">PARTE II: LAS DIMENSIONES DE LA ESCALA</div>
+                <a href="capitulo_03.html">El tiempo</a>
+                <a href="capitulo_04.html">El espacio</a>
+                <a href="capitulo_05.html">La complejidad</a>
+                <a href="capitulo_06.html">La sociedad</a>
+                <a href="capitulo_07.html">La información</a>
+                <a href="capitulo_08.html">La energía</a>
+
+                <div class="menu-part">PARTE III: LA ESCALA COMO INSTRUMENTO</div>
+                <a href="capitulo_09.html">La música</a>
+                <a href="capitulo_10.html">La imagen</a>
+                <a href="capitulo_11.html">El relato</a>
+            </div>
+        </div>
+        <div class="ui-bottom-left" id="scroll-indicator">INICIAR SCROLL</div>
+        <div class="ui-bottom-right" id="scale-metric">SCALE:<br>1:1</div>
+    </div>
+
+    <main class="content-scroll">
+        <!-- Portada de la Nota -->
+        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+            <h1>NOTA DEL<br>AUTOR</h1>
+        </section>
+
+        <!-- Texto completo sin botón de expandir (es un manifiesto) -->
+        <section class="step" data-scale="1" data-metric="1" data-shape="square" data-invert="true" data-layer="grid">
+            <div class="text-block">
+                <div class="full-text" style="display: block; opacity: 1;">
+                    <p>Empecé a escribir <em>Las Escalas</em> hace unas pocas semanas. Y es solo un decir: no escribí una sola palabra del texto final. Cada frase, cada carácter y cada imagen de este libro fue generado por una Inteligencia Artificial.</p>
+                    <p>Mi tarea fue otra: proveer la idea original, decidir qué preguntas valía la pena perseguir y, mediante múltiples iteraciones, someter el texto a una curaduría exhaustiva hasta que satisficiera mis expectativas. Declaro que fueron superadas con creces.</p>
+                    <p>Demás está decir que el libro llevó una décima parte del tiempo que hubiese requerido de puño y letra. Pero, más importante todavía, posee un orden de magnitud mayor en cantidad, complejidad y conexiones de lo que jamás habría podido lograr por mi cuenta.</p>
+                    <p>Para el lector escéptico y purista, la lectura termina acá. Espero haber sido claro y brutal con el <em>disclaimer</em>; no tengo demasiado que discutirle.</p>
+                    <p>Para el resto, una confesión: esta idea lleva años en mi mente. Durante mucho tiempo existió apenas como una intuición, algo que sabía que quería pensar pero que nunca lograba convertir en una obra. Sin la ayuda de esta nueva tecnología, <em>Las Escalas</em> jamás hubiera visto la luz.</p>
+                    <p>Yo tuve una idea y una máquina me ayudó a convertirla en un libro.</p>
+                    <p>A pesar de las resistencias obvias del caso, me pareció oportuno compartirlo. Para quienes, simplemente, disfrutan de las ideas, independientemente de la mano —humana o no— que haya tecleado las palabras.</p>
+                </div>
+                
+                <br><br><br>
+                <div style="text-align: center;">
+                    <a href="index.html" class="nav-button">COMENZAR LA LECTURA >></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js?v=12"></script>
+</body>
+</html>
