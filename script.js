@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         layer.classList.remove('is-active');
                     }
                     // Scale all backgrounds gracefully so there's no popping during transition
-                    layer.style.transform = `scale(${renderScale})`;
+                    const bgScale = Math.max(0.5, renderScale);
+                    layer.style.transform = `scale(${bgScale})`;
                 });
 
                 // Update visual scale object
