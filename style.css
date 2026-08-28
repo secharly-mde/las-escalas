@@ -381,6 +381,30 @@ body.invert .bg-layer.narr-ink { mix-blend-mode: screen; }
 }
 body.invert .bg-layer.narr-library { mix-blend-mode: screen; }
 
+.bg-layer.cine-celluloid {
+    background-image: url('images/tex_cine_celluloid.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.cine-celluloid { mix-blend-mode: screen; }
+
+.bg-layer.cine-light {
+    background-image: url('images/tex_cine_light.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.cine-light { mix-blend-mode: screen; }
+
+.bg-layer.cine-dark {
+    background-image: url('images/tex_cine_dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+body.invert .bg-layer.cine-dark { mix-blend-mode: screen; }
+
 /* --- SPACE LAYERS --- */
 .bg-layer.space-void {
     background-image: url('images/tex_space_void.jpg');
