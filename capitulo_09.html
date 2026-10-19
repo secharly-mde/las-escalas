@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — LA MÚSICA</title>
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -105,12 +105,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="music-notation">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="music-notation">
             <h1>LA<br>MÚSICA</h1>
         </section>
 
         <!-- I. El herrero — PITÁGORAS Y LA PROPORCIÓN -->
-        <section class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="music-resonance">
+        <section id="el-herrero" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="music-resonance">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El herrero</h2>
@@ -128,7 +128,7 @@
         </section>
 
         <!-- II. Los armónicos — LA SERIE NATURAL -->
-        <section class="step" data-scale="2" data-metric="440" data-shape="line" data-invert="true" data-layer="music-waveform">
+        <section id="los-armonicos" data-sec="sec-2" class="step" data-scale="2" data-metric="440" data-shape="line" data-invert="true" data-layer="music-waveform">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. Los armónicos</h2>
@@ -145,7 +145,7 @@
         </section>
 
         <!-- III. La coma — EL ERROR IRREMEDIABLE -->
-        <section class="step" data-scale="0.5" data-metric="0.01" data-shape="dot" data-invert="false" data-layer="music-notation">
+        <section id="la-coma" data-sec="sec-3" class="step" data-scale="0.5" data-metric="0.01" data-shape="dot" data-invert="false" data-layer="music-notation">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La coma</h2>
@@ -162,7 +162,7 @@
         </section>
 
         <!-- IV. El compromiso — EL TEMPERAMENTO IGUAL -->
-        <section class="step" data-scale="1.8" data-metric="12" data-shape="circle" data-invert="true" data-layer="music-resonance">
+        <section id="el-compromiso" data-sec="sec-4" class="step" data-scale="1.8" data-metric="12" data-shape="circle" data-invert="true" data-layer="music-resonance">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. El compromiso</h2>
@@ -180,7 +180,7 @@
         </section>
 
         <!-- V. Los colores — LOS MODOS -->
-        <section class="step" data-scale="1.5" data-metric="7" data-shape="square" data-invert="false" data-layer="music-waveform">
+        <section id="los-colores" data-sec="sec-5" class="step" data-scale="1.5" data-metric="7" data-shape="square" data-invert="false" data-layer="music-waveform">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. Los colores</h2>
@@ -197,7 +197,7 @@
         </section>
 
         <!-- VI. El salto — COLTRANE Y LA MODULACIÓN -->
-        <section class="step" data-scale="2.5" data-metric="100000" data-shape="circle" data-invert="true" data-layer="music-notation">
+        <section id="el-salto" data-sec="sec-6" class="step" data-scale="2.5" data-metric="100000" data-shape="circle" data-invert="true" data-layer="music-notation">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. El salto</h2>
@@ -214,7 +214,7 @@
         </section>
 
         <!-- VII. El silencio — CAGE Y 4'33" -->
-        <section class="step" data-scale="0.2" data-metric="0" data-shape="dot" data-invert="true" data-layer="space-void">
+        <section id="el-silencio" data-sec="sec-7" class="step" data-scale="0.2" data-metric="0" data-shape="dot" data-invert="true" data-layer="space-void">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. El silencio</h2>
@@ -230,7 +230,7 @@
         </section>
 
         <!-- VIII. La espiral — OCTAVAS Y ESCALAS DEL MUNDO -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="music-resonance">
+        <section id="la-espiral" data-sec="sec-8" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="music-resonance">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. La espiral</h2>
@@ -254,6 +254,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=9"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — LA INFORMACIÓN</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -101,12 +101,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>LA<br>INFORMACIÓN</h1>
         </section>
 
         <!-- I. El bit — SHANNON -->
-        <section class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="grid">
+        <section id="el-bit" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El bit</h2>
@@ -125,7 +125,7 @@
         </section>
 
         <!-- II. La biblioteca total — BORGES -->
-        <section class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="info-noise">
+        <section id="la-biblioteca-total" data-sec="sec-2" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="info-noise">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La biblioteca total</h2>
@@ -146,7 +146,7 @@
         </section>
 
         <!-- III. La compresión — KOLMOGOROV / WAGENSBERG -->
-        <section class="step" data-scale="0.8" data-metric="0.001" data-shape="line" data-invert="false" data-layer="info-signal">
+        <section id="la-compresion" data-sec="sec-3" class="step" data-scale="0.8" data-metric="0.001" data-shape="line" data-invert="false" data-layer="info-signal">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La compresión</h2>
@@ -168,7 +168,7 @@
         </section>
 
         <!-- IV. La pirámide — ACKOFF / T.S. ELIOT -->
-        <section class="step" data-scale="1.5" data-metric="100" data-shape="square" data-invert="true" data-layer="info-library">
+        <section id="la-piramide" data-sec="sec-4" class="step" data-scale="1.5" data-metric="100" data-shape="square" data-invert="true" data-layer="info-library">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La pirámide</h2>
@@ -191,7 +191,7 @@
         </section>
 
         <!-- V. El diluvio — LA ERA DE LA INFORMACIÓN -->
-        <section class="step" data-scale="1.8" data-metric="1000000000" data-shape="circle" data-invert="false" data-layer="info-noise">
+        <section id="el-diluvio" data-sec="sec-5" class="step" data-scale="1.8" data-metric="1000000000" data-shape="circle" data-invert="false" data-layer="info-noise">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El diluvio</h2>
@@ -210,7 +210,7 @@
         </section>
 
         <!-- VI. La entropía — LANDAUER / CIERRE -->
-        <section class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="true" data-layer="info-signal">
+        <section id="la-entropia" data-sec="sec-6" class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="true" data-layer="info-signal">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. La entropía</h2>
@@ -231,6 +231,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

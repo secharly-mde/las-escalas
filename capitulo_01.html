@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — CAPÍTULO 1</title>
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -101,12 +101,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>LA<br>MIRADA</h1>
         </section>
 
         <!-- I. El mapa del imperio — BORGES -->
-        <section class="step" data-scale="1.2" data-metric="1" data-shape="line" data-invert="false" data-layer="map">
+        <section id="el-mapa-del-imperio" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="line" data-invert="false" data-layer="map">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El mapa del imperio</h2>
@@ -127,7 +127,7 @@
         </section>
 
         <!-- II. El encuadre — FOTOGRAFÍA -->
-        <section class="step" data-scale="1.5" data-metric="10" data-shape="square" data-invert="true" data-layer="grid">
+        <section id="el-encuadre" data-sec="sec-2" class="step" data-scale="1.5" data-metric="10" data-shape="square" data-invert="true" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. El encuadre</h2>
@@ -147,7 +147,7 @@
         </section>
 
         <!-- III. La interfaz — HOFFMAN -->
-        <section class="step" data-scale="0.5" data-metric="0.001" data-shape="dot" data-invert="false" data-layer="frequency">
+        <section id="la-interfaz" data-sec="sec-3" class="step" data-scale="0.5" data-metric="0.001" data-shape="dot" data-invert="false" data-layer="frequency">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La interfaz</h2>
@@ -168,7 +168,7 @@
         </section>
 
         <!-- IV. El Umwelt — UEXKÜLL -->
-        <section class="step" data-scale="2" data-metric="100" data-shape="circle" data-invert="true" data-layer="bio">
+        <section id="la-burbuja" data-sec="sec-4" class="step" data-scale="2" data-metric="100" data-shape="circle" data-invert="true" data-layer="bio">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La burbuja</h2>
@@ -191,7 +191,7 @@
         </section>
 
         <!-- V. El animal de escala media — DAWKINS -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="square" data-invert="false" data-layer="grid">
+        <section id="el-animal-de-escala-media" data-sec="sec-5" class="step" data-scale="1" data-metric="1" data-shape="square" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El animal de escala media</h2>
@@ -210,7 +210,7 @@
         </section>
 
         <!-- VI. El Biosoftware — GARCÍA GUERCETTI -->
-        <section class="step" data-scale="0.8" data-metric="0.0001" data-shape="dot" data-invert="true" data-layer="entropy">
+        <section id="el-sustrato" data-sec="sec-6" class="step" data-scale="0.8" data-metric="0.0001" data-shape="dot" data-invert="true" data-layer="entropy">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. El sustrato</h2>
@@ -233,7 +233,7 @@
         </section>
 
         <!-- VII. El primer acto de edición — SÍNTESIS -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
+        <section id="el-primer-acto-de-edicion" data-sec="sec-7" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. El primer acto de edición</h2>
@@ -253,7 +253,7 @@
         </section>
 
         <!-- VIII. Conclusión -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="lo-que-no-vemos" data-sec="sec-8" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. Lo que no vemos</h2>
@@ -280,6 +280,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

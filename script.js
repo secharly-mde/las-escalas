@@ -97,4 +97,55 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // INDIVIDUAL SECTION LINKING & DEEP NAVIGATION
+    steps.forEach((step) => {
+        const h2 = step.querySelector('h2');
+        const secId = step.getAttribute('id') || step.getAttribute('data-sec');
+        if (h2 && secId && !h2.querySelector('.section-link-btn')) {
+            const titleSpan = document.createElement('span');
+            titleSpan.textContent = h2.textContent;
+            h2.textContent = '';
+            h2.appendChild(titleSpan);
+
+            const linkBtn = document.createElement('button');
+            linkBtn.type = 'button';
+            linkBtn.className = 'section-link-btn';
+            linkBtn.title = 'Copiar enlace directo a esta sección';
+            linkBtn.textContent = '[#]';
+            linkBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const url = new URL(window.location.href);
+                url.hash = secId;
+                window.history.replaceState(null, '', url.toString());
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(url.toString());
+                }
+                linkBtn.textContent = '[ENLACE COPIADO]';
+                setTimeout(() => { linkBtn.textContent = '[#]'; }, 1600);
+            });
+            h2.appendChild(linkBtn);
+        }
+    });
+
+    function navigateToHashSection() {
+        const rawHash = decodeURIComponent(window.location.hash || '').replace(/^#/, '');
+        if (!rawHash) return;
+        const target = document.getElementById(rawHash) || document.querySelector(`.step[data-sec="${rawHash}"]`);
+        if (target) {
+            setTimeout(() => {
+                steps.forEach(s => s.classList.remove('is-active'));
+                target.classList.add('is-active');
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('expand') === '1') {
+                    const expandBtn = target.querySelector('.expand-btn');
+                    if (expandBtn) expandBtn.click();
+                }
+            }, 250);
+        }
+    }
+
+    navigateToHashSection();
+    window.addEventListener('hashchange', navigateToHashSection);
 });

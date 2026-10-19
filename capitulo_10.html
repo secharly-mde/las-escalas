@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — LA IMAGEN</title>
-    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -105,12 +105,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="visual-miniature">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="visual-miniature">
             <h1>LA<br>IMAGEN</h1>
         </section>
 
         <!-- I. La miniatura — LO PEQUEÑO COMO INTIMIDAD -->
-        <section class="step" data-scale="0.3" data-metric="0.01" data-shape="dot" data-invert="false" data-layer="visual-miniature">
+        <section id="la-miniatura" data-sec="sec-1" class="step" data-scale="0.3" data-metric="0.01" data-shape="dot" data-invert="false" data-layer="visual-miniature">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. La miniatura</h2>
@@ -127,7 +127,7 @@
         </section>
 
         <!-- II. La distancia — MONET Y EL UMBRAL PERCEPTIVO -->
-        <section class="step" data-scale="1.5" data-metric="100" data-shape="circle" data-invert="true" data-layer="visual-brushstroke">
+        <section id="la-distancia" data-sec="sec-2" class="step" data-scale="1.5" data-metric="100" data-shape="circle" data-invert="true" data-layer="visual-brushstroke">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La distancia</h2>
@@ -144,7 +144,7 @@
         </section>
 
         <!-- III. El muro — LOS MURALISTAS Y LA ESCALA PÚBLICA -->
-        <section class="step" data-scale="3" data-metric="10000" data-shape="square" data-invert="false" data-layer="visual-landscape">
+        <section id="el-muro" data-sec="sec-3" class="step" data-scale="3" data-metric="10000" data-shape="square" data-invert="false" data-layer="visual-landscape">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. El muro</h2>
@@ -160,7 +160,7 @@
         </section>
 
         <!-- IV. La tierra — LAND ART Y LO EFÍMERO -->
-        <section class="step" data-scale="5" data-metric="1000000" data-shape="line" data-invert="true" data-layer="visual-landscape">
+        <section id="la-tierra" data-sec="sec-4" class="step" data-scale="5" data-metric="1000000" data-shape="line" data-invert="true" data-layer="visual-landscape">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La tierra</h2>
@@ -177,7 +177,7 @@
         </section>
 
         <!-- V. El umbral — ARQUITECTURA COMO ESCALA DE LA EMOCIÓN -->
-        <section class="step" data-scale="0.5" data-metric="4.5" data-shape="dot" data-invert="false" data-layer="visual-miniature">
+        <section id="el-umbral" data-sec="sec-5" class="step" data-scale="0.5" data-metric="4.5" data-shape="dot" data-invert="false" data-layer="visual-miniature">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El umbral</h2>
@@ -194,7 +194,7 @@
         </section>
 
         <!-- VI. Las dieciocho pulgadas — ROTHKO, TURRELL, BANKSY -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="circle" data-invert="true" data-layer="visual-brushstroke">
+        <section id="las-dieciocho-pulgadas" data-sec="sec-6" class="step" data-scale="1" data-metric="1" data-shape="circle" data-invert="true" data-layer="visual-brushstroke">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. Las dieciocho pulgadas</h2>
@@ -218,6 +218,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=10"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

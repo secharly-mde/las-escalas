@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — LA ENERGÍA</title>
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -101,12 +101,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>LA<br>ENERGÍA</h1>
         </section>
 
         <!-- I. La bombilla — METABOLISMO HUMANO -->
-        <section class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="energy-plasma">
+        <section id="la-bombilla" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="energy-plasma">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. La bombilla</h2>
@@ -124,7 +124,7 @@
             </section>
 
         <!-- II. El rayo — POTENCIA Y ESCALA TEMPORAL -->
-        <section class="step" data-scale="2" data-metric="1000000" data-shape="line" data-invert="true" data-layer="energy-plasma">
+        <section id="el-rayo" data-sec="sec-2" class="step" data-scale="2" data-metric="1000000" data-shape="line" data-invert="true" data-layer="energy-plasma">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. El rayo</h2>
@@ -143,7 +143,7 @@
             </section>
 
         <!-- III. La ecuación — EINSTEIN Y E=mc² -->
-        <section class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="false" data-layer="grid">
+        <section id="la-ecuacion" data-sec="sec-3" class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La ecuación</h2>
@@ -163,7 +163,7 @@
             </section>
 
         <!-- IV. La estrella — EL SOL Y LAS SUPERNOVAS -->
-        <section class="step" data-scale="1.8" data-metric="100000000" data-shape="circle" data-invert="true" data-layer="energy-fusion">
+        <section id="la-estrella" data-sec="sec-4" class="step" data-scale="1.8" data-metric="100000000" data-shape="circle" data-invert="true" data-layer="energy-fusion">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La estrella</h2>
@@ -182,7 +182,7 @@
             </section>
 
         <!-- V. La escalera — KARDASHEV -->
-        <section class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="energy-dissipation">
+        <section id="la-escalera" data-sec="sec-5" class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="energy-dissipation">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. La escalera</h2>
@@ -202,7 +202,7 @@
             </section>
 
         <!-- VI. Los bloques — FEYNMAN Y QUÉ ES LA ENERGÍA -->
-        <section class="step" data-scale="0.8" data-metric="0.001" data-shape="dot" data-invert="true" data-layer="energy-dissipation">
+        <section id="los-bloques" data-sec="sec-6" class="step" data-scale="0.8" data-metric="0.001" data-shape="dot" data-invert="true" data-layer="energy-dissipation">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. Los bloques</h2>
@@ -222,6 +222,6 @@
             </section>
     </main>
 
-    <script src="script.js?v=8"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

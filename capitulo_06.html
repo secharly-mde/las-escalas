@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — CAPÍTULO 6</title>
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -106,12 +106,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>LA SOCIEDAD</h1>
         </section>
 
         <!-- I. El número de Dunbar — MARCO -->
-        <section class="step" data-scale="1.2" data-metric="150" data-shape="circle" data-invert="false" data-layer="soc-crowd">
+        <section id="el-numero-de-dunbar" data-sec="sec-1" class="step" data-scale="1.2" data-metric="150" data-shape="circle" data-invert="false" data-layer="soc-crowd">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El número de Dunbar</h2>
@@ -130,7 +130,7 @@
         </section>
 
         <!-- II. La cara y el nombre — ↓ EL INDIVIDUO -->
-        <section class="step" data-scale="0.5" data-metric="1" data-shape="dot" data-invert="true" data-layer="soc-individual">
+        <section id="la-cara-y-el-nombre" data-sec="sec-2" class="step" data-scale="0.5" data-metric="1" data-shape="dot" data-invert="true" data-layer="soc-individual">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La cara y el nombre</h2>
@@ -150,7 +150,7 @@
         </section>
 
         <!-- III. La plaza — ↑ LA CIUDAD -->
-        <section class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="soc-crowd">
+        <section id="la-plaza" data-sec="sec-3" class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="soc-crowd">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La plaza</h2>
@@ -170,7 +170,7 @@
         </section>
 
         <!-- IV. La bandera — ↑ LA NACIÓN -->
-        <section class="step" data-scale="2" data-metric="100000000" data-shape="square" data-invert="true" data-layer="soc-crowd">
+        <section id="la-bandera" data-sec="sec-4" class="step" data-scale="2" data-metric="100000000" data-shape="square" data-invert="true" data-layer="soc-crowd">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La bandera</h2>
@@ -190,7 +190,7 @@
         </section>
 
         <!-- V. El niño en el pozo — ⟷ PIVOTE -->
-        <section class="step" data-scale="0.8" data-metric="1" data-shape="dot" data-invert="false" data-layer="soc-individual">
+        <section id="el-nino-en-el-pozo" data-sec="sec-5" class="step" data-scale="0.8" data-metric="1" data-shape="dot" data-invert="false" data-layer="soc-individual">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El niño en el pozo</h2>
@@ -211,7 +211,7 @@
         </section>
 
         <!-- VI. La especie — ↑ LA HUMANIDAD -->
-        <section class="step" data-scale="3" data-metric="8000000000" data-shape="circle" data-invert="true" data-layer="soc-network">
+        <section id="la-especie" data-sec="sec-6" class="step" data-scale="3" data-metric="8000000000" data-shape="circle" data-invert="true" data-layer="soc-network">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. La especie</h2>
@@ -229,7 +229,7 @@
         </section>
 
         <!-- VII. La estadística de Stalin — SÍNTESIS -->
-        <section class="step" data-scale="1" data-metric="1000000" data-shape="line" data-invert="false" data-layer="soc-data">
+        <section id="la-moral-y-la-escala" data-sec="sec-7" class="step" data-scale="1" data-metric="1000000" data-shape="line" data-invert="false" data-layer="soc-data">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. La moral y la escala</h2>
@@ -248,7 +248,7 @@
         </section>
 
         <!-- VIII. El prójimo — CONCLUSIÓN -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="el-projimo" data-sec="sec-8" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. El prójimo</h2>
@@ -276,6 +276,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

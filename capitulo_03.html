@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — CAPÍTULO 3</title>
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -101,12 +101,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>EL TIEMPO</h1>
         </section>
 
         <!-- I. Siccar Point — MARCO -->
-        <section class="step" data-scale="1.2" data-metric="1000000" data-shape="line" data-invert="false" data-layer="geology">
+        <section id="siccar-point" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1000000" data-shape="line" data-invert="false" data-layer="geology">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. Siccar Point</h2>
@@ -127,7 +127,7 @@
         </section>
 
         <!-- II. Lo que dura un aleteo — ↓ MICROSEGUNDOS -->
-        <section class="step" data-scale="0.3" data-metric="0.001" data-shape="dot" data-invert="true" data-layer="frequency">
+        <section id="lo-que-dura-un-aleteo" data-sec="sec-2" class="step" data-scale="0.3" data-metric="0.001" data-shape="dot" data-invert="true" data-layer="frequency">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. Lo que dura un aleteo</h2>
@@ -146,7 +146,7 @@
         </section>
 
         <!-- III. Los cuadernos que siguen matando — ↓ TIEMPO ATÓMICO -->
-        <section class="step" data-scale="0.5" data-metric="0.000001" data-shape="dot" data-invert="true" data-layer="decay">
+        <section id="los-cuadernos-que-siguen-matando" data-sec="sec-3" class="step" data-scale="0.5" data-metric="0.000001" data-shape="dot" data-invert="true" data-layer="decay">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. Los cuadernos que siguen matando</h2>
@@ -168,7 +168,7 @@
         </section>
 
         <!-- IV. Cleopatra y el iPhone — ⟷ PIVOTE -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="square" data-invert="false" data-layer="grid">
+        <section id="el-espejismo-del-pasado" data-sec="sec-4" class="step" data-scale="1" data-metric="1" data-shape="square" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. El espejismo del pasado</h2>
@@ -186,7 +186,7 @@
         </section>
 
         <!-- V. La montaña que es una ola — ↑ MILLONES DE AÑOS -->
-        <section class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="false" data-layer="geology">
+        <section id="la-montana-que-es-una-ola" data-sec="sec-5" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="false" data-layer="geology">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. La montaña que es una ola</h2>
@@ -207,7 +207,7 @@
         </section>
 
         <!-- VI. El último reloj — ↑ MILES DE MILLONES DE AÑOS -->
-        <section class="step" data-scale="3" data-metric="1000000000" data-shape="circle" data-invert="true" data-layer="entropy">
+        <section id="el-ultimo-reloj" data-sec="sec-6" class="step" data-scale="3" data-metric="1000000000" data-shape="circle" data-invert="true" data-layer="entropy">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. El último reloj</h2>
@@ -228,7 +228,7 @@
         </section>
 
         <!-- VII. El río — SÍNTESIS -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
+        <section id="el-rio" data-sec="sec-7" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. El río</h2>
@@ -248,7 +248,7 @@
         </section>
 
         <!-- VIII. El tempo — CONCLUSIÓN -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="frequency">
+        <section id="el-tempo" data-sec="sec-8" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="frequency">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. El tempo</h2>
@@ -275,6 +275,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>

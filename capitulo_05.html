@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — CAPÍTULO 5</title>
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -101,12 +101,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <h1>LA COMPLEJIDAD</h1>
         </section>
 
         <!-- I. More Is Different — MARCO -->
-        <section class="step" data-scale="1.2" data-metric="100" data-shape="line" data-invert="false" data-layer="complex-emergence">
+        <section id="more-is-different" data-sec="sec-1" class="step" data-scale="1.2" data-metric="100" data-shape="line" data-invert="false" data-layer="complex-emergence">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. More Is Different</h2>
@@ -126,7 +126,7 @@
         </section>
 
         <!-- II. La hormiga y la colonia — ↓ LA EMERGENCIA BIOLÓGICA -->
-        <section class="step" data-scale="0.5" data-metric="1" data-shape="dot" data-invert="true" data-layer="complex-emergence">
+        <section id="la-hormiga-y-la-colonia" data-sec="sec-2" class="step" data-scale="0.5" data-metric="1" data-shape="dot" data-invert="true" data-layer="complex-emergence">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La hormiga y la colonia</h2>
@@ -146,7 +146,7 @@
         </section>
 
         <!-- III. El atasco — ↑ EMERGENCIA SOCIAL -->
-        <section class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="complex-emergence">
+        <section id="el-atasco" data-sec="sec-3" class="step" data-scale="1.5" data-metric="10000" data-shape="square" data-invert="false" data-layer="complex-emergence">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. El atasco</h2>
@@ -166,7 +166,7 @@
         </section>
 
         <!-- IV. La consciencia — ⟷ PIVOTE -->
-        <section class="step" data-scale="1" data-metric="86000000000" data-shape="circle" data-invert="true" data-layer="complex-chaos">
+        <section id="el-problema-dificil" data-sec="sec-4" class="step" data-scale="1" data-metric="86000000000" data-shape="circle" data-invert="true" data-layer="complex-chaos">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. El problema difícil</h2>
@@ -188,7 +188,7 @@
         </section>
 
         <!-- V. Fractales — ↑ PATRONES A TRAVÉS DE ESCALAS -->
-        <section class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="false" data-layer="complex-fractal">
+        <section id="la-costa-que-no-se-puede-medir" data-sec="sec-5" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="false" data-layer="complex-fractal">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. La costa que no se puede medir</h2>
@@ -209,7 +209,7 @@
         </section>
 
         <!-- VI. El termitero y la catedral — ↑ EMERGENCIA ARQUITECTÓNICA -->
-        <section class="step" data-scale="0.8" data-metric="100000" data-shape="line" data-invert="true" data-layer="complex-emergence">
+        <section id="el-termitero-y-la-catedral" data-sec="sec-6" class="step" data-scale="0.8" data-metric="100000" data-shape="line" data-invert="true" data-layer="complex-emergence">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. El termitero y la catedral</h2>
@@ -231,7 +231,7 @@
         </section>
 
         <!-- VII. Los pisos de la realidad — SÍNTESIS -->
-        <section class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
+        <section id="la-escalera-rota" data-sec="sec-7" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. La escalera rota</h2>
@@ -251,7 +251,7 @@
         </section>
 
         <!-- VIII. Conclusión -->
-        <section class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="el-coro" data-sec="sec-8" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. El coro</h2>
@@ -279,6 +279,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=20"></script>
 </body>
 </html>
