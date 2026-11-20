@@ -3,44 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAS ESCALAS — LA PALABRA</title>
-    <link rel="stylesheet" href="style.css?v=20">
+    <title>LAS ESCALAS — Un ensayo sobre la medida de todas las cosas</title>
+    <meta name="description" content="Un ensayo literario y científico sobre la medida de todas las cosas, por Carlos Servetto.">
+    <meta name="author" content="Carlos Servetto">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="canonical" href="https://lasescalas.uy/">
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="LAS ESCALAS — Un ensayo sobre la medida de todas las cosas">
+    <meta property="og:description" content="Un ensayo literario y científico sobre la medida de todas las cosas, por Carlos Servetto.">
+    <meta property="og:image" content="https://lasescalas.uy/images/cover_las_escalas.jpg">
+    <meta property="og:url" content="https://lasescalas.uy/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css?v=30">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="noise"></div>
     
     <div class="visual-container">
-        <div class="bg-layer space" id="bg-space"></div>
-        <div class="bg-layer bio" id="bg-bio"></div>
-        <div class="bg-layer map" id="bg-map"></div>
-        <div class="bg-layer grid is-active" id="bg-grid"></div>
-        <div class="bg-layer word-matrix" id="bg-word-matrix"></div>
-        <div class="bg-layer word-noise" id="bg-word-noise"></div>
-        <div class="bg-layer word-fragment" id="bg-word-fragment"></div>
-
-        <div class="bg-layer music-notation" id="bg-music-notation"></div>
-        <div class="bg-layer music-waveform" id="bg-music-waveform"></div>
-        <div class="bg-layer music-resonance" id="bg-music-resonance"></div>
-
-        <div class="bg-layer visual-miniature" id="bg-visual-miniature"></div>
-        <div class="bg-layer visual-brushstroke" id="bg-visual-brushstroke"></div>
-        <div class="bg-layer visual-landscape" id="bg-visual-landscape"></div>
-
-        <div class="bg-layer narr-page" id="bg-narr-page"></div>
-        <div class="bg-layer narr-ink" id="bg-narr-ink"></div>
-        <div class="bg-layer narr-library" id="bg-narr-library"></div>
-
-        <div class="bg-layer cine-celluloid" id="bg-cine-celluloid"></div>
-        <div class="bg-layer cine-light" id="bg-cine-light"></div>
-        <div class="bg-layer cine-dark" id="bg-cine-dark"></div>
+        <div class="bg-layer grid" id="bg-grid"></div>
+        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_00_la_palabra.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
     </div>
 
     <div class="ui-overlay">
-        <div class="ui-top-left">PRELIMINARES<br>V.0.1.0</div>
+        <a href="index.html" class="ui-top-left">LAS ESCALAS<br>CARLOS SERVETTO</a>
         <div class="ui-top-right dropdown">
             <div class="dropdown-trigger">LA PALABRA ▾</div>
             <div class="dropdown-content">
@@ -76,13 +65,42 @@
                 <a href="capitulo_18.html">Epílogo</a>
             </div>
         </div>
-        <div class="ui-bottom-left" id="scroll-indicator">INICIAR SCROLL</div>
-        <div class="ui-bottom-right" id="scale-metric">SCALE:<br>1:1</div>
+        <div class="ui-bottom-left" id="scroll-indicator">DESPLAZAR ↓</div>
+        <div class="ui-bottom-right" id="scale-metric">ESCALA<br>1:1</div>
     </div>
 
     <main class="content-scroll">
+        <!-- Portada Principal del Libro -->
+        <section id="portada-libro" data-sec="book-cover" class="step hero is-active" data-scale="1" data-metric="X" data-shape="square" data-invert="false">
+            <div class="book-cover-hero">
+                <div class="book-cover-frame">
+                    <img src="images/cover_las_escalas.jpg" alt="Portada de Las Escalas — Carlos Servetto">
+                </div>
+                <div class="book-cover-meta">
+                    <div class="book-kicker">ENSAYO INTERACTIVO · 1:X</div>
+                    <h1 class="book-main-title">LAS ESCALAS</h1>
+                    <div class="book-subtitle">Un ensayo sobre la medida de todas las cosas</div>
+                    <div class="book-author">CARLOS SERVETTO</div>
+                    <div class="book-actions">
+                        <a href="#portada" class="book-btn primary">COMENZAR LECTURA ↓</a>
+                        <a href="nota_del_autor.html" class="book-btn">NOTA DEL AUTOR</a>
+                        <a href="las_escalas.epub" class="book-btn" download>DESCARGAR EPUB</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="word-matrix">
-            <h1>LA<br>PALABRA</h1>
+            <div class="chapter-hero-card">
+                <div class="chapter-hero-plate">
+                    <img src="images/laminas/lamina_00_la_palabra.jpg" alt="Lámina: La palabra">
+                </div>
+                <div class="chapter-hero-info">
+                    <div class="chapter-hero-kicker">PRÓLOGO · PRELIMINARES</div>
+                    <h1>LA<br>PALABRA</h1>
+                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
+                </div>
+            </div>
         </section>
 
         <section id="fragmento-1" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1.5" data-shape="square" data-layer="word-noise">
@@ -136,6 +154,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=20"></script>
+    <script src="script.js?v=30"></script>
 </body>
 </html>

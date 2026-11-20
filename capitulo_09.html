@@ -4,66 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAS ESCALAS — LA MÚSICA</title>
-    <link rel="stylesheet" href="style.css?v=20">
+    <meta name="description" content="Armónicos pitagóricos, la coma irreductible, el silencio de John Cage y la espiral de diez octavas.">
+    <meta name="author" content="Carlos Servetto">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="canonical" href="https://lasescalas.uy/capitulo_09.html">
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="LAS ESCALAS — LA MÚSICA">
+    <meta property="og:description" content="Armónicos pitagóricos, la coma irreductible, el silencio de John Cage y la espiral de diez octavas.">
+    <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_08_la_musica.jpg">
+    <meta property="og:url" content="https://lasescalas.uy/capitulo_09.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css?v=30">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="noise"></div>
     
     <div class="visual-container">
-        <div class="bg-layer space" id="bg-space"></div>
-        <div class="bg-layer bio" id="bg-bio"></div>
-        <div class="bg-layer map" id="bg-map"></div>
-        <div class="bg-layer grid is-active" id="bg-grid"></div>
-        
-        <div class="bg-layer geology" id="bg-geology"></div>
-        <div class="bg-layer frequency" id="bg-frequency"></div>
-        <div class="bg-layer decay" id="bg-decay"></div>
-        <div class="bg-layer entropy" id="bg-entropy"></div>
-
-        <div class="bg-layer space-void" id="bg-space-void"></div>
-        <div class="bg-layer space-orbit" id="bg-space-orbit"></div>
-        <div class="bg-layer space-dust" id="bg-space-dust"></div>
-        
-        <div class="bg-layer complex-fractal" id="bg-complex-fractal"></div>
-        <div class="bg-layer complex-chaos" id="bg-complex-chaos"></div>
-        <div class="bg-layer complex-emergence" id="bg-complex-emergence"></div>
-        
-        <div class="bg-layer info-noise" id="bg-info-noise"></div>
-        <div class="bg-layer info-signal" id="bg-info-signal"></div>
-        <div class="bg-layer info-library" id="bg-info-library"></div>
-        
-        <div class="bg-layer energy-plasma" id="bg-energy-plasma"></div>
-        <div class="bg-layer energy-fusion" id="bg-energy-fusion"></div>
-        <div class="bg-layer energy-dissipation" id="bg-energy-dissipation"></div>
-
-        <div class="bg-layer word-matrix" id="bg-word-matrix"></div>
-        <div class="bg-layer word-noise" id="bg-word-noise"></div>
-        <div class="bg-layer word-fragment" id="bg-word-fragment"></div>
-
-        <div class="bg-layer music-notation" id="bg-music-notation"></div>
-        <div class="bg-layer music-waveform" id="bg-music-waveform"></div>
-        <div class="bg-layer music-resonance" id="bg-music-resonance"></div>
-
-        <div class="bg-layer visual-miniature" id="bg-visual-miniature"></div>
-        <div class="bg-layer visual-brushstroke" id="bg-visual-brushstroke"></div>
-        <div class="bg-layer visual-landscape" id="bg-visual-landscape"></div>
-
-        <div class="bg-layer narr-page" id="bg-narr-page"></div>
-        <div class="bg-layer narr-ink" id="bg-narr-ink"></div>
-        <div class="bg-layer narr-library" id="bg-narr-library"></div>
-
-        <div class="bg-layer cine-celluloid" id="bg-cine-celluloid"></div>
-        <div class="bg-layer cine-light" id="bg-cine-light"></div>
-        <div class="bg-layer cine-dark" id="bg-cine-dark"></div>
-
-        <div class="scale-object dot" id="scale-object"></div>
+        <div class="bg-layer grid" id="bg-grid"></div>
+        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_08_la_musica.jpg');"></div>
+        <div class="scale-object square" id="scale-object"></div>
     </div>
 
     <div class="ui-overlay">
-        <div class="ui-top-left">PARTE III: EL INSTRUMENTO<br>V.0.1.0</div>
+        <a href="index.html" class="ui-top-left">LAS ESCALAS<br>CARLOS SERVETTO</a>
         <div class="ui-top-right dropdown">
             <div class="dropdown-trigger">LA MÚSICA ▾</div>
             <div class="dropdown-content">
@@ -99,14 +65,23 @@
                 <a href="capitulo_18.html">Epílogo</a>
             </div>
         </div>
-        <div class="ui-bottom-left" id="scroll-indicator">INICIAR SCROLL</div>
-        <div class="ui-bottom-right" id="scale-metric">SCALE:<br>1:1</div>
+        <div class="ui-bottom-left" id="scroll-indicator">DESPLAZAR ↓</div>
+        <div class="ui-bottom-right" id="scale-metric">ESCALA<br>1:1</div>
     </div>
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
         <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="music-notation">
-            <h1>LA<br>MÚSICA</h1>
+            <div class="chapter-hero-card">
+                <div class="chapter-hero-plate">
+                    <img src="images/laminas/lamina_08_la_musica.jpg" alt="Lámina: La música">
+                </div>
+                <div class="chapter-hero-info">
+                    <div class="chapter-hero-kicker">CAPÍTULO 08 · PARTE III</div>
+                    <h1>LA<br>MÚSICA</h1>
+                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
+                </div>
+            </div>
         </section>
 
         <!-- I. El herrero — PITÁGORAS Y LA PROPORCIÓN -->
@@ -245,6 +220,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=20"></script>
+    <script src="script.js?v=30"></script>
 </body>
 </html>

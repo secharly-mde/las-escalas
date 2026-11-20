@@ -1,87 +1,202 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const steps = document.querySelectorAll('.step');
+    const steps = Array.from(document.querySelectorAll('.step'));
+    const readableSteps = steps.filter(s => s.querySelector('.expand-btn'));
     const scaleObject = document.getElementById('scale-object');
-    const bgLayers = document.querySelectorAll('.bg-layer');
+    const bgGrid = document.getElementById('bg-grid');
+    const bgPlate = document.getElementById('bg-plate');
     const scaleMetric = document.getElementById('scale-metric');
+    const scrollIndicator = document.getElementById('scroll-indicator');
     const body = document.body;
 
-    // Trigger intersection exactly when the middle of the section hits the middle of the screen
+    // Create top reading progress bar
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    document.body.prepend(progressBar);
+
+    // Create reading backdrop for closing modal by clicking outside
+    const backdrop = document.createElement('div');
+    backdrop.className = 'reading-backdrop';
+    document.body.appendChild(backdrop);
+
+    let isReadingMode = false;
+    let activeExpandedBlock = null;
+
+    // Smooth logarithmic mapping so kinetic zoom-in / zoom-out feels deep & dramatic
+    // without ever pixelating the background plate or breaking layout!
+    function computeKineticTransforms(rawScale) {
+        const val = Math.max(0.0001, parseFloat(rawScale) || 1);
+        const logS = Math.log10(val); // roughly -4 to +2
+        // Scale object moves dramatically (0.28x to 3.4x)
+        const objScale = Math.max(0.28, Math.min(3.4, Math.pow(1.65, logS)));
+        // Architectural grid zooms noticeably (0.65x to 1.85x)
+        const gridScale = Math.max(0.65, Math.min(1.85, 1 + logS * 0.22));
+        // Official chapter plate breathes/zooms gracefully (0.86x to 1.24x)
+        const plateScale = Math.max(0.86, Math.min(1.24, 1 + logS * 0.085));
+        return { objScale, gridScale, plateScale };
+    }
+
+    function updateProgressBar() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+        progressBar.style.width = `${pct}%`;
+    }
+    window.addEventListener('scroll', updateProgressBar, { passive: true });
+    updateProgressBar();
+
+    // Activate step visual state
+    function activateStep(target) {
+        steps.forEach(s => s.classList.remove('is-active'));
+        target.classList.add('is-active');
+
+        const renderScale = target.getAttribute('data-scale') || 1;
+        const narrativeMetric = target.getAttribute('data-metric') || 1;
+        const shape = target.getAttribute('data-shape') || 'square';
+        const invert = target.getAttribute('data-invert') === 'true';
+
+        const { objScale, gridScale, plateScale } = computeKineticTransforms(renderScale);
+
+        if (bgGrid) {
+            bgGrid.style.transform = `scale(${gridScale.toFixed(3)})`;
+        }
+        if (bgPlate) {
+            bgPlate.style.transform = `scale(${plateScale.toFixed(3)})`;
+        }
+        if (scaleObject) {
+            scaleObject.style.transform = `scale(${objScale.toFixed(3)})`;
+            scaleObject.className = `scale-object ${shape}`;
+        }
+        if (scaleMetric) {
+            scaleMetric.innerHTML = `ESCALA<br>1:${narrativeMetric}`;
+        }
+
+        // Update bottom-left indicator with real section progress
+        if (scrollIndicator) {
+            const h2 = target.querySelector('h2 span') || target.querySelector('h2');
+            if (target.classList.contains('hero')) {
+                scrollIndicator.textContent = 'DESPLAZAR ↓';
+            } else if (h2 && readableSteps.length > 0) {
+                const idx = readableSteps.indexOf(target);
+                const padIdx = String(idx + 1).padStart(2, '0');
+                const padTot = String(readableSteps.length).padStart(2, '0');
+                scrollIndicator.textContent = `${padIdx} / ${padTot} · ${h2.textContent.trim()}`;
+            } else {
+                const idx = steps.indexOf(target);
+                scrollIndicator.textContent = `${String(idx).padStart(2, '0')} / ${String(steps.length - 1).padStart(2, '0')}`;
+            }
+        }
+
+        if (invert) {
+            body.classList.add('invert');
+        } else {
+            body.classList.remove('invert');
+        }
+    }
+
     const observerOptions = {
         root: null,
-        rootMargin: '-50% 0px -50% 0px',
+        rootMargin: '-45% 0px -45% 0px',
         threshold: 0
     };
 
-    let isReadingMode = false;
-
     const observer = new IntersectionObserver((entries) => {
-        if (isReadingMode) return; // Freeze background updates while reading
+        if (isReadingMode) return;
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Activate step
-                steps.forEach(s => s.classList.remove('is-active'));
-                entry.target.classList.add('is-active');
-
-                // Get data attributes
-                const renderScale = entry.target.getAttribute('data-scale') || 1;
-                const narrativeMetric = entry.target.getAttribute('data-metric') || 1;
-                const shape = entry.target.getAttribute('data-shape') || 'square';
-                const invert = entry.target.getAttribute('data-invert') === 'true';
-                const targetLayer = entry.target.getAttribute('data-layer') || 'grid';
-
-                // CROSSFADING LAYERS
-                bgLayers.forEach(layer => {
-                    if (layer.id === `bg-${targetLayer}`) {
-                        layer.classList.add('is-active');
-                    } else {
-                        layer.classList.remove('is-active');
-                    }
-                    // Scale all backgrounds gracefully so there's no popping during transition
-                    const bgScale = Math.max(0.5, renderScale);
-                    layer.style.transform = `scale(${bgScale})`;
-                });
-
-                // Update visual scale object
-                scaleObject.style.transform = `scale(${renderScale})`;
-                scaleObject.className = `scale-object ${shape}`;
-
-                // Update metric UI with NARRATIVE scale
-                scaleMetric.innerHTML = `SCALE: <br>1:${narrativeMetric}`;
-
-                // Invert colors if needed
-                if (invert) {
-                    body.classList.add('invert');
-                } else {
-                    body.classList.remove('invert');
-                }
+                activateStep(entry.target);
             }
         });
     }, observerOptions);
 
     steps.forEach(step => observer.observe(step));
+    if (steps.length > 0) {
+        activateStep(steps[0]);
+    }
 
     // READING MODE LOGIC
+    function openReadingMode(textBlock) {
+        if (!textBlock) return;
+        if (activeExpandedBlock && activeExpandedBlock !== textBlock) {
+            activeExpandedBlock.classList.remove('expanded');
+        }
+        textBlock.classList.add('expanded');
+        body.classList.add('is-reading-mode');
+        isReadingMode = true;
+        activeExpandedBlock = textBlock;
+        textBlock.scrollTop = 0;
+    }
+
+    function closeReadingMode() {
+        if (activeExpandedBlock) {
+            activeExpandedBlock.classList.remove('expanded');
+            activeExpandedBlock = null;
+        }
+        body.classList.remove('is-reading-mode');
+        isReadingMode = false;
+    }
+
+    // Inject in-modal Prev / Next section buttons for seamless continuous reading
+    readableSteps.forEach((step, idx) => {
+        const textBlock = step.querySelector('.text-block');
+        if (!textBlock || textBlock.querySelector('.modal-sec-nav')) return;
+
+        const navRow = document.createElement('div');
+        navRow.className = 'modal-sec-nav';
+
+        const prevBtn = document.createElement('button');
+        prevBtn.type = 'button';
+        prevBtn.className = 'modal-nav-btn';
+        prevBtn.textContent = '← SECCIÓN ANTERIOR';
+        prevBtn.disabled = (idx === 0);
+        prevBtn.addEventListener('click', () => {
+            if (idx > 0) {
+                const prevStep = readableSteps[idx - 1];
+                closeReadingMode();
+                activateStep(prevStep);
+                prevStep.scrollIntoView({ behavior: 'instant', block: 'center' });
+                openReadingMode(prevStep.querySelector('.text-block'));
+            }
+        });
+
+        const nextBtn = document.createElement('button');
+        nextBtn.type = 'button';
+        nextBtn.className = 'modal-nav-btn';
+        nextBtn.textContent = 'SIGUIENTE SECCIÓN →';
+        nextBtn.disabled = (idx === readableSteps.length - 1);
+        nextBtn.addEventListener('click', () => {
+            if (idx < readableSteps.length - 1) {
+                const nextStep = readableSteps[idx + 1];
+                closeReadingMode();
+                activateStep(nextStep);
+                nextStep.scrollIntoView({ behavior: 'instant', block: 'center' });
+                openReadingMode(nextStep.querySelector('.text-block'));
+            }
+        });
+
+        navRow.appendChild(prevBtn);
+        navRow.appendChild(nextBtn);
+        textBlock.appendChild(navRow);
+    });
+
     document.querySelectorAll('.expand-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const textBlock = e.target.closest('.text-block');
-            textBlock.classList.add('expanded');
-            body.classList.add('is-reading-mode');
-            isReadingMode = true;
-            // Scroll to top of the expanded block
-            textBlock.scrollTop = 0;
+            openReadingMode(textBlock);
         });
     });
 
     document.querySelectorAll('.collapse-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const textBlock = e.target.closest('.text-block');
-            textBlock.classList.remove('expanded');
-            body.classList.remove('is-reading-mode');
-            isReadingMode = false;
-        });
+        btn.addEventListener('click', () => closeReadingMode());
     });
 
-    // DROPDOWN LOGIC
+    backdrop.addEventListener('click', () => closeReadingMode());
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isReadingMode) {
+            closeReadingMode();
+        }
+    });
+
+    // DROPDOWN LOGIC + HIGHLIGHT CURRENT CHAPTER
     const dropdown = document.querySelector('.ui-top-right.dropdown');
     if (dropdown) {
         const trigger = dropdown.querySelector('.dropdown-trigger');
@@ -89,11 +204,16 @@ document.addEventListener("DOMContentLoaded", () => {
             e.stopPropagation();
             dropdown.classList.toggle('is-open');
         });
-
-        // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
             if (!dropdown.contains(e.target)) {
                 dropdown.classList.remove('is-open');
+            }
+        });
+
+        const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+        dropdown.querySelectorAll('.dropdown-content a').forEach(a => {
+            if (a.getAttribute('href') === currentFile) {
+                a.classList.add('is-current');
             }
         });
     }
@@ -121,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(url.toString());
                 }
-                linkBtn.textContent = '[ENLACE COPIADO]';
+                linkBtn.textContent = '[COPIADO]';
                 setTimeout(() => { linkBtn.textContent = '[#]'; }, 1600);
             });
             h2.appendChild(linkBtn);
@@ -134,8 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const target = document.getElementById(rawHash) || document.querySelector(`.step[data-sec="${rawHash}"]`);
         if (target) {
             setTimeout(() => {
-                steps.forEach(s => s.classList.remove('is-active'));
-                target.classList.add('is-active');
+                activateStep(target);
                 target.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 const params = new URLSearchParams(window.location.search);
                 if (params.get('expand') === '1') {
