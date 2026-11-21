@@ -4,9 +4,74 @@ document.addEventListener("DOMContentLoaded", () => {
     const scaleObject = document.getElementById('scale-object');
     const bgGrid = document.getElementById('bg-grid');
     const bgPlate = document.getElementById('bg-plate');
+    const atlasViewport = document.getElementById('atlas-viewport');
+    const atlasCanvas = document.getElementById('atlas-canvas');
     const scaleMetric = document.getElementById('scale-metric');
     const scrollIndicator = document.getElementById('scroll-indicator');
     const body = document.body;
+
+    // GRAND ATLAS + KINETIC LOUPE CAMERA INITIALIZATION
+    let hasAtlas = false;
+    let currentStep = null;
+
+    if (atlasViewport && atlasCanvas) {
+        const atlasUrl = atlasViewport.getAttribute('data-atlas');
+        if (atlasUrl) {
+            hasAtlas = true;
+            body.classList.add('has-atlas');
+            const reticle = document.createElement('div');
+            reticle.className = 'loupe-reticle';
+            atlasViewport.appendChild(reticle);
+
+            fetch(atlasUrl)
+                .then(r => r.text())
+                .then(svgText => {
+                    atlasCanvas.innerHTML = svgText;
+                    if (currentStep) updateAtlasCamera(currentStep);
+                })
+                .catch(err => console.error('Atlas SVG load error:', err));
+        }
+    }
+
+    function updateAtlasCamera(target) {
+        if (!hasAtlas || !atlasCanvas || !target) return;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const isDesktop = vw >= 1024;
+        const isHero = target.classList.contains('hero');
+
+        if (isHero) {
+            body.classList.add('atlas-hero-view');
+        } else {
+            body.classList.remove('atlas-hero-view');
+        }
+
+        const camX = parseFloat(target.getAttribute('data-cam-x')) || 1800;
+        const camY = parseFloat(target.getAttribute('data-cam-y')) || 1200;
+        const camZoom = parseFloat(target.getAttribute('data-cam-zoom')) || 1.0;
+
+        // Fit-base scale so zoom=1.0 frames the whole 3600x2400 Grand Atlas comfortably
+        const baseScale = Math.min(vw / 3600, vh / 2400) * (isHero ? 0.94 : 0.90);
+        const finalScale = baseScale * camZoom;
+
+        // On desktop sections, focus the loupe on the open right stage (68% X); on hero/mobile, center (50% X)
+        const targetScreenX = (isDesktop && !isHero) ? vw * 0.68 : vw * 0.50;
+        const targetScreenY = vh * 0.50;
+
+        const tx = targetScreenX - camX * finalScale;
+        const ty = targetScreenY - camY * finalScale;
+
+        atlasCanvas.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${finalScale.toFixed(4)})`;
+
+        if (scaleMetric) {
+            const narrativeMetric = target.getAttribute('data-metric') || 1;
+            scaleMetric.innerHTML = `LUPA ${camZoom.toFixed(1)}×<br>ESCALA 1:${narrativeMetric}`;
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        if (hasAtlas && currentStep) updateAtlasCamera(currentStep);
+    }, { passive: true });
 
     // Create top reading progress bar
     const progressBar = document.createElement('div');
@@ -46,6 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Activate step visual state
     function activateStep(target) {
+        currentStep = target;
         steps.forEach(s => s.classList.remove('is-active'));
         target.classList.add('is-active');
 
@@ -59,15 +125,19 @@ document.addEventListener("DOMContentLoaded", () => {
         if (bgGrid) {
             bgGrid.style.transform = `scale(${gridScale.toFixed(3)})`;
         }
-        if (bgPlate) {
-            bgPlate.style.transform = `scale(${plateScale.toFixed(3)})`;
-        }
-        if (scaleObject) {
-            scaleObject.style.transform = `scale(${objScale.toFixed(3)})`;
-            scaleObject.className = `scale-object ${shape}`;
-        }
-        if (scaleMetric) {
-            scaleMetric.innerHTML = `ESCALA<br>1:${narrativeMetric}`;
+        if (hasAtlas) {
+            updateAtlasCamera(target);
+        } else {
+            if (bgPlate) {
+                bgPlate.style.transform = `scale(${plateScale.toFixed(3)})`;
+            }
+            if (scaleObject) {
+                scaleObject.style.transform = `scale(${objScale.toFixed(3)})`;
+                scaleObject.className = `scale-object ${shape}`;
+            }
+            if (scaleMetric) {
+                scaleMetric.innerHTML = `ESCALA<br>1:${narrativeMetric}`;
+            }
         }
 
         // Update bottom-left indicator with real section progress
