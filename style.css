@@ -584,11 +584,25 @@ body.invert .book-cover-hero {
     background: rgba(13, 14, 16, 0.72);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    z-index: 950;
+    z-index: 900;
 }
 
 body.is-reading-mode .reading-backdrop {
     display: block;
+}
+
+body.is-reading-mode .content-scroll {
+    z-index: 960;
+    pointer-events: none;
+}
+
+body.is-reading-mode .step:not(.is-reading-step) {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+body.is-reading-mode .step.is-reading-step {
+    opacity: 1 !important;
 }
 
 .full-text {
@@ -620,6 +634,7 @@ body.is-reading-mode .reading-backdrop {
     padding: 0 3.2rem 3.2rem 3.2rem;
     border: 1px solid var(--border-strong);
     box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+    pointer-events: auto;
 }
 
 .text-block.expanded .summary-text {

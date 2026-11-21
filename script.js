@@ -118,6 +118,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!textBlock) return;
         if (activeExpandedBlock && activeExpandedBlock !== textBlock) {
             activeExpandedBlock.classList.remove('expanded');
+            const oldStep = activeExpandedBlock.closest('.step');
+            if (oldStep) oldStep.classList.remove('is-reading-step');
+        }
+        const parentStep = textBlock.closest('.step');
+        if (parentStep) {
+            parentStep.classList.add('is-active');
+            parentStep.classList.add('is-reading-step');
         }
         textBlock.classList.add('expanded');
         body.classList.add('is-reading-mode');
@@ -129,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function closeReadingMode() {
         if (activeExpandedBlock) {
             activeExpandedBlock.classList.remove('expanded');
+            const oldStep = activeExpandedBlock.closest('.step');
+            if (oldStep) oldStep.classList.remove('is-reading-step');
             activeExpandedBlock = null;
         }
         body.classList.remove('is-reading-mode');
