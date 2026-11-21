@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_13_la_decision.jpg">
     <meta property="og:url" content="https://lasescalas.uy/capitulo_14.html">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -24,8 +24,11 @@
     
     <div class="visual-container">
         <div class="bg-layer grid" id="bg-grid"></div>
-        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_13_la_decision.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="atlas-viewport" id="atlas-viewport" data-atlas="images/atlas/atlas_13_decision.svg">
+        <div class="atlas-canvas" id="atlas-canvas"></div>
     </div>
 
     <div class="ui-overlay">
@@ -71,21 +74,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
-            <div class="chapter-hero-card">
-                <div class="chapter-hero-plate">
-                    <img src="images/laminas/lamina_13_la_decision.jpg" alt="Lámina: La decisión">
-                </div>
-                <div class="chapter-hero-info">
-                    <div class="chapter-hero-kicker">CAPÍTULO 13 · PARTE IV</div>
-                    <h1>LA<br>DECISIÓN</h1>
-                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
-                </div>
-            </div>
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="1.05">
+            <h1>LA<br>DECISIÓN</h1>
         </section>
 
         <!-- I. Las dos puertas — BEZOS Y LA IRREVERSIBILIDAD -->
-        <section id="las-dos-puertas" data-sec="sec-1" class="step" data-scale="2" data-metric="2" data-shape="line" data-invert="false" data-layer="complex-chaos">
+        <section id="las-dos-puertas" data-sec="sec-1" class="step" data-scale="2" data-metric="2" data-shape="line" data-invert="false" data-layer="complex-chaos" data-cam-x="660" data-cam-y="620" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. Las dos puertas</h2>
@@ -102,7 +96,7 @@
         </section>
 
         <!-- II. La ilusión de foco — KAHNEMAN Y EL ZOOM INVOLUNTARIO -->
-        <section id="la-ilusion-de-foco" data-sec="sec-2" class="step" data-scale="0.1" data-metric="1" data-shape="circle" data-invert="true" data-layer="info-signal">
+        <section id="la-ilusion-de-foco" data-sec="sec-2" class="step" data-scale="0.1" data-metric="1" data-shape="circle" data-invert="true" data-layer="info-signal" data-cam-x="1800" data-cam-y="560" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La ilusión de foco</h2>
@@ -119,7 +113,7 @@
         </section>
 
         <!-- III. El malvavisco — LA ESCALA DE LA PACIENCIA -->
-        <section id="el-malvavisco" data-sec="sec-3" class="step" data-scale="0.5" data-metric="15" data-shape="dot" data-invert="false" data-layer="decay">
+        <section id="el-malvavisco" data-sec="sec-3" class="step" data-scale="0.5" data-metric="15" data-shape="dot" data-invert="false" data-layer="decay" data-cam-x="2940" data-cam-y="620" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. El malvavisco</h2>
@@ -136,7 +130,7 @@
         </section>
 
         <!-- IV. La báscula — BUFFETT Y LA ASÍNTOTA DEL TIEMPO -->
-        <section id="la-bascula" data-sec="sec-4" class="step" data-scale="10" data-metric="40000000" data-shape="line" data-invert="true" data-layer="energy-fusion">
+        <section id="la-bascula" data-sec="sec-4" class="step" data-scale="10" data-metric="40000000" data-shape="line" data-invert="true" data-layer="energy-fusion" data-cam-x="1120" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La báscula</h2>
@@ -153,7 +147,7 @@
         </section>
 
         <!-- V. La asamblea — LOS YOES TEMPORALES -->
-        <section id="la-asamblea" data-sec="sec-5" class="step" data-scale="0.3" data-metric="80" data-shape="circle" data-invert="false" data-layer="complex-emergence">
+        <section id="la-asamblea" data-sec="sec-5" class="step" data-scale="0.3" data-metric="80" data-shape="circle" data-invert="false" data-layer="complex-emergence" data-cam-x="2480" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. La asamblea</h2>
@@ -177,6 +171,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 </html>

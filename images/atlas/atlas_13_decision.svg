@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2400" width="3600" height="2400" preserveAspectRatio="xMidYMid meet">
+<g id="atlas-grid" opacity="0.11" stroke="currentColor" stroke-width="1">
+  <line x1="0" y1="0" x2="0" y2="2400"/>
+  <line x1="120" y1="0" x2="120" y2="2400" opacity="0.45"/>
+  <line x1="240" y1="0" x2="240" y2="2400" opacity="0.45"/>
+  <line x1="360" y1="0" x2="360" y2="2400" opacity="0.45"/>
+  <line x1="480" y1="0" x2="480" y2="2400" opacity="0.45"/>
+  <line x1="600" y1="0" x2="600" y2="2400"/>
+  <line x1="720" y1="0" x2="720" y2="2400" opacity="0.45"/>
+  <line x1="840" y1="0" x2="840" y2="2400" opacity="0.45"/>
+  <line x1="960" y1="0" x2="960" y2="2400" opacity="0.45"/>
+  <line x1="1080" y1="0" x2="1080" y2="2400" opacity="0.45"/>
+  <line x1="1200" y1="0" x2="1200" y2="2400"/>
+  <line x1="1320" y1="0" x2="1320" y2="2400" opacity="0.45"/>
+  <line x1="1440" y1="0" x2="1440" y2="2400" opacity="0.45"/>
+  <line x1="1560" y1="0" x2="1560" y2="2400" opacity="0.45"/>
+  <line x1="1680" y1="0" x2="1680" y2="2400" opacity="0.45"/>
+  <line x1="1800" y1="0" x2="1800" y2="2400"/>
+  <line x1="1920" y1="0" x2="1920" y2="2400" opacity="0.45"/>
+  <line x1="2040" y1="0" x2="2040" y2="2400" opacity="0.45"/>
+  <line x1="2160" y1="0" x2="2160" y2="2400" opacity="0.45"/>
+  <line x1="2280" y1="0" x2="2280" y2="2400" opacity="0.45"/>
+  <line x1="2400" y1="0" x2="2400" y2="2400"/>
+  <line x1="2520" y1="0" x2="2520" y2="2400" opacity="0.45"/>
+  <line x1="2640" y1="0" x2="2640" y2="2400" opacity="0.45"/>
+  <line x1="2760" y1="0" x2="2760" y2="2400" opacity="0.45"/>
+  <line x1="2880" y1="0" x2="2880" y2="2400" opacity="0.45"/>
+  <line x1="3000" y1="0" x2="3000" y2="2400"/>
+  <line x1="3120" y1="0" x2="3120" y2="2400" opacity="0.45"/>
+  <line x1="3240" y1="0" x2="3240" y2="2400" opacity="0.45"/>
+  <line x1="3360" y1="0" x2="3360" y2="2400" opacity="0.45"/>
+  <line x1="3480" y1="0" x2="3480" y2="2400" opacity="0.45"/>
+  <line x1="3600" y1="0" x2="3600" y2="2400"/>
+  <line x1="0" y1="0" x2="3600" y2="0"/>
+  <line x1="0" y1="120" x2="3600" y2="120" opacity="0.45"/>
+  <line x1="0" y1="240" x2="3600" y2="240" opacity="0.45"/>
+  <line x1="0" y1="360" x2="3600" y2="360" opacity="0.45"/>
+  <line x1="0" y1="480" x2="3600" y2="480" opacity="0.45"/>
+  <line x1="0" y1="600" x2="3600" y2="600"/>
+  <line x1="0" y1="720" x2="3600" y2="720" opacity="0.45"/>
+  <line x1="0" y1="840" x2="3600" y2="840" opacity="0.45"/>
+  <line x1="0" y1="960" x2="3600" y2="960" opacity="0.45"/>
+  <line x1="0" y1="1080" x2="3600" y2="1080" opacity="0.45"/>
+  <line x1="0" y1="1200" x2="3600" y2="1200"/>
+  <line x1="0" y1="1320" x2="3600" y2="1320" opacity="0.45"/>
+  <line x1="0" y1="1440" x2="3600" y2="1440" opacity="0.45"/>
+  <line x1="0" y1="1560" x2="3600" y2="1560" opacity="0.45"/>
+  <line x1="0" y1="1680" x2="3600" y2="1680" opacity="0.45"/>
+  <line x1="0" y1="1800" x2="3600" y2="1800"/>
+  <line x1="0" y1="1920" x2="3600" y2="1920" opacity="0.45"/>
+  <line x1="0" y1="2040" x2="3600" y2="2040" opacity="0.45"/>
+  <line x1="0" y1="2160" x2="3600" y2="2160" opacity="0.45"/>
+  <line x1="0" y1="2280" x2="3600" y2="2280" opacity="0.45"/>
+  <line x1="0" y1="2400" x2="3600" y2="2400"/>
+</g>
+<g id="atlas-paths" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 10" opacity="0.26">
+  <path d="M 660 620 Q 1230.0 550.0, 1800 560 Q 2370.0 550.0, 2940 620 Q 2030.0 1160.0, 1120 1780 Q 1800.0 1740.0, 2480 1780"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="280.0" y="390.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="302.0" y="424.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">01 / BEZOS · TIPO 1 VS. TIPO 2</text>
+  <circle cx="485" cy="630" r="125" stroke-width="2.0"/>
+  <line x1="485.0" y1="517.0" x2="485.0" y2="505.0" stroke-width="1" opacity="0.5"/>
+  <line x1="497.5" y1="510.7" x2="498.1" y2="505.7" stroke-width="1" opacity="0.5"/>
+  <line x1="509.9" y1="512.6" x2="511.0" y2="507.7" stroke-width="1" opacity="0.5"/>
+  <line x1="522.1" y1="515.9" x2="523.6" y2="511.1" stroke-width="1" opacity="0.5"/>
+  <line x1="533.8" y1="520.4" x2="535.8" y2="515.8" stroke-width="1" opacity="0.5"/>
+  <line x1="541.5" y1="532.1" x2="547.5" y2="521.7" stroke-width="1" opacity="0.5"/>
+  <line x1="555.5" y1="532.9" x2="558.5" y2="528.9" stroke-width="1" opacity="0.5"/>
+  <line x1="565.3" y1="540.8" x2="568.6" y2="537.1" stroke-width="1" opacity="0.5"/>
+  <line x1="574.2" y1="549.7" x2="577.9" y2="546.4" stroke-width="1" opacity="0.5"/>
+  <line x1="582.1" y1="559.5" x2="586.1" y2="556.5" stroke-width="1" opacity="0.5"/>
+  <line x1="582.9" y1="573.5" x2="593.3" y2="567.5" stroke-width="1" opacity="0.5"/>
+  <line x1="594.6" y1="581.2" x2="599.2" y2="579.2" stroke-width="1" opacity="0.5"/>
+  <line x1="599.1" y1="592.9" x2="603.9" y2="591.4" stroke-width="1" opacity="0.5"/>
+  <line x1="602.4" y1="605.1" x2="607.3" y2="604.0" stroke-width="1" opacity="0.5"/>
+  <line x1="604.3" y1="617.5" x2="609.3" y2="616.9" stroke-width="1" opacity="0.5"/>
+  <line x1="598.0" y1="630.0" x2="610.0" y2="630.0" stroke-width="1" opacity="0.5"/>
+  <line x1="604.3" y1="642.5" x2="609.3" y2="643.1" stroke-width="1" opacity="0.5"/>
+  <line x1="602.4" y1="654.9" x2="607.3" y2="656.0" stroke-width="1" opacity="0.5"/>
+  <line x1="599.1" y1="667.1" x2="603.9" y2="668.6" stroke-width="1" opacity="0.5"/>
+  <line x1="594.6" y1="678.8" x2="599.2" y2="680.8" stroke-width="1" opacity="0.5"/>
+  <line x1="582.9" y1="686.5" x2="593.3" y2="692.5" stroke-width="1" opacity="0.5"/>
+  <line x1="582.1" y1="700.5" x2="586.1" y2="703.5" stroke-width="1" opacity="0.5"/>
+  <line x1="574.2" y1="710.3" x2="577.9" y2="713.6" stroke-width="1" opacity="0.5"/>
+  <line x1="565.3" y1="719.2" x2="568.6" y2="722.9" stroke-width="1" opacity="0.5"/>
+  <line x1="555.5" y1="727.1" x2="558.5" y2="731.1" stroke-width="1" opacity="0.5"/>
+  <line x1="541.5" y1="727.9" x2="547.5" y2="738.3" stroke-width="1" opacity="0.5"/>
+  <line x1="533.8" y1="739.6" x2="535.8" y2="744.2" stroke-width="1" opacity="0.5"/>
+  <line x1="522.1" y1="744.1" x2="523.6" y2="748.9" stroke-width="1" opacity="0.5"/>
+  <line x1="509.9" y1="747.4" x2="511.0" y2="752.3" stroke-width="1" opacity="0.5"/>
+  <line x1="497.5" y1="749.3" x2="498.1" y2="754.3" stroke-width="1" opacity="0.5"/>
+  <line x1="485.0" y1="743.0" x2="485.0" y2="755.0" stroke-width="1" opacity="0.5"/>
+  <line x1="472.5" y1="749.3" x2="471.9" y2="754.3" stroke-width="1" opacity="0.5"/>
+  <line x1="460.1" y1="747.4" x2="459.0" y2="752.3" stroke-width="1" opacity="0.5"/>
+  <line x1="447.9" y1="744.1" x2="446.4" y2="748.9" stroke-width="1" opacity="0.5"/>
+  <line x1="436.2" y1="739.6" x2="434.2" y2="744.2" stroke-width="1" opacity="0.5"/>
+  <line x1="428.5" y1="727.9" x2="422.5" y2="738.3" stroke-width="1" opacity="0.5"/>
+  <line x1="414.5" y1="727.1" x2="411.5" y2="731.1" stroke-width="1" opacity="0.5"/>
+  <line x1="404.7" y1="719.2" x2="401.4" y2="722.9" stroke-width="1" opacity="0.5"/>
+  <line x1="395.8" y1="710.3" x2="392.1" y2="713.6" stroke-width="1" opacity="0.5"/>
+  <line x1="387.9" y1="700.5" x2="383.9" y2="703.5" stroke-width="1" opacity="0.5"/>
+  <line x1="387.1" y1="686.5" x2="376.7" y2="692.5" stroke-width="1" opacity="0.5"/>
+  <line x1="375.4" y1="678.8" x2="370.8" y2="680.8" stroke-width="1" opacity="0.5"/>
+  <line x1="370.9" y1="667.1" x2="366.1" y2="668.6" stroke-width="1" opacity="0.5"/>
+  <line x1="367.6" y1="654.9" x2="362.7" y2="656.0" stroke-width="1" opacity="0.5"/>
+  <line x1="365.7" y1="642.5" x2="360.7" y2="643.1" stroke-width="1" opacity="0.5"/>
+  <line x1="372.0" y1="630.0" x2="360.0" y2="630.0" stroke-width="1" opacity="0.5"/>
+  <line x1="365.7" y1="617.5" x2="360.7" y2="616.9" stroke-width="1" opacity="0.5"/>
+  <line x1="367.6" y1="605.1" x2="362.7" y2="604.0" stroke-width="1" opacity="0.5"/>
+  <line x1="370.9" y1="592.9" x2="366.1" y2="591.4" stroke-width="1" opacity="0.5"/>
+  <line x1="375.4" y1="581.2" x2="370.8" y2="579.2" stroke-width="1" opacity="0.5"/>
+  <line x1="387.1" y1="573.5" x2="376.7" y2="567.5" stroke-width="1" opacity="0.5"/>
+  <line x1="387.9" y1="559.5" x2="383.9" y2="556.5" stroke-width="1" opacity="0.5"/>
+  <line x1="395.8" y1="549.7" x2="392.1" y2="546.4" stroke-width="1" opacity="0.5"/>
+  <line x1="404.7" y1="540.8" x2="401.4" y2="537.1" stroke-width="1" opacity="0.5"/>
+  <line x1="414.5" y1="532.9" x2="411.5" y2="528.9" stroke-width="1" opacity="0.5"/>
+  <line x1="428.5" y1="532.1" x2="422.5" y2="521.7" stroke-width="1" opacity="0.5"/>
+  <line x1="436.2" y1="520.4" x2="434.2" y2="515.8" stroke-width="1" opacity="0.5"/>
+  <line x1="447.9" y1="515.9" x2="446.4" y2="511.1" stroke-width="1" opacity="0.5"/>
+  <line x1="460.1" y1="512.6" x2="459.0" y2="507.7" stroke-width="1" opacity="0.5"/>
+  <line x1="472.5" y1="510.7" x2="471.9" y2="505.7" stroke-width="1" opacity="0.5"/>
+  <line x1="485" y1="630" x2="485.0" y2="527.0" stroke-width="2.6"/>
+  <circle cx="485" cy="630" r="4.5" fill="currentColor"/>
+  <text x="485" y="787" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="1.5" opacity="0.85">TIPO 1 · UNA VÍA</text>
+  <circle cx="835" cy="630" r="125" stroke-width="2.0"/>
+  <line x1="835.0" y1="517.0" x2="835.0" y2="505.0" stroke-width="1" opacity="0.5"/>
+  <line x1="901.4" y1="538.6" x2="908.5" y2="528.9" stroke-width="1" opacity="0.5"/>
+  <line x1="942.5" y1="595.1" x2="953.9" y2="591.4" stroke-width="1" opacity="0.5"/>
+  <line x1="942.5" y1="664.9" x2="953.9" y2="668.6" stroke-width="1" opacity="0.5"/>
+  <line x1="901.4" y1="721.4" x2="908.5" y2="731.1" stroke-width="1" opacity="0.5"/>
+  <line x1="835.0" y1="743.0" x2="835.0" y2="755.0" stroke-width="1" opacity="0.5"/>
+  <line x1="768.6" y1="721.4" x2="761.5" y2="731.1" stroke-width="1" opacity="0.5"/>
+  <line x1="727.5" y1="664.9" x2="716.1" y2="668.6" stroke-width="1" opacity="0.5"/>
+  <line x1="727.5" y1="595.1" x2="716.1" y2="591.4" stroke-width="1" opacity="0.5"/>
+  <line x1="768.6" y1="538.6" x2="761.5" y2="528.9" stroke-width="1" opacity="0.5"/>
+  <line x1="835" y1="630" x2="938.0" y2="630.0" stroke-width="2.6"/>
+  <circle cx="835" cy="630" r="4.5" fill="currentColor"/>
+  <text x="835" y="787" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="1.5" opacity="0.85">TIPO 2 · REVERSIBLE</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1420.0" y="330.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="1442.0" y="364.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">02 / KAHNEMAN · ILUSIÓN DE FOCO</text>
+  <rect x="1556.8" y="442.6" width="486.4" height="14" fill="currentColor"/>
+  <line x1="1800" y1="688.8" x2="1586.0" y2="456.6" stroke-width="1.8"/>
+  <line x1="1800" y1="688.8" x2="2014.0" y2="456.6" stroke-width="1.8"/>
+  <line x1="1800" y1="688.8" x2="1800" y2="456.6" stroke-width="1" stroke-dasharray="5 7" opacity="0.45"/>
+  <path d="M 1754.5 635.6 A 70 70 0 0 1 1845.5 635.6" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1715.5 590.0 A 130 130 0 0 1 1884.5 590.0" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1676.5 544.4 A 190 190 0 0 1 1923.5 544.4" stroke-width="0.9" opacity="0.35"/>
+  <circle cx="1800" cy="688.8" r="6" fill="currentColor"/>
+  <text x="1800" y="431.6" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="2" opacity="0.85">UN FACTOR AISLADO</text>
+  <text x="1814" y="569.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.8">HIPER-ZOOM</text>
+  <text x="1800" y="716.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="2" opacity="0.65">SISTEMA 1 / SISTEMA 2</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2560.0" y="390.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="2582.0" y="424.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">03 / MISCHEL · KIDD (2013)</text>
+  <text x="2754.0" y="550.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">ENTORNO CAÓTICO</text>
+  <line x1="2770.0" y1="546.0" x2="3200.0" y2="546.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2770.0" y="538.0" width="107.5" height="16" fill="none" stroke-width="1.6"/>
+  <text x="3214.0" y="550.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">3 MIN</text>
+  <text x="2754.0" y="710.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">ENTORNO CONFIABLE</text>
+  <line x1="2770.0" y1="706.0" x2="3200.0" y2="706.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2770.0" y="698.0" width="378.4" height="16" fill="currentColor" stroke-width="1.6"/>
+  <text x="3214.0" y="710.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">12 MIN</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="740.0" y="1550.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="762.0" y="1584.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">04 / GRAHAM · BUFFETT (1965—2025)</text>
+  <line x1="810.0" y1="1945.0" x2="1440.0" y2="1945.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="810.0" y1="1635.0" x2="810.0" y2="1945.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="810.0" y1="1867.5" x2="1440.0" y2="1867.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="810.0" y1="1790.0" x2="1440.0" y2="1790.0" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="810.0" y1="1712.5" x2="1440.0" y2="1712.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <polyline points="810.0,1926.4 816.3,1926.4 822.6,1926.4 828.9,1926.4 835.2,1926.4 841.5,1926.3 847.8,1926.3 854.1,1926.2 860.4,1926.2 866.7,1926.1 873.0,1926.0 879.3,1925.8 885.6,1925.7 891.9,1925.5 898.2,1925.3 904.5,1925.1 910.8,1924.8 917.1,1924.5 923.4,1924.2 929.7,1923.8 936.0,1923.4 942.3,1922.9 948.6,1922.5 954.9,1921.9 961.2,1921.4 967.5,1920.8 973.8,1920.1 980.1,1919.4 986.4,1918.7 992.7,1917.9 999.0,1917.0 1005.3,1916.1 1011.6,1915.2 1017.9,1914.2 1024.2,1913.1 1030.5,1912.0 1036.8,1910.8 1043.1,1909.5 1049.4,1908.2 1055.7,1906.9 1062.0,1905.4 1068.3,1903.9 1074.6,1902.4 1080.9,1900.7 1087.2,1899.0 1093.5,1897.2 1099.8,1895.4 1106.1,1893.5 1112.4,1891.5 1118.7,1889.4 1125.0,1887.2 1131.3,1885.0 1137.6,1882.7 1143.9,1880.3 1150.2,1877.8 1156.5,1875.2 1162.8,1872.6 1169.1,1869.9 1175.4,1867.0 1181.7,1864.1 1188.0,1861.1 1194.3,1858.0 1200.6,1854.9 1206.9,1851.6 1213.2,1848.2 1219.5,1844.7 1225.8,1841.2 1232.1,1837.5 1238.4,1833.7 1244.7,1829.9 1251.0,1825.9 1257.3,1821.8 1263.6,1817.7 1269.9,1813.4 1276.2,1809.0 1282.5,1804.5 1288.8,1799.9 1295.1,1795.2 1301.4,1790.3 1307.7,1785.4 1314.0,1780.4 1320.3,1775.2 1326.6,1769.9 1332.9,1764.5 1339.2,1759.0 1345.5,1753.3 1351.8,1747.6 1358.1,1741.7 1364.4,1735.7 1370.7,1729.5 1377.0,1723.3 1383.3,1716.9 1389.6,1710.4 1395.9,1703.8 1402.2,1697.0 1408.5,1690.1 1414.8,1683.1 1421.1,1675.9 1427.4,1668.6 1433.7,1661.2 1440.0,1653.6" stroke-width="2.6" opacity="0.95"/>
+  <circle cx="1440.0" cy="1653.6" r="4" fill="currentColor" opacity="0.95"/>
+  <text x="1430.0" y="1641.6" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">19.7% COMPUESTO · 60 AÑOS</text>
+  <text x="810.0" y="1969.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.65">$19</text>
+  <text x="1125.0" y="1969.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.65">30 AÑOS</text>
+  <text x="1440.0" y="1969.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.65">$754.800</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2100.0" y="1550.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="2122.0" y="1584.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">05 / AINSLIE · DESCUENTO HIPERBÓLICO</text>
+  <line x1="2170.0" y1="1945.0" x2="2800.0" y2="1945.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="2170.0" y1="1635.0" x2="2170.0" y2="1945.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="2170.0" y1="1867.5" x2="2800.0" y2="1867.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="2170.0" y1="1790.0" x2="2800.0" y2="1790.0" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="2170.0" y1="1712.5" x2="2800.0" y2="1712.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <polyline points="2170.0,1902.4 2176.3,1902.0 2182.6,1901.6 2188.9,1901.1 2195.2,1900.7 2201.5,1900.3 2207.8,1899.8 2214.1,1899.4 2220.4,1898.9 2226.7,1898.5 2233.0,1898.0 2239.3,1897.5 2245.6,1897.0 2251.9,1896.5 2258.2,1896.0 2264.5,1895.4 2270.8,1894.9 2277.1,1894.3 2283.4,1893.8 2289.7,1893.2 2296.0,1892.6 2302.3,1892.0 2308.6,1891.4 2314.9,1890.7 2321.2,1890.1 2327.5,1889.4 2333.8,1888.7 2340.1,1888.0 2346.4,1887.3 2352.7,1886.6 2359.0,1885.8 2365.3,1885.1 2371.6,1884.3 2377.9,1883.4 2384.2,1882.6 2390.5,1881.7 2396.8,1880.9 2403.1,1880.0 2409.4,1879.0 2415.7,1878.0 2422.0,1877.1 2428.3,1876.0 2434.6,1875.0 2440.9,1873.9 2447.2,1872.8 2453.5,1871.6 2459.8,1870.4 2466.1,1869.2 2472.4,1867.9 2478.7,1866.6 2485.0,1865.2 2491.3,1863.8 2497.6,1862.3 2503.9,1860.8 2510.2,1859.2 2516.5,1857.6 2522.8,1855.9 2529.1,1854.1 2535.4,1852.3 2541.7,1850.4 2548.0,1848.4 2554.3,1846.3 2560.6,1844.1 2566.9,1841.8 2573.2,1839.5 2579.5,1837.0 2585.8,1834.4 2592.1,1831.6 2598.4,1828.8 2604.7,1825.7 2611.0,1822.5 2617.3,1819.2 2623.6,1815.6 2629.9,1811.8 2636.2,1807.9 2642.5,1803.6 2648.8,1799.1 2655.1,1794.3 2661.4,1789.2 2667.7,1783.7 2674.0,1777.8 2680.3,1771.5 2686.6,1764.6 2692.9,1757.2 2699.2,1749.2 2705.5,1740.5 2711.8,1730.9 2718.1,1720.4 2724.4,1708.8 2730.7,1696.0 2737.0,1681.6 2743.3,1665.6 2749.6,1647.4" stroke-width="2.5" opacity="0.95"/>
+  <circle cx="2749.6" cy="1647.4" r="4" fill="currentColor" opacity="0.95"/>
+  <text x="2739.6" y="1635.4" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">FUTURO</text>
+  <polyline points="2170.0,1906.8 2176.3,1906.3 2182.6,1905.8 2188.9,1905.2 2195.2,1904.7 2201.5,1904.1 2207.8,1903.6 2214.1,1903.0 2220.4,1902.4 2226.7,1901.8 2233.0,1901.1 2239.3,1900.5 2245.6,1899.8 2251.9,1899.1 2258.2,1898.3 2264.5,1897.6 2270.8,1896.8 2277.1,1896.0 2283.4,1895.2 2289.7,1894.4 2296.0,1893.5 2302.3,1892.6 2308.6,1891.6 2314.9,1890.6 2321.2,1889.6 2327.5,1888.6 2333.8,1887.5 2340.1,1886.3 2346.4,1885.1 2352.7,1883.9 2359.0,1882.6 2365.3,1881.3 2371.6,1879.8 2377.9,1878.4 2384.2,1876.8 2390.5,1875.2 2396.8,1873.6 2403.1,1871.8 2409.4,1869.9 2415.7,1868.0 2422.0,1865.9 2428.3,1863.7 2434.6,1861.4 2440.9,1859.0 2447.2,1856.4 2453.5,1853.7 2459.8,1850.8 2466.1,1847.7 2472.4,1844.4 2478.7,1840.8 2485.0,1837.0 2491.3,1832.9 2497.6,1828.5 2503.9,1823.7 2510.2,1818.6 2516.5,1812.9 2522.8,1806.7 2529.1,1799.9 2535.4,1792.5 2541.7,1784.2 2548.0,1774.9 2554.3,1764.5 2560.6,1752.8" stroke-width="1.8" stroke-dasharray="6 6" opacity="0.7"/>
+  <circle cx="2560.6" cy="1752.8" r="4" fill="currentColor" opacity="0.7"/>
+  <text x="2550.6" y="1740.8" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">AHORA</text>
+  <circle cx="2359.0" cy="1876.8" r="6.5" stroke-width="2.0"/>
+  <line x1="2359.0" y1="1868.8" x2="2359.0" y2="1814.8" stroke-width="1"/>
+  <text x="2359.0" y="1804.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">REVERSIÓN</text>
+</g>
+</svg>

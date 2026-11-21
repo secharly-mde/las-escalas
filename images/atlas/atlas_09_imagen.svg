@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2400" width="3600" height="2400" preserveAspectRatio="xMidYMid meet">
+<g id="atlas-grid" opacity="0.11" stroke="currentColor" stroke-width="1">
+  <line x1="0" y1="0" x2="0" y2="2400"/>
+  <line x1="120" y1="0" x2="120" y2="2400" opacity="0.45"/>
+  <line x1="240" y1="0" x2="240" y2="2400" opacity="0.45"/>
+  <line x1="360" y1="0" x2="360" y2="2400" opacity="0.45"/>
+  <line x1="480" y1="0" x2="480" y2="2400" opacity="0.45"/>
+  <line x1="600" y1="0" x2="600" y2="2400"/>
+  <line x1="720" y1="0" x2="720" y2="2400" opacity="0.45"/>
+  <line x1="840" y1="0" x2="840" y2="2400" opacity="0.45"/>
+  <line x1="960" y1="0" x2="960" y2="2400" opacity="0.45"/>
+  <line x1="1080" y1="0" x2="1080" y2="2400" opacity="0.45"/>
+  <line x1="1200" y1="0" x2="1200" y2="2400"/>
+  <line x1="1320" y1="0" x2="1320" y2="2400" opacity="0.45"/>
+  <line x1="1440" y1="0" x2="1440" y2="2400" opacity="0.45"/>
+  <line x1="1560" y1="0" x2="1560" y2="2400" opacity="0.45"/>
+  <line x1="1680" y1="0" x2="1680" y2="2400" opacity="0.45"/>
+  <line x1="1800" y1="0" x2="1800" y2="2400"/>
+  <line x1="1920" y1="0" x2="1920" y2="2400" opacity="0.45"/>
+  <line x1="2040" y1="0" x2="2040" y2="2400" opacity="0.45"/>
+  <line x1="2160" y1="0" x2="2160" y2="2400" opacity="0.45"/>
+  <line x1="2280" y1="0" x2="2280" y2="2400" opacity="0.45"/>
+  <line x1="2400" y1="0" x2="2400" y2="2400"/>
+  <line x1="2520" y1="0" x2="2520" y2="2400" opacity="0.45"/>
+  <line x1="2640" y1="0" x2="2640" y2="2400" opacity="0.45"/>
+  <line x1="2760" y1="0" x2="2760" y2="2400" opacity="0.45"/>
+  <line x1="2880" y1="0" x2="2880" y2="2400" opacity="0.45"/>
+  <line x1="3000" y1="0" x2="3000" y2="2400"/>
+  <line x1="3120" y1="0" x2="3120" y2="2400" opacity="0.45"/>
+  <line x1="3240" y1="0" x2="3240" y2="2400" opacity="0.45"/>
+  <line x1="3360" y1="0" x2="3360" y2="2400" opacity="0.45"/>
+  <line x1="3480" y1="0" x2="3480" y2="2400" opacity="0.45"/>
+  <line x1="3600" y1="0" x2="3600" y2="2400"/>
+  <line x1="0" y1="0" x2="3600" y2="0"/>
+  <line x1="0" y1="120" x2="3600" y2="120" opacity="0.45"/>
+  <line x1="0" y1="240" x2="3600" y2="240" opacity="0.45"/>
+  <line x1="0" y1="360" x2="3600" y2="360" opacity="0.45"/>
+  <line x1="0" y1="480" x2="3600" y2="480" opacity="0.45"/>
+  <line x1="0" y1="600" x2="3600" y2="600"/>
+  <line x1="0" y1="720" x2="3600" y2="720" opacity="0.45"/>
+  <line x1="0" y1="840" x2="3600" y2="840" opacity="0.45"/>
+  <line x1="0" y1="960" x2="3600" y2="960" opacity="0.45"/>
+  <line x1="0" y1="1080" x2="3600" y2="1080" opacity="0.45"/>
+  <line x1="0" y1="1200" x2="3600" y2="1200"/>
+  <line x1="0" y1="1320" x2="3600" y2="1320" opacity="0.45"/>
+  <line x1="0" y1="1440" x2="3600" y2="1440" opacity="0.45"/>
+  <line x1="0" y1="1560" x2="3600" y2="1560" opacity="0.45"/>
+  <line x1="0" y1="1680" x2="3600" y2="1680" opacity="0.45"/>
+  <line x1="0" y1="1800" x2="3600" y2="1800"/>
+  <line x1="0" y1="1920" x2="3600" y2="1920" opacity="0.45"/>
+  <line x1="0" y1="2040" x2="3600" y2="2040" opacity="0.45"/>
+  <line x1="0" y1="2160" x2="3600" y2="2160" opacity="0.45"/>
+  <line x1="0" y1="2280" x2="3600" y2="2280" opacity="0.45"/>
+  <line x1="0" y1="2400" x2="3600" y2="2400"/>
+</g>
+<g id="atlas-paths" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 10" opacity="0.26">
+  <path d="M 640 600 Q 1220.0 550.0, 1800 580 Q 2380.0 550.0, 2960 600 Q 1800.0 1150.0, 640 1780 Q 1220.0 1750.0, 1800 1800 Q 2380.0 1750.0, 2960 1780"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="282.0" y="394.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">01 / NETSUKE (3 CM) · VERMEER (24 CM)</text>
+  <rect x="313.2" y="412.8" width="653.6" height="374.4" stroke-width="0.9" opacity="0.25"/>
+  <text x="323.2" y="430.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.4">MURO</text>
+  <rect x="492.9" y="515.8" width="294.1" height="168.5" stroke-width="1.5" opacity="0.65"/>
+  <text x="502.9" y="533.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.8">VERMEER</text>
+  <rect x="594.2" y="573.8" width="91.5" height="52.4" stroke-width="2.4" opacity="1.0"/>
+  <text x="604.2" y="591.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">NETSUKE</text>
+  <line x1="293.2" y1="600" x2="986.8" y2="600" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <line x1="640" y1="392.8" x2="640" y2="807.2" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <circle cx="640" cy="600" r="18" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="640" cy="600" r="3" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1420.0" y="350.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="1442.0" y="384.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">02 / MONET · UMBRAL DE DISTANCIA</text>
+  <rect x="1556.8" y="462.6" width="486.4" height="14" fill="currentColor"/>
+  <line x1="1800" y1="708.8" x2="1586.0" y2="476.6" stroke-width="1.8"/>
+  <line x1="1800" y1="708.8" x2="2014.0" y2="476.6" stroke-width="1.8"/>
+  <line x1="1800" y1="708.8" x2="1800" y2="476.6" stroke-width="1" stroke-dasharray="5 7" opacity="0.45"/>
+  <path d="M 1754.5 655.6 A 70 70 0 0 1 1845.5 655.6" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1715.5 610.0 A 130 130 0 0 1 1884.5 610.0" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1676.5 564.4 A 190 190 0 0 1 1923.5 564.4" stroke-width="0.9" opacity="0.35"/>
+  <circle cx="1800" cy="708.8" r="6" fill="currentColor"/>
+  <text x="1800" y="451.6" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="2" opacity="0.85">ORANGERIE (91 METROS)</text>
+  <text x="1814" y="589.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.8">MEZCLA ÓPTICA</text>
+  <text x="1800" y="736.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="2" opacity="0.65">OJO DEL ESPECTADOR</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="2602.0" y="394.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">03 / SIQUEIROS · OROZCO · POLLOCK</text>
+  <rect x="2633.2" y="465.2" width="653.6" height="269.6" stroke-width="2.2" opacity="0.9"/>
+  <text x="2643.2" y="483.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">MURAL ARQUITECTÓNICO</text>
+  <rect x="2822.7" y="495.2" width="274.5" height="209.7" stroke-width="1.2" opacity="0.5"/>
+  <text x="2832.7" y="513.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">CABALLETE</text>
+  <line x1="2613.2" y1="600" x2="3306.8" y2="600" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <line x1="2960" y1="392.8" x2="2960" y2="807.2" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <circle cx="2960" cy="600" r="18" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="2960" cy="600" r="3" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="640" y="1526.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">04 / SMITHSON · SPIRAL JETTY (460 M)</text>
+  <circle cx="640" cy="1780" r="66.0" stroke-width="0.8" opacity="0.22"/>
+  <circle cx="640" cy="1780" r="132.0" stroke-width="0.8" opacity="0.22"/>
+  <circle cx="640" cy="1780" r="198.0" stroke-width="0.8" opacity="0.22"/>
+  <circle cx="640" cy="1780" r="220.0" stroke-width="0.8" opacity="0.22"/>
+  <polyline points="640.0,1764.0 640.8,1763.2 641.7,1762.6 642.6,1762.0 643.6,1761.5 644.6,1761.1 645.7,1760.7 646.8,1760.4 648.0,1760.2 649.2,1760.1 650.4,1760.0 651.6,1760.0 652.9,1760.1 654.2,1760.2 655.5,1760.5 656.8,1760.8 658.1,1761.2 659.4,1761.7 660.7,1762.3 662.0,1762.9 663.2,1763.7 664.5,1764.5 665.7,1765.4 666.8,1766.4 668.0,1767.4 669.1,1768.6 670.1,1769.8 671.1,1771.1 672.0,1772.5 672.9,1773.9 673.7,1775.4 674.4,1777.0 675.1,1778.6 675.6,1780.3 676.1,1782.1 676.5,1783.8 676.9,1785.7 677.1,1787.5 677.2,1789.4 677.2,1791.4 677.1,1793.3 677.0,1795.3 676.7,1797.3 676.3,1799.2 675.8,1801.2 675.2,1803.2 674.4,1805.2 673.6,1807.1 672.7,1809.1 671.6,1811.0 670.5,1812.8 669.2,1814.7 667.8,1816.4 666.4,1818.2 664.8,1819.8 663.1,1821.4 661.3,1823.0 659.5,1824.4 657.5,1825.8 655.4,1827.1 653.3,1828.2 651.1,1829.3 648.8,1830.3 646.5,1831.2 644.1,1832.0 641.6,1832.6 639.0,1833.2 636.5,1833.6 633.9,1833.9 631.2,1834.0 628.5,1834.0 625.8,1833.9 623.1,1833.7 620.4,1833.3 617.6,1832.8 614.9,1832.1 612.2,1831.3 609.5,1830.3 606.9,1829.2 604.2,1828.0 601.7,1826.6 599.1,1825.1 596.7,1823.5 594.2,1821.7 591.9,1819.8 589.7,1817.7 587.5,1815.6 585.4,1813.3 583.4,1810.9 581.6,1808.4 579.8,1805.7 578.2,1803.0 576.7,1800.2 575.3,1797.2 574.1,1794.2 572.9,1791.1 572.0,1788.0 571.2,1784.7 570.5,1781.5 570.0,1778.1 569.7,1774.7 569.6,1771.3 569.6,1767.9 569.7,1764.4 570.1,1760.9 570.6,1757.4 571.3,1754.0 572.1,1750.5 573.2,1747.1 574.4,1743.7 575.8,1740.3 577.4,1737.0 579.1,1733.8 581.0,1730.6 583.1,1727.5 585.3,1724.5 587.7,1721.5 590.2,1718.7 592.9,1716.0 595.8,1713.4 598.7,1711.0 601.9,1708.6 605.1,1706.4 608.5,1704.4 612.0,1702.5 615.6,1700.8 619.3,1699.2 623.1,1697.9 626.9,1696.6 630.9,1695.6 634.9,1694.8 639.0,1694.2 643.1,1693.7 647.3,1693.5 651.5,1693.4 655.7,1693.6 659.9,1694.0 664.1,1694.6 668.3,1695.3 672.5,1696.3 676.7,1697.6 680.8,1699.0 684.9,1700.6 688.9,1702.4 692.8,1704.5 696.7,1706.7 700.5,1709.1 704.1,1711.7 707.7,1714.5 711.1,1717.5 714.4,1720.7 717.5,1724.0 720.5,1727.5 723.3,1731.2 726.0,1735.0 728.5,1739.0 730.8,1743.1 732.9,1747.3 734.8,1751.7 736.6,1756.1 738.1,1760.7 739.4,1765.3 740.4,1770.1 741.3,1774.8 741.9,1779.7 742.3,1784.6 742.4,1789.5 742.3,1794.5 742.0,1799.5 741.4,1804.4 740.6,1809.4 739.5,1814.3 738.2,1819.2 736.6,1824.1 734.8,1828.9 732.8,1833.6 730.5,1838.2 728.0,1842.8 725.3,1847.2 722.4,1851.5 719.2,1855.7 715.8,1859.8 712.2,1863.7 708.4,1867.4 704.4,1871.0 700.3,1874.3 695.9,1877.5 691.4,1880.5 686.7,1883.3 681.9,1885.9 677.0,1888.2 671.9,1890.3 666.7,1892.2 661.4,1893.8 655.9,1895.1 650.5,1896.2 644.9,1897.1 639.3,1897.7 633.6,1898.0 628.0,1898.0 622.3,1897.8 616.5,1897.2 610.8,1896.4 605.2,1895.4 599.5,1894.0 593.9,1892.4 588.4,1890.5 583.0,1888.3 577.6,1885.9 572.4,1883.1 567.2,1880.2 562.2,1876.9 557.4,1873.5 552.6,1869.7 548.1,1865.8 543.7,1861.6 539.6,1857.2 535.6,1852.5 531.9,1847.7 528.3,1842.7 525.0,1837.5 522.0,1832.1 519.2,1826.6 516.7,1820.9 514.4,1815.1 512.4,1809.1 510.7,1803.1 509.3,1796.9 508.1,1790.7 507.3,1784.4 506.8,1778.0 506.6,1771.6 506.7,1765.2 507.1,1758.7 507.8,1752.3 508.8,1745.9 510.1,1739.5 511.8,1733.2 513.7,1726.9 516.0,1720.7 518.6,1714.6 521.4,1708.7 524.6,1702.8 528.0,1697.1 531.8,1691.5 535.8,1686.2 540.1,1681.0 544.6,1675.9 549.4,1671.1 554.4,1666.5 559.7,1662.2 565.2,1658.1 570.9,1654.2 576.8,1650.7 582.8,1647.4 589.1,1644.3 595.5,1641.6 602.0,1639.2 608.7,1637.1 615.5,1635.3 622.4,1633.8 629.4,1632.7 636.5,1631.9 643.6,1631.4 650.7,1631.3 657.9,1631.5 665.0,1632.1 672.2,1633.0 679.3,1634.3 686.4,1635.9 693.4,1637.8 700.3,1640.1 707.1,1642.7 713.8,1645.7 720.4,1649.0 726.8,1652.6 733.1,1656.5 739.2,1660.8 745.1,1665.3 750.8,1670.2 756.3,1675.3 761.5,1680.7 766.5,1686.3 771.2,1692.2 775.7,1698.4 779.8,1704.8 783.7,1711.3 787.2,1718.1 790.5,1725.1 793.4,1732.2 795.9,1739.5 798.1,1746.9 800.0,1754.4 801.5,1762.1 802.6,1769.8 803.4,1777.6 803.8,1785.4 803.8,1793.3 803.4,1801.1 802.7,1809.0 801.5,1816.9 800.0,1824.7 798.1,1832.4 795.9,1840.1 793.2,1847.7 790.2,1855.1 786.9,1862.5 783.1,1869.6 779.1,1876.7 774.6,1883.5 769.9,1890.1 764.8,1896.5 759.4,1902.7 753.7,1908.6 747.7,1914.2 741.4,1919.6 734.9,1924.7 728.1,1929.5 721.0,1933.9 713.8,1938.0 706.3,1941.8 698.6,1945.2 690.8,1948.3 682.8,1950.9 674.7,1953.2 666.4,1955.2 658.0,1956.7 649.6,1957.8 641.1,1958.5 632.5,1958.8 623.9,1958.7 615.3,1958.2 606.7,1957.2 598.2,1955.9 589.7,1954.1 581.3,1951.9 572.9,1949.3 564.7,1946.4 556.7,1943.0 548.7,1939.2 541.0,1935.0 533.4,1930.5 526.0,1925.6 518.9,1920.3 512.0,1914.7 505.4,1908.7 499.0,1902.4 493.0,1895.8 487.3,1888.9 481.8,1881.7 476.8,1874.2 472.0,1866.5 467.7,1858.6 463.7,1850.4 460.1,1842.0 456.9,1833.5 454.1,1824.8 451.7,1815.9 449.8,1806.9 448.3,1797.8 447.2,1788.7 446.5,1779.4 446.3,1770.1 446.6,1760.8 447.3,1751.5 448.4,1742.3 450.0,1733.0 452.0,1723.9 454.5,1714.8 457.4,1705.8 460.8,1697.0 464.5,1688.3 468.7,1679.7 473.4,1671.4 478.4,1663.3 483.8,1655.4 489.6,1647.8 495.8,1640.4 502.3,1633.4 509.2,1626.6 516.4,1620.2 523.9,1614.1 531.8,1608.3 539.9,1602.9 548.3,1597.9 556.9,1593.4 565.8,1589.2 574.8,1585.4 584.1,1582.1 593.5,1579.2 603.1,1576.8 612.8,1574.8 622.6,1573.3 632.5,1572.2 642.5,1571.7 652.5,1571.6 662.5,1572.0 672.5,1572.8 682.5,1574.2 692.4,1576.0 702.2,1578.3 711.9,1581.1 721.5,1584.4 731.0,1588.1 740.3,1592.3 749.4,1596.9 758.3,1602.0 766.9,1607.5 775.3,1613.4 783.4,1619.7 791.3,1626.5 798.8,1633.6 805.9,1641.1 812.7,1648.9 819.2,1657.0 825.2,1665.5 830.9,1674.3 836.1,1683.4 841.0,1692.7 845.3,1702.2 849.2,1712.0" stroke-width="2.2"/>
+  <circle cx="640" cy="1780" r="5" fill="currentColor"/>
+  <text x="640" y="2034.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="2" opacity="0.7">6.650 TONELADAS DE BASALTO · UTAH</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="1800" y="1539.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">05 / PANTEÓN (43 M) VS. TAI-AN (1,8 M)</text>
+  <line x1="1800" y1="1800" x2="2041.0" y2="1800.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1970.4" y2="1970.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1800.0" y2="2041.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1629.6" y2="1970.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1559.0" y2="1800.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1629.6" y2="1629.6" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1800.0" y2="1559.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1800" y1="1800" x2="1970.4" y2="1629.6" stroke-width="0.8" opacity="0.18"/>
+  <circle cx="1800" cy="1800" r="225.0" stroke-width="2.4" opacity="0.95"/>
+  <text x="1800" y="1569.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">CÚPULA PANTEÓN 43 M</text>
+  <circle cx="1800" cy="1800" r="47.2" stroke-width="1.0" opacity="0.38"/>
+  <text x="1800" y="1746.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">ÓCULO 9 M</text>
+  <circle cx="1800" cy="1800" r="13.5" stroke-width="2.4" opacity="0.95"/>
+  <text x="1800" y="1780.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">TAI-AN</text>
+  <circle cx="1800" cy="1800" r="4.5" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2580.0" y="1550.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="2602.0" y="1584.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">06 / ROTHKO · 18 PULGADAS (45 CM)</text>
+  <rect x="2716.8" y="1662.6" width="486.4" height="14" fill="currentColor"/>
+  <line x1="2960" y1="1908.8" x2="2746.0" y2="1676.6" stroke-width="1.8"/>
+  <line x1="2960" y1="1908.8" x2="3174.0" y2="1676.6" stroke-width="1.8"/>
+  <line x1="2960" y1="1908.8" x2="2960" y2="1676.6" stroke-width="1" stroke-dasharray="5 7" opacity="0.45"/>
+  <path d="M 2914.5 1855.6 A 70 70 0 0 1 3005.5 1855.6" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 2875.5 1810.0 A 130 130 0 0 1 3044.5 1810.0" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 2836.5 1764.4 A 190 190 0 0 1 3083.5 1764.4" stroke-width="0.9" opacity="0.35"/>
+  <circle cx="2960" cy="1908.8" r="6" fill="currentColor"/>
+  <text x="2960" y="1651.6" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="2" opacity="0.85">LIENZO DE 3 METROS</text>
+  <text x="2974" y="1789.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.8">CAMPO VISUAL 120°</text>
+  <text x="2960" y="1936.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="2" opacity="0.65">INMERSIÓN ÍNTIMA</text>
+</g>
+</svg>

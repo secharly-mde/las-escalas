@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2400" width="3600" height="2400" preserveAspectRatio="xMidYMid meet">
+<g id="atlas-grid" opacity="0.11" stroke="currentColor" stroke-width="1">
+  <line x1="0" y1="0" x2="0" y2="2400"/>
+  <line x1="120" y1="0" x2="120" y2="2400" opacity="0.45"/>
+  <line x1="240" y1="0" x2="240" y2="2400" opacity="0.45"/>
+  <line x1="360" y1="0" x2="360" y2="2400" opacity="0.45"/>
+  <line x1="480" y1="0" x2="480" y2="2400" opacity="0.45"/>
+  <line x1="600" y1="0" x2="600" y2="2400"/>
+  <line x1="720" y1="0" x2="720" y2="2400" opacity="0.45"/>
+  <line x1="840" y1="0" x2="840" y2="2400" opacity="0.45"/>
+  <line x1="960" y1="0" x2="960" y2="2400" opacity="0.45"/>
+  <line x1="1080" y1="0" x2="1080" y2="2400" opacity="0.45"/>
+  <line x1="1200" y1="0" x2="1200" y2="2400"/>
+  <line x1="1320" y1="0" x2="1320" y2="2400" opacity="0.45"/>
+  <line x1="1440" y1="0" x2="1440" y2="2400" opacity="0.45"/>
+  <line x1="1560" y1="0" x2="1560" y2="2400" opacity="0.45"/>
+  <line x1="1680" y1="0" x2="1680" y2="2400" opacity="0.45"/>
+  <line x1="1800" y1="0" x2="1800" y2="2400"/>
+  <line x1="1920" y1="0" x2="1920" y2="2400" opacity="0.45"/>
+  <line x1="2040" y1="0" x2="2040" y2="2400" opacity="0.45"/>
+  <line x1="2160" y1="0" x2="2160" y2="2400" opacity="0.45"/>
+  <line x1="2280" y1="0" x2="2280" y2="2400" opacity="0.45"/>
+  <line x1="2400" y1="0" x2="2400" y2="2400"/>
+  <line x1="2520" y1="0" x2="2520" y2="2400" opacity="0.45"/>
+  <line x1="2640" y1="0" x2="2640" y2="2400" opacity="0.45"/>
+  <line x1="2760" y1="0" x2="2760" y2="2400" opacity="0.45"/>
+  <line x1="2880" y1="0" x2="2880" y2="2400" opacity="0.45"/>
+  <line x1="3000" y1="0" x2="3000" y2="2400"/>
+  <line x1="3120" y1="0" x2="3120" y2="2400" opacity="0.45"/>
+  <line x1="3240" y1="0" x2="3240" y2="2400" opacity="0.45"/>
+  <line x1="3360" y1="0" x2="3360" y2="2400" opacity="0.45"/>
+  <line x1="3480" y1="0" x2="3480" y2="2400" opacity="0.45"/>
+  <line x1="3600" y1="0" x2="3600" y2="2400"/>
+  <line x1="0" y1="0" x2="3600" y2="0"/>
+  <line x1="0" y1="120" x2="3600" y2="120" opacity="0.45"/>
+  <line x1="0" y1="240" x2="3600" y2="240" opacity="0.45"/>
+  <line x1="0" y1="360" x2="3600" y2="360" opacity="0.45"/>
+  <line x1="0" y1="480" x2="3600" y2="480" opacity="0.45"/>
+  <line x1="0" y1="600" x2="3600" y2="600"/>
+  <line x1="0" y1="720" x2="3600" y2="720" opacity="0.45"/>
+  <line x1="0" y1="840" x2="3600" y2="840" opacity="0.45"/>
+  <line x1="0" y1="960" x2="3600" y2="960" opacity="0.45"/>
+  <line x1="0" y1="1080" x2="3600" y2="1080" opacity="0.45"/>
+  <line x1="0" y1="1200" x2="3600" y2="1200"/>
+  <line x1="0" y1="1320" x2="3600" y2="1320" opacity="0.45"/>
+  <line x1="0" y1="1440" x2="3600" y2="1440" opacity="0.45"/>
+  <line x1="0" y1="1560" x2="3600" y2="1560" opacity="0.45"/>
+  <line x1="0" y1="1680" x2="3600" y2="1680" opacity="0.45"/>
+  <line x1="0" y1="1800" x2="3600" y2="1800"/>
+  <line x1="0" y1="1920" x2="3600" y2="1920" opacity="0.45"/>
+  <line x1="0" y1="2040" x2="3600" y2="2040" opacity="0.45"/>
+  <line x1="0" y1="2160" x2="3600" y2="2160" opacity="0.45"/>
+  <line x1="0" y1="2280" x2="3600" y2="2280" opacity="0.45"/>
+  <line x1="0" y1="2400" x2="3600" y2="2400"/>
+</g>
+<g id="atlas-paths" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 10" opacity="0.26">
+  <path d="M 580 440 Q 1190.0 390.0, 1800 420 Q 2410.0 390.0, 3020 440 Q 1800.0 780.0, 580 1200 Q 1190.0 1160.0, 1800 1200 Q 2410.0 1160.0, 3020 1200 Q 2060.0 1530.0, 1100 1940 Q 1800.0 1900.0, 2500 1940"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="222.0" y="234.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">01 / BORGES · MAPA 1:1</text>
+  <rect x="253.2" y="252.8" width="653.6" height="374.4" stroke-width="1.0" opacity="0.35"/>
+  <text x="263.2" y="270.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.5">1:1 TOTALIDAD</text>
+  <rect x="344.7" y="305.2" width="470.6" height="269.6" stroke-width="1.4" opacity="0.55"/>
+  <text x="354.7" y="323.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.7000000000000001">1:100</text>
+  <rect x="432.9" y="355.8" width="294.1" height="168.5" stroke-width="2.0" opacity="0.8"/>
+  <text x="442.9" y="373.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">1:10.000</text>
+  <rect x="508.1" y="398.8" width="143.8" height="82.4" stroke-width="2.6" opacity="1.0"/>
+  <text x="518.1" y="416.8" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">MAPA ÚTIL</text>
+  <line x1="233.2" y1="440" x2="926.8" y2="440" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <line x1="580" y1="232.8" x2="580" y2="647.2" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <circle cx="580" cy="440" r="18" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="580" cy="440" r="3" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1420.0" y="190.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="1442.0" y="224.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">02 / EL ENCUADRE</text>
+  <rect x="1556.8" y="302.6" width="486.4" height="14" fill="currentColor"/>
+  <line x1="1800" y1="548.8" x2="1586.0" y2="316.6" stroke-width="1.8"/>
+  <line x1="1800" y1="548.8" x2="2014.0" y2="316.6" stroke-width="1.8"/>
+  <line x1="1800" y1="548.8" x2="1800" y2="316.6" stroke-width="1" stroke-dasharray="5 7" opacity="0.45"/>
+  <path d="M 1754.5 495.6 A 70 70 0 0 1 1845.5 495.6" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1715.5 450.0 A 130 130 0 0 1 1884.5 450.0" stroke-width="0.9" opacity="0.35"/>
+  <path d="M 1676.5 404.4 A 190 190 0 0 1 1923.5 404.4" stroke-width="0.9" opacity="0.35"/>
+  <circle cx="1800" cy="548.8" r="6" fill="currentColor"/>
+  <text x="1800" y="291.6" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="12" letter-spacing="2" opacity="0.85">ESCENA COMPLETA</text>
+  <text x="1814" y="429.2" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.8">RECORTE DE ATENCIÓN</text>
+  <text x="1800" y="576.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="2" opacity="0.65">OBSERVADOR</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="2662.0" y="234.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">03 / HOFFMAN · LA INTERFAZ</text>
+  <rect x="2719.3" y="294.0" width="601.3" height="292.0" stroke-width="1.0" opacity="0.3"/>
+  <text x="2729.3" y="312.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.44999999999999996">REALIDAD OCULTA</text>
+  <rect x="2830.5" y="342.7" width="379.1" height="194.7" stroke-width="2.2" opacity="0.9"/>
+  <text x="2840.5" y="360.7" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.9">ESCRITORIO PERCEPTIVO</text>
+  <line x1="2673.2" y1="440" x2="3366.8" y2="440" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <line x1="3020" y1="232.8" x2="3020" y2="647.2" stroke-width="0.8" stroke-dasharray="5 7" opacity="0.28"/>
+  <circle cx="3020" cy="440" r="18" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="3020" cy="440" r="3" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="200.0" y="970.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="222.0" y="1004.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">04 / UEXKÜLL · UMWELT</text>
+  <text x="394.0" y="1102.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">GARRAPATA</text>
+  <line x1="410.0" y1="1098.0" x2="840.0" y2="1098.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="410.0" y="1090.0" width="60.2" height="16" fill="none" stroke-width="1.6"/>
+  <text x="854.0" y="1102.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">37°C</text>
+  <text x="394.0" y="1182.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">ABEJA</text>
+  <line x1="410.0" y1="1178.0" x2="840.0" y2="1178.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="410.0" y="1170.0" width="180.6" height="16" fill="none" stroke-width="1.6"/>
+  <text x="854.0" y="1182.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">UV</text>
+  <text x="394.0" y="1262.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">HUMANO</text>
+  <line x1="410.0" y1="1258.0" x2="840.0" y2="1258.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="410.0" y="1250.0" width="232.2" height="16" fill="currentColor" stroke-width="1.6"/>
+  <text x="854.0" y="1262.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">400-750 THz</text>
+  <text x="394.0" y="1342.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">MURCIÉLAGO</text>
+  <line x1="410.0" y1="1338.0" x2="840.0" y2="1338.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="410.0" y="1330.0" width="378.4" height="16" fill="none" stroke-width="1.6"/>
+  <text x="854.0" y="1342.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">100 kHz</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1410.0" y="990.0" width="780" height="420" stroke-width="1" opacity="0.22"/>
+  <text x="1432.0" y="1024.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">05 / DAWKINS · MUNDO MEDIO</text>
+  <line x1="1470.0" y1="1215" x2="2130.0" y2="1215" stroke-width="2.0"/>
+  <line x1="1470.0" y1="1203" x2="1470.0" y2="1227" stroke-width="1" opacity="0.4"/>
+  <line x1="1503.0" y1="1209" x2="1503.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1536.0" y1="1209" x2="1536.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1569.0" y1="1209" x2="1569.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1602.0" y1="1209" x2="1602.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1635.0" y1="1203" x2="1635.0" y2="1227" stroke-width="1" opacity="0.4"/>
+  <line x1="1668.0" y1="1209" x2="1668.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1701.0" y1="1209" x2="1701.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1734.0" y1="1209" x2="1734.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1767.0" y1="1209" x2="1767.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1800.0" y1="1203" x2="1800.0" y2="1227" stroke-width="1" opacity="0.4"/>
+  <line x1="1833.0" y1="1209" x2="1833.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1866.0" y1="1209" x2="1866.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1899.0" y1="1209" x2="1899.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1932.0" y1="1209" x2="1932.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="1965.0" y1="1203" x2="1965.0" y2="1227" stroke-width="1" opacity="0.4"/>
+  <line x1="1998.0" y1="1209" x2="1998.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="2031.0" y1="1209" x2="2031.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="2064.0" y1="1209" x2="2064.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="2097.0" y1="1209" x2="2097.0" y2="1221" stroke-width="1" opacity="0.4"/>
+  <line x1="2130.0" y1="1203" x2="2130.0" y2="1227" stroke-width="1" opacity="0.4"/>
+  <line x1="1522.8" y1="1215" x2="1522.8" y2="1150" stroke-width="1" opacity="0.6"/>
+  <text x="1522.8" y="1139" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">QUARK</text>
+  <line x1="1522.8" y1="1215" x2="1522.8" y2="1280" stroke-width="1" opacity="0.6"/>
+  <text x="1522.8" y="1299" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">10⁻¹⁸ m</text>
+  <circle cx="1522.8" cy="1215" r="4" fill="none" stroke-width="1.8"/>
+  <line x1="1786.8" y1="1215" x2="1786.8" y2="1150" stroke-width="1" opacity="0.6"/>
+  <text x="1786.8" y="1139" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">HUMANO</text>
+  <line x1="1786.8" y1="1215" x2="1786.8" y2="1280" stroke-width="1" opacity="0.6"/>
+  <text x="1786.8" y="1299" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">10⁰ m</text>
+  <circle cx="1786.8" cy="1215" r="6" fill="currentColor" stroke-width="1.8"/>
+  <line x1="2077.2" y1="1215" x2="2077.2" y2="1150" stroke-width="1" opacity="0.6"/>
+  <text x="2077.2" y="1139" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">GALAXIA</text>
+  <line x1="2077.2" y1="1215" x2="2077.2" y2="1280" stroke-width="1" opacity="0.6"/>
+  <text x="2077.2" y="1299" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">10²¹ m</text>
+  <circle cx="2077.2" cy="1215" r="4" fill="none" stroke-width="1.8"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2640.0" y="970.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="2662.0" y="1004.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">06 / WHEELER · IT FROM BIT</text>
+  <line x1="3020.0" y1="1062.0" x2="2860.4" y2="1135.6" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2860.4" cy="1135.6" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3020.0" y1="1062.0" x2="3179.6" y2="1135.6" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3179.6" cy="1135.6" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2860.4" y1="1135.6" x2="2780.6" y2="1209.2" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2780.6" cy="1209.2" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2860.4" y1="1135.6" x2="2940.2" y2="1209.2" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2940.2" cy="1209.2" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3179.6" y1="1135.6" x2="3099.8" y2="1209.2" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3099.8" cy="1209.2" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3179.6" y1="1135.6" x2="3259.4" y2="1209.2" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3259.4" cy="1209.2" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2780.6" y1="1209.2" x2="2740.7" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2740.7" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2780.6" y1="1209.2" x2="2820.5" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2820.5" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2940.2" y1="1209.2" x2="2900.3" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2900.3" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2940.2" y1="1209.2" x2="2980.1" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="2980.1" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3099.8" y1="1209.2" x2="3059.9" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3059.9" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3099.8" y1="1209.2" x2="3139.7" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3139.7" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3259.4" y1="1209.2" x2="3219.5" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3219.5" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="3259.4" y1="1209.2" x2="3299.3" y2="1282.8" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="3299.3" cy="1282.8" r="3.5" fill="currentColor" opacity="0.6"/>
+  <line x1="2740.7" y1="1282.8" x2="2720.8" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2720.8" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2740.7" y1="1282.8" x2="2760.7" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2760.7" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2820.5" y1="1282.8" x2="2800.6" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2800.6" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2820.5" y1="1282.8" x2="2840.5" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2840.5" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2900.3" y1="1282.8" x2="2880.4" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2880.4" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2900.3" y1="1282.8" x2="2920.2" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2920.2" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2980.1" y1="1282.8" x2="2960.2" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="2960.2" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="2980.1" y1="1282.8" x2="3000.1" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3000.1" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3059.9" y1="1282.8" x2="3040.0" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3040.0" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3059.9" y1="1282.8" x2="3079.9" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3079.9" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3139.7" y1="1282.8" x2="3119.8" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3119.8" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3139.7" y1="1282.8" x2="3159.7" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3159.7" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3219.5" y1="1282.8" x2="3199.6" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3199.6" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3219.5" y1="1282.8" x2="3239.5" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3239.5" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3299.3" y1="1282.8" x2="3279.4" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3279.4" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <line x1="3299.3" y1="1282.8" x2="3319.2" y2="1356.4" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="3319.2" cy="1356.4" r="2.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="3020" cy="1062.0" r="5" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="1100" y="1679.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">07 / EL PRIMER ACTO DE EDICIÓN</text>
+  <line x1="1100" y1="1940" x2="1341.0" y2="1940.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="1270.4" y2="2110.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="1100.0" y2="2181.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="929.6" y2="2110.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="859.0" y2="1940.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="929.6" y2="1769.6" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="1100.0" y2="1699.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="1100" y1="1940" x2="1270.4" y2="1769.6" stroke-width="0.8" opacity="0.18"/>
+  <circle cx="1100" cy="1940" r="225.0" stroke-width="1.0" opacity="0.38"/>
+  <text x="1100" y="1709.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">DESCARTADO</text>
+  <circle cx="1100" cy="1940" r="139.5" stroke-width="2.4" opacity="0.95"/>
+  <text x="1100" y="1794.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">PERCIBIDO</text>
+  <circle cx="1100" cy="1940" r="56.2" stroke-width="2.4" opacity="0.95"/>
+  <text x="1100" y="1877.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">FOCO</text>
+  <circle cx="1100" cy="1940" r="4.5" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2120.0" y="1700.0" width="760" height="480" stroke-width="1" opacity="0.22"/>
+  <text x="2142.0" y="1734.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">08 / LO QUE NO VEMOS</text>
+  <line x1="2180.0" y1="2091.0" x2="2820.0" y2="2091.0" stroke-width="0.9" opacity="0.66"/>
+  <line x1="2180.0" y1="2063.4" x2="2820.0" y2="2063.4" stroke-width="0.9" opacity="0.63"/>
+  <line x1="2180.0" y1="2041.2" x2="2820.0" y2="2041.2" stroke-width="0.9" opacity="0.59"/>
+  <line x1="2180.0" y1="2023.3" x2="2820.0" y2="2023.3" stroke-width="0.9" opacity="0.55"/>
+  <line x1="2180.0" y1="2008.8" x2="2820.0" y2="2008.8" stroke-width="0.9" opacity="0.52"/>
+  <line x1="2180.0" y1="1997.1" x2="2820.0" y2="1997.1" stroke-width="0.9" opacity="0.48"/>
+  <line x1="2180.0" y1="1987.6" x2="2820.0" y2="1987.6" stroke-width="0.9" opacity="0.44"/>
+  <line x1="2180.0" y1="1979.9" x2="2820.0" y2="1979.9" stroke-width="0.9" opacity="0.41"/>
+  <line x1="2180.0" y1="1973.8" x2="2820.0" y2="1973.8" stroke-width="0.9" opacity="0.37"/>
+  <line x1="2180.0" y1="1968.8" x2="2820.0" y2="1968.8" stroke-width="0.9" opacity="0.33"/>
+  <line x1="2180.0" y1="1964.7" x2="2820.0" y2="1964.7" stroke-width="0.9" opacity="0.30"/>
+  <line x1="2180.0" y1="1961.5" x2="2820.0" y2="1961.5" stroke-width="0.9" opacity="0.26"/>
+  <line x1="2180.0" y1="1958.8" x2="2820.0" y2="1958.8" stroke-width="0.9" opacity="0.22"/>
+  <line x1="2180.0" y1="1956.7" x2="2820.0" y2="1956.7" stroke-width="0.9" opacity="0.19"/>
+  <line x1="2180.0" y1="1955.0" x2="2820.0" y2="1955.0" stroke-width="0.9" opacity="0.15"/>
+  <line x1="2180.0" y1="2125.0" x2="2308.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2233.3" y1="2125.0" x2="2340.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2286.7" y1="2125.0" x2="2372.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2340.0" y1="2125.0" x2="2404.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2393.3" y1="2125.0" x2="2436.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2446.7" y1="2125.0" x2="2468.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2500.0" y1="2125.0" x2="2500.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2553.3" y1="2125.0" x2="2532.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2606.7" y1="2125.0" x2="2564.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2660.0" y1="2125.0" x2="2596.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2713.3" y1="2125.0" x2="2628.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2766.7" y1="2125.0" x2="2660.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2820.0" y1="2125.0" x2="2692.0" y2="1955" stroke-width="0.8" opacity="0.25"/>
+  <line x1="2180.0" y1="1955" x2="2445" y2="1955" stroke-width="2.0"/>
+  <line x1="2555" y1="1955" x2="2820.0" y2="1955" stroke-width="2.0"/>
+  <text x="2500" y="1959" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="3" opacity="0.75">LÍMITE</text>
+</g>
+</svg>

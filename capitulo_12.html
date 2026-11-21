@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_11_el_plano.jpg">
     <meta property="og:url" content="https://lasescalas.uy/capitulo_12.html">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -24,8 +24,11 @@
     
     <div class="visual-container">
         <div class="bg-layer grid" id="bg-grid"></div>
-        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_11_el_plano.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="atlas-viewport" id="atlas-viewport" data-atlas="images/atlas/atlas_11_plano.svg">
+        <div class="atlas-canvas" id="atlas-canvas"></div>
     </div>
 
     <div class="ui-overlay">
@@ -71,21 +74,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="cine-celluloid">
-            <div class="chapter-hero-card">
-                <div class="chapter-hero-plate">
-                    <img src="images/laminas/lamina_11_el_plano.jpg" alt="Lámina: El plano">
-                </div>
-                <div class="chapter-hero-info">
-                    <div class="chapter-hero-kicker">CAPÍTULO 11 · PARTE III</div>
-                    <h1>EL<br>PLANO</h1>
-                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
-                </div>
-            </div>
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="cine-celluloid" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="1.05">
+            <h1>EL<br>PLANO</h1>
         </section>
 
         <!-- I. El tren — EL NACIMIENTO DE LA ESCALA CINEMATOGRÁFICA -->
-        <section id="el-tren" data-sec="sec-1" class="step" data-scale="0.5" data-metric="50" data-shape="line" data-invert="false" data-layer="cine-light">
+        <section id="el-tren" data-sec="sec-1" class="step" data-scale="0.5" data-metric="50" data-shape="line" data-invert="false" data-layer="cine-light" data-cam-x="640" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El tren</h2>
@@ -102,7 +96,7 @@
         </section>
 
         <!-- II. El rostro — EL PRIMER PLANO COMO MICROSCOPIO -->
-        <section id="el-rostro" data-sec="sec-2" class="step" data-scale="0.1" data-metric="80" data-shape="circle" data-invert="true" data-layer="cine-dark">
+        <section id="el-rostro" data-sec="sec-2" class="step" data-scale="0.1" data-metric="80" data-shape="circle" data-invert="true" data-layer="cine-dark" data-cam-x="1800" data-cam-y="580" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. El rostro</h2>
@@ -120,7 +114,7 @@
         </section>
 
         <!-- III. El desierto — EL PLANO GENERAL COMO APLASTAMIENTO -->
-        <section id="el-desierto" data-sec="sec-3" class="step" data-scale="5" data-metric="222" data-shape="line" data-invert="false" data-layer="cine-light">
+        <section id="el-desierto" data-sec="sec-3" class="step" data-scale="5" data-metric="222" data-shape="line" data-invert="false" data-layer="cine-light" data-cam-x="2960" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. El desierto</h2>
@@ -137,7 +131,7 @@
         </section>
 
         <!-- IV. El hueso — EL MATCH CUT COMO MÁQUINA DEL TIEMPO -->
-        <section id="el-hueso" data-sec="sec-4" class="step" data-scale="10" data-metric="4000000" data-shape="dot" data-invert="true" data-layer="cine-celluloid">
+        <section id="el-hueso" data-sec="sec-4" class="step" data-scale="10" data-metric="4000000" data-shape="dot" data-invert="true" data-layer="cine-celluloid" data-cam-x="640" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. El hueso</h2>
@@ -155,7 +149,7 @@
         </section>
 
         <!-- V. El tiempo tallado — DURACIÓN COMO ESCALA -->
-        <section id="el-tiempo-tallado" data-sec="sec-5" class="step" data-scale="2" data-metric="857" data-shape="circle" data-invert="false" data-layer="cine-dark">
+        <section id="el-tiempo-tallado" data-sec="sec-5" class="step" data-scale="2" data-metric="857" data-shape="circle" data-invert="false" data-layer="cine-dark" data-cam-x="1800" data-cam-y="1800" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El tiempo tallado</h2>
@@ -173,7 +167,7 @@
         </section>
 
         <!-- VI. La butaca — LA ESCALA FÍSICA DE LA EXPERIENCIA -->
-        <section id="la-butaca" data-sec="sec-6" class="step" data-scale="0.01" data-metric="70" data-shape="square" data-invert="true" data-layer="cine-light">
+        <section id="la-butaca" data-sec="sec-6" class="step" data-scale="0.01" data-metric="70" data-shape="square" data-invert="true" data-layer="cine-light" data-cam-x="2960" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. La butaca</h2>
@@ -198,6 +192,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_10_el_relato.jpg">
     <meta property="og:url" content="https://lasescalas.uy/capitulo_11.html">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -24,8 +24,11 @@
     
     <div class="visual-container">
         <div class="bg-layer grid" id="bg-grid"></div>
-        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_10_el_relato.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="atlas-viewport" id="atlas-viewport" data-atlas="images/atlas/atlas_10_relato.svg">
+        <div class="atlas-canvas" id="atlas-canvas"></div>
     </div>
 
     <div class="ui-overlay">
@@ -71,21 +74,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="narr-page">
-            <div class="chapter-hero-card">
-                <div class="chapter-hero-plate">
-                    <img src="images/laminas/lamina_10_el_relato.jpg" alt="Lámina: El relato">
-                </div>
-                <div class="chapter-hero-info">
-                    <div class="chapter-hero-kicker">CAPÍTULO 10 · PARTE III</div>
-                    <h1>EL<br>RELATO</h1>
-                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
-                </div>
-            </div>
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="narr-page" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="1.05">
+            <h1>EL<br>RELATO</h1>
         </section>
 
         <!-- I. Las diecisiete moras — EL HAIKU COMO ESCALA MÍNIMA -->
-        <section id="las-diecisiete-moras" data-sec="sec-1" class="step" data-scale="0.1" data-metric="17" data-shape="dot" data-invert="false" data-layer="narr-ink">
+        <section id="las-diecisiete-moras" data-sec="sec-1" class="step" data-scale="0.1" data-metric="17" data-shape="dot" data-invert="false" data-layer="narr-ink" data-cam-x="640" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. Las diecisiete moras</h2>
@@ -102,7 +96,7 @@
         </section>
 
         <!-- II. El bisturí — EL CUENTO COMO REVELACIÓN -->
-        <section id="el-bisturi" data-sec="sec-2" class="step" data-scale="0.5" data-metric="600" data-shape="line" data-invert="true" data-layer="narr-page">
+        <section id="el-bisturi" data-sec="sec-2" class="step" data-scale="0.5" data-metric="600" data-shape="line" data-invert="true" data-layer="narr-page" data-cam-x="1800" data-cam-y="580" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. El bisturí</h2>
@@ -120,7 +114,7 @@
         </section>
 
         <!-- III. El río — LA NOVELA COMO INMERSIÓN -->
-        <section id="el-rio" data-sec="sec-3" class="step" data-scale="3" data-metric="1267069" data-shape="circle" data-invert="false" data-layer="narr-library">
+        <section id="el-rio" data-sec="sec-3" class="step" data-scale="3" data-metric="1267069" data-shape="circle" data-invert="false" data-layer="narr-library" data-cam-x="2960" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. El río</h2>
@@ -138,7 +132,7 @@
         </section>
 
         <!-- IV. Las mil y una noches — EL RELATO COMO SUPERVIVENCIA -->
-        <section id="las-mil-y-una-noches" data-sec="sec-4" class="step" data-scale="2" data-metric="1001" data-shape="square" data-invert="true" data-layer="narr-ink">
+        <section id="las-mil-y-una-noches" data-sec="sec-4" class="step" data-scale="2" data-metric="1001" data-shape="square" data-invert="true" data-layer="narr-ink" data-cam-x="640" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. Las mil y una noches</h2>
@@ -155,7 +149,7 @@
         </section>
 
         <!-- V. El cajón — LO QUE NO SE PUBLICÓ -->
-        <section id="el-cajon" data-sec="sec-5" class="step" data-scale="1" data-metric="300" data-shape="dot" data-invert="false" data-layer="narr-page">
+        <section id="el-cajon" data-sec="sec-5" class="step" data-scale="1" data-metric="300" data-shape="dot" data-invert="false" data-layer="narr-page" data-cam-x="1800" data-cam-y="1800" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El cajón</h2>
@@ -172,7 +166,7 @@
         </section>
 
         <!-- VI. Los ocho segundos — LA ESCALA DE LA ATENCIÓN -->
-        <section id="los-ocho-segundos" data-sec="sec-6" class="step" data-scale="0.01" data-metric="280" data-shape="line" data-invert="true" data-layer="narr-ink">
+        <section id="los-ocho-segundos" data-sec="sec-6" class="step" data-scale="0.01" data-metric="280" data-shape="line" data-invert="true" data-layer="narr-ink" data-cam-x="2960" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. Los ocho segundos</h2>
@@ -196,6 +190,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 </html>

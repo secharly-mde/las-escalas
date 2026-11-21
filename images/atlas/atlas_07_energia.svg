@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2400" width="3600" height="2400" preserveAspectRatio="xMidYMid meet">
+<g id="atlas-grid" opacity="0.11" stroke="currentColor" stroke-width="1">
+  <line x1="0" y1="0" x2="0" y2="2400"/>
+  <line x1="120" y1="0" x2="120" y2="2400" opacity="0.45"/>
+  <line x1="240" y1="0" x2="240" y2="2400" opacity="0.45"/>
+  <line x1="360" y1="0" x2="360" y2="2400" opacity="0.45"/>
+  <line x1="480" y1="0" x2="480" y2="2400" opacity="0.45"/>
+  <line x1="600" y1="0" x2="600" y2="2400"/>
+  <line x1="720" y1="0" x2="720" y2="2400" opacity="0.45"/>
+  <line x1="840" y1="0" x2="840" y2="2400" opacity="0.45"/>
+  <line x1="960" y1="0" x2="960" y2="2400" opacity="0.45"/>
+  <line x1="1080" y1="0" x2="1080" y2="2400" opacity="0.45"/>
+  <line x1="1200" y1="0" x2="1200" y2="2400"/>
+  <line x1="1320" y1="0" x2="1320" y2="2400" opacity="0.45"/>
+  <line x1="1440" y1="0" x2="1440" y2="2400" opacity="0.45"/>
+  <line x1="1560" y1="0" x2="1560" y2="2400" opacity="0.45"/>
+  <line x1="1680" y1="0" x2="1680" y2="2400" opacity="0.45"/>
+  <line x1="1800" y1="0" x2="1800" y2="2400"/>
+  <line x1="1920" y1="0" x2="1920" y2="2400" opacity="0.45"/>
+  <line x1="2040" y1="0" x2="2040" y2="2400" opacity="0.45"/>
+  <line x1="2160" y1="0" x2="2160" y2="2400" opacity="0.45"/>
+  <line x1="2280" y1="0" x2="2280" y2="2400" opacity="0.45"/>
+  <line x1="2400" y1="0" x2="2400" y2="2400"/>
+  <line x1="2520" y1="0" x2="2520" y2="2400" opacity="0.45"/>
+  <line x1="2640" y1="0" x2="2640" y2="2400" opacity="0.45"/>
+  <line x1="2760" y1="0" x2="2760" y2="2400" opacity="0.45"/>
+  <line x1="2880" y1="0" x2="2880" y2="2400" opacity="0.45"/>
+  <line x1="3000" y1="0" x2="3000" y2="2400"/>
+  <line x1="3120" y1="0" x2="3120" y2="2400" opacity="0.45"/>
+  <line x1="3240" y1="0" x2="3240" y2="2400" opacity="0.45"/>
+  <line x1="3360" y1="0" x2="3360" y2="2400" opacity="0.45"/>
+  <line x1="3480" y1="0" x2="3480" y2="2400" opacity="0.45"/>
+  <line x1="3600" y1="0" x2="3600" y2="2400"/>
+  <line x1="0" y1="0" x2="3600" y2="0"/>
+  <line x1="0" y1="120" x2="3600" y2="120" opacity="0.45"/>
+  <line x1="0" y1="240" x2="3600" y2="240" opacity="0.45"/>
+  <line x1="0" y1="360" x2="3600" y2="360" opacity="0.45"/>
+  <line x1="0" y1="480" x2="3600" y2="480" opacity="0.45"/>
+  <line x1="0" y1="600" x2="3600" y2="600"/>
+  <line x1="0" y1="720" x2="3600" y2="720" opacity="0.45"/>
+  <line x1="0" y1="840" x2="3600" y2="840" opacity="0.45"/>
+  <line x1="0" y1="960" x2="3600" y2="960" opacity="0.45"/>
+  <line x1="0" y1="1080" x2="3600" y2="1080" opacity="0.45"/>
+  <line x1="0" y1="1200" x2="3600" y2="1200"/>
+  <line x1="0" y1="1320" x2="3600" y2="1320" opacity="0.45"/>
+  <line x1="0" y1="1440" x2="3600" y2="1440" opacity="0.45"/>
+  <line x1="0" y1="1560" x2="3600" y2="1560" opacity="0.45"/>
+  <line x1="0" y1="1680" x2="3600" y2="1680" opacity="0.45"/>
+  <line x1="0" y1="1800" x2="3600" y2="1800"/>
+  <line x1="0" y1="1920" x2="3600" y2="1920" opacity="0.45"/>
+  <line x1="0" y1="2040" x2="3600" y2="2040" opacity="0.45"/>
+  <line x1="0" y1="2160" x2="3600" y2="2160" opacity="0.45"/>
+  <line x1="0" y1="2280" x2="3600" y2="2280" opacity="0.45"/>
+  <line x1="0" y1="2400" x2="3600" y2="2400"/>
+</g>
+<g id="atlas-paths" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 10" opacity="0.26">
+  <path d="M 640 600 Q 1220.0 550.0, 1800 580 Q 2380.0 550.0, 2960 600 Q 1800.0 1150.0, 640 1780 Q 1220.0 1750.0, 1800 1800 Q 2380.0 1750.0, 2960 1780"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="640" y="339.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">01 / METABOLISMO HUMANO · 100 W</text>
+  <line x1="640" y1="600" x2="881.0" y2="600.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="810.4" y2="770.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="640.0" y2="841.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="469.6" y2="770.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="399.0" y2="600.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="469.6" y2="429.6" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="640.0" y2="359.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="600" x2="810.4" y2="429.6" stroke-width="0.8" opacity="0.18"/>
+  <circle cx="640" cy="600" r="225.0" stroke-width="2.4" opacity="0.95"/>
+  <text x="640" y="369.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">100 VATIOS</text>
+  <circle cx="640" cy="600" r="123.8" stroke-width="1.0" opacity="0.38"/>
+  <text x="640" y="470.2" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">CEREBRO · 20 W</text>
+  <circle cx="640" cy="600" r="49.5" stroke-width="1.0" opacity="0.38"/>
+  <text x="640" y="544.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">ATP</text>
+  <circle cx="640" cy="600" r="4.5" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1420.0" y="350.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="1442.0" y="384.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">02 / POTENCIA VS. ENERGÍA · EL RAYO</text>
+  <line x1="1490.0" y1="745.0" x2="2120.0" y2="745.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1490.0" y1="435.0" x2="1490.0" y2="745.0" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1490.0" y1="667.5" x2="2120.0" y2="667.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="1490.0" y1="590.0" x2="2120.0" y2="590.0" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <line x1="1490.0" y1="512.5" x2="2120.0" y2="512.5" stroke-width="0.8" stroke-dasharray="4 7" opacity="0.18"/>
+  <polyline points="1490.0,726.4 1496.3,726.4 1502.6,726.4 1508.9,726.4 1515.2,726.4 1521.5,726.4 1527.8,726.4 1534.1,726.4 1540.4,726.4 1546.7,726.4 1553.0,726.4 1559.3,726.3 1565.6,725.5 1571.9,721.4 1578.2,705.3 1584.5,661.8 1590.8,582.6 1597.1,493.9 1603.4,453.6 1609.7,493.9 1616.0,582.6 1622.3,661.8 1628.6,705.3 1634.9,721.4 1641.2,725.5 1647.5,726.3 1653.8,726.4 1660.1,726.4 1666.4,726.4 1672.7,726.4 1679.0,726.4 1685.3,726.4 1691.6,726.4 1697.9,726.4 1704.2,726.4 1710.5,726.4 1716.8,726.4 1723.1,726.4 1729.4,726.4 1735.7,726.4 1742.0,726.4 1748.3,726.4 1754.6,726.4 1760.9,726.4 1767.2,726.4 1773.5,726.4 1779.8,726.4 1786.1,726.4 1792.4,726.4 1798.7,726.4 1805.0,726.4 1811.3,726.4 1817.6,726.4 1823.9,726.4 1830.2,726.4 1836.5,726.4 1842.8,726.4 1849.1,726.4 1855.4,726.4 1861.7,726.4 1868.0,726.4 1874.3,726.4 1880.6,726.4 1886.9,726.4 1893.2,726.4 1899.5,726.4 1905.8,726.4 1912.1,726.4 1918.4,726.4 1924.7,726.4 1931.0,726.4 1937.3,726.4 1943.6,726.4 1949.9,726.4 1956.2,726.4 1962.5,726.4 1968.8,726.4 1975.1,726.4 1981.4,726.4 1987.7,726.4 1994.0,726.4 2000.3,726.4 2006.6,726.4 2012.9,726.4 2019.2,726.4 2025.5,726.4 2031.8,726.4 2038.1,726.4 2044.4,726.4 2050.7,726.4 2057.0,726.4 2063.3,726.4 2069.6,726.4 2075.9,726.4 2082.2,726.4 2088.5,726.4 2094.8,726.4 2101.1,726.4 2107.4,726.4 2113.7,726.4 2120.0,726.4" stroke-width="2.6" opacity="0.95"/>
+  <circle cx="2120.0" cy="726.4" r="4" fill="currentColor" opacity="0.95"/>
+  <text x="2110.0" y="714.4" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">10¹² W · 30 µS</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2580.0" y="370.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="2602.0" y="404.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">03 / E = mc² · DENSIDAD ENERGÉTICA</text>
+  <text x="2774.0" y="502.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">QUÍMICA</text>
+  <line x1="2790.0" y1="498.0" x2="3220.0" y2="498.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2790.0" y="490.0" width="34.4" height="16" fill="none" stroke-width="1.6"/>
+  <text x="3234.0" y="502.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">10⁷ J/KG</text>
+  <text x="2774.0" y="582.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">FISIÓN</text>
+  <line x1="2790.0" y1="578.0" x2="3220.0" y2="578.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2790.0" y="570.0" width="206.4" height="16" fill="none" stroke-width="1.6"/>
+  <text x="3234.0" y="582.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">10¹⁴ J/KG</text>
+  <text x="2774.0" y="662.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.65">FUSIÓN</text>
+  <line x1="2790.0" y1="658.0" x2="3220.0" y2="658.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2790.0" y="650.0" width="309.6" height="16" fill="none" stroke-width="1.6"/>
+  <text x="3234.0" y="662.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">10¹⁵ J/KG</text>
+  <text x="2774.0" y="742.0" text-anchor="end" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">MASA PURA</text>
+  <line x1="2790.0" y1="738.0" x2="3220.0" y2="738.0" stroke-width="0.8" opacity="0.22"/>
+  <rect x="2790.0" y="730.0" width="412.8" height="16" fill="currentColor" stroke-width="1.6"/>
+  <text x="3234.0" y="742.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" opacity="0.7">9×10¹⁶ J/KG</text>
+</g>
+<g stroke="currentColor" fill="none">
+  <text x="640" y="1519.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">04 / EL SOL · 3.8 × 10²⁶ VATIOS</text>
+  <line x1="640" y1="1780" x2="881.0" y2="1780.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="810.4" y2="1950.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="640.0" y2="2021.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="469.6" y2="1950.4" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="399.0" y2="1780.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="469.6" y2="1609.6" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="640.0" y2="1539.0" stroke-width="0.8" opacity="0.18"/>
+  <line x1="640" y1="1780" x2="810.4" y2="1609.6" stroke-width="0.8" opacity="0.18"/>
+  <circle cx="640" cy="1780" r="225.0" stroke-width="1.0" opacity="0.38"/>
+  <text x="640" y="1549.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">CORONA</text>
+  <circle cx="640" cy="1780" r="146.2" stroke-width="1.0" opacity="0.38"/>
+  <circle cx="786.2" cy="1782.0" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="781.0" cy="1818.9" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="765.3" cy="1855.5" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="745.0" cy="1881.8" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="713.4" cy="1906.5" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="679.1" cy="1920.9" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="641.9" cy="1926.2" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="600.1" cy="1920.7" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="569.3" cy="1908.0" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="537.8" cy="1884.6" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="512.4" cy="1851.4" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="499.4" cy="1820.2" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="493.8" cy="1781.0" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="498.4" cy="1743.3" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="512.2" cy="1708.8" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="535.5" cy="1677.7" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="565.3" cy="1654.3" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="604.3" cy="1638.2" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="639.0" cy="1633.8" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="680.1" cy="1639.3" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="714.5" cy="1654.2" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="744.3" cy="1677.5" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="767.8" cy="1709.0" r="2.0" fill="currentColor" opacity="0.55"/>
+  <circle cx="781.3" cy="1742.3" r="2.0" fill="currentColor" opacity="0.55"/>
+  <text x="640" y="1627.8" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.65">FOTOSFERA</text>
+  <circle cx="640" cy="1780" r="67.5" stroke-width="2.4" opacity="0.95"/>
+  <circle cx="707.5" cy="1780.7" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="697.8" cy="1814.8" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="674.9" cy="1837.8" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="640.4" cy="1847.5" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="606.6" cy="1838.7" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="581.0" cy="1812.8" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="572.5" cy="1780.4" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="581.8" cy="1745.8" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="605.8" cy="1721.8" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="641.1" cy="1712.5" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="672.9" cy="1721.1" r="3.2" fill="currentColor" opacity="0.9"/>
+  <circle cx="698.2" cy="1745.7" r="3.2" fill="currentColor" opacity="0.9"/>
+  <text x="640" y="1706.5" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1.5" opacity="0.95">FUSIÓN H→He</text>
+  <circle cx="640" cy="1780" r="4.5" fill="currentColor"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="1420.0" y="1570.0" width="760" height="460" stroke-width="1" opacity="0.22"/>
+  <text x="1442.0" y="1604.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">05 / ESCALA DE KARDASHEV</text>
+  <circle cx="1490.0" cy="1905.0" r="3.2" fill="none" stroke-width="1.6"/>
+  <text x="1552.0" y="1891.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="10" letter-spacing="1" opacity="0.65">10² W</text>
+  <circle cx="1614.0" cy="1845.0" r="5" fill="currentColor" stroke-width="1.6"/>
+  <text x="1676.0" y="1831.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="10" letter-spacing="1" opacity="0.95">0.73</text>
+  <circle cx="1738.0" cy="1785.0" r="3.2" fill="none" stroke-width="1.6"/>
+  <text x="1800.0" y="1771.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="10" letter-spacing="1" opacity="0.65">TIPO I · 10¹⁶</text>
+  <circle cx="1862.0" cy="1725.0" r="3.2" fill="none" stroke-width="1.6"/>
+  <text x="1924.0" y="1711.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="10" letter-spacing="1" opacity="0.65">TIPO II · 10²⁶</text>
+  <circle cx="1986.0" cy="1665.0" r="3.2" fill="none" stroke-width="1.6"/>
+  <text x="2048.0" y="1651.0" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="10" letter-spacing="1" opacity="0.65">TIPO III · 10³⁷</text>
+  <polyline points="1490.0,1965.0 1490.0,1905.0 1614.0,1905.0 1614.0,1905.0 1614.0,1845.0 1738.0,1845.0 1738.0,1845.0 1738.0,1785.0 1862.0,1785.0 1862.0,1785.0 1862.0,1725.0 1986.0,1725.0 1986.0,1725.0 1986.0,1665.0 2110.0,1665.0" stroke-width="2.2"/>
+</g>
+<g stroke="currentColor" fill="none">
+  <rect x="2570.0" y="1570.0" width="780" height="420" stroke-width="1" opacity="0.22"/>
+  <text x="2592.0" y="1604.0" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.65">06 / DE LO BIOLÓGICO A LO CÓSMICO</text>
+  <line x1="2630.0" y1="1795" x2="3290.0" y2="1795" stroke-width="2.0"/>
+  <line x1="2630.0" y1="1783" x2="2630.0" y2="1807" stroke-width="1" opacity="0.4"/>
+  <line x1="2663.0" y1="1789" x2="2663.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2696.0" y1="1789" x2="2696.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2729.0" y1="1789" x2="2729.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2762.0" y1="1789" x2="2762.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2795.0" y1="1783" x2="2795.0" y2="1807" stroke-width="1" opacity="0.4"/>
+  <line x1="2828.0" y1="1789" x2="2828.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2861.0" y1="1789" x2="2861.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2894.0" y1="1789" x2="2894.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2927.0" y1="1789" x2="2927.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="2960.0" y1="1783" x2="2960.0" y2="1807" stroke-width="1" opacity="0.4"/>
+  <line x1="2993.0" y1="1789" x2="2993.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3026.0" y1="1789" x2="3026.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3059.0" y1="1789" x2="3059.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3092.0" y1="1789" x2="3092.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3125.0" y1="1783" x2="3125.0" y2="1807" stroke-width="1" opacity="0.4"/>
+  <line x1="3158.0" y1="1789" x2="3158.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3191.0" y1="1789" x2="3191.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3224.0" y1="1789" x2="3224.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3257.0" y1="1789" x2="3257.0" y2="1801" stroke-width="1" opacity="0.4"/>
+  <line x1="3290.0" y1="1783" x2="3290.0" y2="1807" stroke-width="1" opacity="0.4"/>
+  <line x1="2663.0" y1="1795" x2="2663.0" y2="1730" stroke-width="1" opacity="0.6"/>
+  <text x="2663.0" y="1719" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">CÉLULA</text>
+  <line x1="2663.0" y1="1795" x2="2663.0" y2="1860" stroke-width="1" opacity="0.6"/>
+  <text x="2663.0" y="1879" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">10⁻¹² W</text>
+  <circle cx="2663.0" cy="1795" r="4" fill="none" stroke-width="1.8"/>
+  <line x1="2841.2" y1="1795" x2="2841.2" y2="1730" stroke-width="1" opacity="0.6"/>
+  <text x="2841.2" y="1719" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">HUMANO</text>
+  <line x1="2841.2" y1="1795" x2="2841.2" y2="1860" stroke-width="1" opacity="0.6"/>
+  <text x="2841.2" y="1879" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.95">10² W</text>
+  <circle cx="2841.2" cy="1795" r="6" fill="currentColor" stroke-width="1.8"/>
+  <line x1="3059.0" y1="1795" x2="3059.0" y2="1730" stroke-width="1" opacity="0.6"/>
+  <text x="3059.0" y="1719" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">PLANETA</text>
+  <line x1="3059.0" y1="1795" x2="3059.0" y2="1860" stroke-width="1" opacity="0.6"/>
+  <text x="3059.0" y="1879" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">10¹⁶ W</text>
+  <circle cx="3059.0" cy="1795" r="4" fill="none" stroke-width="1.8"/>
+  <line x1="3257.0" y1="1795" x2="3257.0" y2="1730" stroke-width="1" opacity="0.6"/>
+  <text x="3257.0" y="1719" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">GALAXIA</text>
+  <line x1="3257.0" y1="1795" x2="3257.0" y2="1860" stroke-width="1" opacity="0.6"/>
+  <text x="3257.0" y="1879" text-anchor="middle" fill="currentColor" stroke="none" font-family="JetBrains Mono, Menlo, monospace" font-size="11" letter-spacing="1" opacity="0.7">10³⁷ W</text>
+  <circle cx="3257.0" cy="1795" r="4" fill="none" stroke-width="1.8"/>
+</g>
+</svg>

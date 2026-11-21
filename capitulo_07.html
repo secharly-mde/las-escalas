@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_06_la_informacion.jpg">
     <meta property="og:url" content="https://lasescalas.uy/capitulo_07.html">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -24,8 +24,11 @@
     
     <div class="visual-container">
         <div class="bg-layer grid" id="bg-grid"></div>
-        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_06_la_informacion.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="atlas-viewport" id="atlas-viewport" data-atlas="images/atlas/atlas_06_informacion.svg">
+        <div class="atlas-canvas" id="atlas-canvas"></div>
     </div>
 
     <div class="ui-overlay">
@@ -71,21 +74,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
-            <div class="chapter-hero-card">
-                <div class="chapter-hero-plate">
-                    <img src="images/laminas/lamina_06_la_informacion.jpg" alt="Lámina: La información">
-                </div>
-                <div class="chapter-hero-info">
-                    <div class="chapter-hero-kicker">CAPÍTULO 06 · PARTE II</div>
-                    <h1>LA<br>INFORMACIÓN</h1>
-                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
-                </div>
-            </div>
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="1.05">
+            <h1>LA<br>INFORMACIÓN</h1>
         </section>
 
         <!-- I. El bit — SHANNON -->
-        <section id="el-bit" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="grid">
+        <section id="el-bit" data-sec="sec-1" class="step" data-scale="1.2" data-metric="1" data-shape="dot" data-invert="false" data-layer="grid" data-cam-x="640" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. El bit</h2>
@@ -104,7 +98,7 @@
         </section>
 
         <!-- II. La biblioteca total — BORGES -->
-        <section id="la-biblioteca-total" data-sec="sec-2" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="info-noise">
+        <section id="la-biblioteca-total" data-sec="sec-2" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="info-noise" data-cam-x="1800" data-cam-y="580" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. La biblioteca total</h2>
@@ -125,7 +119,7 @@
         </section>
 
         <!-- III. La compresión — KOLMOGOROV / WAGENSBERG -->
-        <section id="la-compresion" data-sec="sec-3" class="step" data-scale="0.8" data-metric="0.001" data-shape="line" data-invert="false" data-layer="info-signal">
+        <section id="la-compresion" data-sec="sec-3" class="step" data-scale="0.8" data-metric="0.001" data-shape="line" data-invert="false" data-layer="info-signal" data-cam-x="2960" data-cam-y="600" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. La compresión</h2>
@@ -147,7 +141,7 @@
         </section>
 
         <!-- IV. La pirámide — ACKOFF / T.S. ELIOT -->
-        <section id="la-piramide" data-sec="sec-4" class="step" data-scale="1.5" data-metric="100" data-shape="square" data-invert="true" data-layer="info-library">
+        <section id="la-piramide" data-sec="sec-4" class="step" data-scale="1.5" data-metric="100" data-shape="square" data-invert="true" data-layer="info-library" data-cam-x="640" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. La pirámide</h2>
@@ -170,7 +164,7 @@
         </section>
 
         <!-- V. El diluvio — LA ERA DE LA INFORMACIÓN -->
-        <section id="el-diluvio" data-sec="sec-5" class="step" data-scale="1.8" data-metric="1000000000" data-shape="circle" data-invert="false" data-layer="info-noise">
+        <section id="el-diluvio" data-sec="sec-5" class="step" data-scale="1.8" data-metric="1000000000" data-shape="circle" data-invert="false" data-layer="info-noise" data-cam-x="1800" data-cam-y="1800" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. El diluvio</h2>
@@ -189,7 +183,7 @@
         </section>
 
         <!-- VI. La entropía — LANDAUER / CIERRE -->
-        <section id="la-entropia" data-sec="sec-6" class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="true" data-layer="info-signal">
+        <section id="la-entropia" data-sec="sec-6" class="step" data-scale="0.5" data-metric="0.0000001" data-shape="dot" data-invert="true" data-layer="info-signal" data-cam-x="2960" data-cam-y="1780" data-cam-zoom="2.7">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. La entropía</h2>
@@ -216,6 +210,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 </html>

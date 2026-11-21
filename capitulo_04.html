@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://lasescalas.uy/images/laminas/lamina_03_el_espacio.jpg">
     <meta property="og:url" content="https://lasescalas.uy/capitulo_04.html">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -24,8 +24,11 @@
     
     <div class="visual-container">
         <div class="bg-layer grid" id="bg-grid"></div>
-        <div class="bg-layer plate" id="bg-plate" style="background-image: url('images/laminas/lamina_03_el_espacio.jpg');"></div>
         <div class="scale-object square" id="scale-object"></div>
+    </div>
+
+    <div class="atlas-viewport" id="atlas-viewport" data-atlas="images/atlas/atlas_03_espacio.svg">
+        <div class="atlas-canvas" id="atlas-canvas"></div>
     </div>
 
     <div class="ui-overlay">
@@ -71,21 +74,12 @@
 
     <main class="content-scroll">
         <!-- Portada del Capítulo -->
-        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="space-orbit">
-            <div class="chapter-hero-card">
-                <div class="chapter-hero-plate">
-                    <img src="images/laminas/lamina_03_el_espacio.jpg" alt="Lámina: El espacio">
-                </div>
-                <div class="chapter-hero-info">
-                    <div class="chapter-hero-kicker">CAPÍTULO 03 · PARTE II</div>
-                    <h1>EL ESPACIO</h1>
-                    <div class="chapter-hero-hint">DESPLAZAR PARA RECORRER LAS ESCALAS ↓</div>
-                </div>
-            </div>
+        <section id="portada" data-sec="hero-1" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="space-orbit" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="1.05">
+            <h1>EL ESPACIO</h1>
         </section>
 
         <!-- I. Pascal -->
-        <section id="los-dos-abismos" data-sec="sec-1" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid">
+        <section id="los-dos-abismos" data-sec="sec-1" class="step" data-scale="1" data-metric="1" data-shape="line" data-invert="false" data-layer="grid" data-cam-x="580" data-cam-y="440" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>I. Los dos abismos</h2>
@@ -104,7 +98,7 @@
         </section>
 
         <!-- II. El pañero de Delft -->
-        <section id="el-panero-de-delft" data-sec="sec-2" class="step" data-scale="1.5" data-metric="0.001" data-shape="circle" data-invert="true" data-layer="space-dust">
+        <section id="el-panero-de-delft" data-sec="sec-2" class="step" data-scale="1.5" data-metric="0.001" data-shape="circle" data-invert="true" data-layer="space-dust" data-cam-x="1800" data-cam-y="420" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>II. El pañero de Delft</h2>
@@ -126,7 +120,7 @@
         </section>
 
         <!-- III. Tardígrado -->
-        <section id="lo-que-vive-debajo" data-sec="sec-3" class="step" data-scale="2.5" data-metric="0.0001" data-shape="circle" data-invert="false" data-layer="space-dust">
+        <section id="lo-que-vive-debajo" data-sec="sec-3" class="step" data-scale="2.5" data-metric="0.0001" data-shape="circle" data-invert="false" data-layer="space-dust" data-cam-x="3020" data-cam-y="440" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>III. Lo que vive debajo</h2>
@@ -146,7 +140,7 @@
         </section>
 
         <!-- IV. Boltzmann -->
-        <section id="el-hombre-que-creyo-en-los-atomos" data-sec="sec-4" class="step" data-scale="0.5" data-metric="0.000000001" data-shape="dot" data-invert="true" data-layer="space-dust">
+        <section id="el-hombre-que-creyo-en-los-atomos" data-sec="sec-4" class="step" data-scale="0.5" data-metric="0.000000001" data-shape="dot" data-invert="true" data-layer="space-dust" data-cam-x="580" data-cam-y="1200" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IV. El hombre que creyó en los átomos</h2>
@@ -167,7 +161,7 @@
         </section>
 
         <!-- V. La herida -->
-        <section id="la-herida" data-sec="sec-5" class="step" data-scale="0.8" data-metric="100" data-shape="square" data-invert="false" data-layer="space-orbit">
+        <section id="la-herida" data-sec="sec-5" class="step" data-scale="0.8" data-metric="100" data-shape="square" data-invert="false" data-layer="space-orbit" data-cam-x="1800" data-cam-y="1200" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>V. La herida</h2>
@@ -189,7 +183,7 @@
         </section>
 
         <!-- VI. Hubble -->
-        <section id="la-expansion" data-sec="sec-6" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="space-void">
+        <section id="la-expansion" data-sec="sec-6" class="step" data-scale="2" data-metric="1000000" data-shape="circle" data-invert="true" data-layer="space-void" data-cam-x="3020" data-cam-y="1200" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VI. La expansión</h2>
@@ -209,7 +203,7 @@
         </section>
 
         <!-- VII. Voyager -->
-        <section id="la-mota-de-polvo" data-sec="sec-7" class="step" data-scale="0.1" data-metric="1000000000" data-shape="dot" data-invert="true" data-layer="space-void">
+        <section id="la-mota-de-polvo" data-sec="sec-7" class="step" data-scale="0.1" data-metric="1000000000" data-shape="dot" data-invert="true" data-layer="space-void" data-cam-x="580" data-cam-y="1960" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VII. La mota de polvo</h2>
@@ -228,7 +222,7 @@
         </section>
 
         <!-- VIII. Powers of ten -->
-        <section id="los-pisos-de-la-realidad" data-sec="sec-8" class="step" data-scale="1.2" data-metric="10" data-shape="circle" data-invert="false" data-layer="grid">
+        <section id="los-pisos-de-la-realidad" data-sec="sec-8" class="step" data-scale="1.2" data-metric="10" data-shape="circle" data-invert="false" data-layer="grid" data-cam-x="1800" data-cam-y="1960" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>VIII. Los pisos de la realidad</h2>
@@ -247,7 +241,7 @@
         </section>
 
         <!-- IX. Conclusion -->
-        <section id="el-corredor" data-sec="sec-9" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid">
+        <section id="el-corredor" data-sec="sec-9" class="step hero" data-scale="1" data-metric="1" data-shape="square" data-layer="grid" data-cam-x="3020" data-cam-y="1960" data-cam-zoom="2.8">
             <div class="text-block">
                 <button class="action-btn collapse-btn">[- REDUCIR ESCALA]</button>
                 <h2>IX. El corredor</h2>
@@ -276,6 +270,6 @@
         </section>
     </main>
 
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 </html>
