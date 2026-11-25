@@ -10,67 +10,266 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollIndicator = document.getElementById('scroll-indicator');
     const body = document.body;
 
-    // GRAND ATLAS + KINETIC LOUPE CAMERA INITIALIZATION
+    // GRAND ATLAS + 3D AERIAL OVERFLIGHT & ZENITHAL DIVE CAMERA
+    let isReadingMode = false;
+    let activeExpandedBlock = null;
     let hasAtlas = false;
     let currentStep = null;
+    let atlasCamera = null;
+    let loupeReticle = null;
+    let flightRaf = null;
+    let lastFrameTime = 0;
+    let flightInitialized = false;
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const camState = {
+        x: 1800,
+        y: 1200,
+        zoom: 1.0,
+        pitch: 0,
+        bank: 0,
+        screenX: window.innerWidth * 0.5,
+        screenY: window.innerHeight * 0.5,
+        baseScale: 0.35
+    };
+
+    const camTarget = { ...camState };
+
+    function clamp(v, min, max) {
+        return Math.max(min, Math.min(max, v));
+    }
+
+    function lerp(a, b, t) {
+        return a + (b - a) * t;
+    }
+
+    function getStepCam(step, vw, vh) {
+        const isDesktop = vw >= 1024;
+        const isHero = step.classList.contains('hero');
+        return {
+            x: parseFloat(step.getAttribute('data-cam-x')) || 1800,
+            y: parseFloat(step.getAttribute('data-cam-y')) || 1200,
+            zoom: parseFloat(step.getAttribute('data-cam-zoom')) || 1.0,
+            isHero,
+            screenX: (isDesktop && !isHero) ? vw * 0.68 : vw * 0.50,
+            screenY: vh * 0.50,
+            baseScale: Math.min(vw / 3600, vh / 2400) * (isHero ? 0.94 : 0.90)
+        };
+    }
+
+    function computeFlightTarget() {
+        if (!hasAtlas || steps.length === 0) return;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const anchorY = vh * 0.5;
+
+        const centers = steps.map(s => {
+            const r = s.getBoundingClientRect();
+            return r.top + r.height * 0.5;
+        });
+
+        let idxA = 0;
+        let idxB = 0;
+        let rawT = 0;
+
+        if (anchorY <= centers[0]) {
+            idxA = 0;
+            idxB = 0;
+            rawT = 0;
+        } else if (anchorY >= centers[centers.length - 1]) {
+            idxA = steps.length - 1;
+            idxB = steps.length - 1;
+            rawT = 0;
+        } else {
+            for (let i = 0; i < centers.length - 1; i++) {
+                if (anchorY >= centers[i] && anchorY <= centers[i + 1]) {
+                    idxA = i;
+                    idxB = i + 1;
+                    const span = Math.max(1, centers[i + 1] - centers[i]);
+                    rawT = clamp((anchorY - centers[i]) / span, 0, 1);
+                    break;
+                }
+            }
+        }
+
+        const a = getStepCam(steps[idxA], vw, vh);
+        const b = getStepCam(steps[idxB], vw, vh);
+
+        // Landing dwell zone: flat & zenithal while centered on a section
+        const dwell = 0.14;
+        let u = 0;
+        if (idxA === idxB || rawT <= dwell) {
+            u = 0;
+        } else if (rawT >= 1 - dwell) {
+            u = 1;
+        } else {
+            u = (rawT - dwell) / (1 - 2 * dwell);
+        }
+
+        const easePos = u * u * (3 - 2 * u);
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const dist = Math.hypot(dx, dy);
+        const zoomDiff = Math.abs(b.zoom - a.zoom);
+        const shouldFly = !prefersReducedMotion && (dist > 60 || zoomDiff > 0.35);
+
+        const rawArc = shouldFly ? Math.sin(Math.PI * u) : 0;
+        const arc = rawArc > 0 ? Math.pow(rawArc, 0.82) : 0;
+
+        const distFactor = clamp(dist / 2200, 0.45, 1.15);
+        const baseZoom = lerp(a.zoom, b.zoom, easePos);
+
+        // Lift off to aerial altitude mid-flight, then dive zenithally onto the target
+        const cruiseZoom = Math.min(baseZoom, Math.max(0.92, 1.48 - distFactor * 0.42));
+        const finalZoom = (a.isHero && b.isHero)
+            ? baseZoom
+            : lerp(baseZoom, cruiseZoom, arc);
+
+        // Retro 3D overflight pitch (rotateX) + gentle aircraft bank (rotateZ)
+        const maxPitch = (a.isHero || b.isHero) ? 38 : (38 + distFactor * 14);
+        const pitch = shouldFly ? maxPitch * arc : 0;
+        const bankDir = clamp(dx / 1400, -1, 1);
+        const bank = shouldFly ? (-bankDir * 9.5 * arc) : 0;
+
+        camTarget.x = lerp(a.x, b.x, easePos);
+        camTarget.y = lerp(a.y, b.y, easePos);
+        camTarget.zoom = finalZoom;
+        camTarget.pitch = pitch;
+        camTarget.bank = bank;
+        camTarget.screenX = lerp(a.screenX, b.screenX, easePos);
+        camTarget.screenY = lerp(a.screenY, b.screenY, easePos) + (vh * 0.045 * arc);
+        camTarget.baseScale = lerp(a.baseScale, b.baseScale, easePos);
+    }
+
+    function renderAtlasCamera() {
+        if (!hasAtlas || !atlasCamera || !atlasCanvas) return;
+        const finalScale = camState.baseScale * camState.zoom;
+        const pitch = Math.abs(camState.pitch) < 0.08 ? 0 : camState.pitch;
+        const bank = Math.abs(camState.bank) < 0.05 ? 0 : camState.bank;
+
+        atlasCamera.style.transform =
+            `translate3d(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px, 0) ` +
+            `perspective(1100px) ` +
+            `rotateX(${pitch.toFixed(2)}deg) ` +
+            `rotateZ(${bank.toFixed(2)}deg) ` +
+            `scale(${finalScale.toFixed(4)})`;
+
+        atlasCanvas.style.transform =
+            `translate3d(${(-camState.x).toFixed(1)}px, ${(-camState.y).toFixed(1)}px, 0)`;
+
+        const isFlying = pitch > 3.0;
+        if (loupeReticle) {
+            loupeReticle.classList.toggle('is-flying', isFlying);
+        }
+
+        if (scaleMetric && currentStep) {
+            const narrativeMetric = currentStep.getAttribute('data-metric') || 1;
+            if (isFlying) {
+                scaleMetric.innerHTML = `VUELO ${camState.zoom.toFixed(1)}× · ${Math.round(pitch)}°<br>ESCALA 1:${narrativeMetric}`;
+            } else {
+                scaleMetric.innerHTML = `CENIT ${camState.zoom.toFixed(1)}×<br>ESCALA 1:${narrativeMetric}`;
+            }
+        }
+    }
+
+    function tickFlight(now) {
+        if (!lastFrameTime) lastFrameTime = now;
+        const dt = Math.min(0.05, (now - lastFrameTime) / 1000);
+        lastFrameTime = now;
+
+        if (!isReadingMode) {
+            computeFlightTarget();
+        }
+
+        const k = 1 - Math.exp(-dt * 6.8);
+        camState.x = lerp(camState.x, camTarget.x, k);
+        camState.y = lerp(camState.y, camTarget.y, k);
+        camState.zoom = lerp(camState.zoom, camTarget.zoom, k);
+        camState.pitch = lerp(camState.pitch, camTarget.pitch, k);
+        camState.bank = lerp(camState.bank, camTarget.bank, k);
+        camState.screenX = lerp(camState.screenX, camTarget.screenX, k);
+        camState.screenY = lerp(camState.screenY, camTarget.screenY, k);
+        camState.baseScale = lerp(camState.baseScale, camTarget.baseScale, k);
+
+        renderAtlasCamera();
+
+        const settled =
+            Math.abs(camState.x - camTarget.x) < 0.4 &&
+            Math.abs(camState.y - camTarget.y) < 0.4 &&
+            Math.abs(camState.zoom - camTarget.zoom) < 0.002 &&
+            Math.abs(camState.pitch - camTarget.pitch) < 0.05 &&
+            Math.abs(camState.bank - camTarget.bank) < 0.05 &&
+            Math.abs(camState.screenX - camTarget.screenX) < 0.4 &&
+            Math.abs(camState.screenY - camTarget.screenY) < 0.4;
+
+        if (!settled) {
+            flightRaf = requestAnimationFrame(tickFlight);
+        } else {
+            Object.assign(camState, camTarget);
+            renderAtlasCamera();
+            flightRaf = null;
+            lastFrameTime = 0;
+        }
+    }
+
+    function wakeFlight(snap = false) {
+        if (!hasAtlas) return;
+        computeFlightTarget();
+        if (snap || !flightInitialized) {
+            Object.assign(camState, camTarget);
+            flightInitialized = true;
+            renderAtlasCamera();
+            return;
+        }
+        if (!flightRaf) {
+            lastFrameTime = 0;
+            flightRaf = requestAnimationFrame(tickFlight);
+        }
+    }
 
     if (atlasViewport && atlasCanvas) {
         const atlasUrl = atlasViewport.getAttribute('data-atlas');
         if (atlasUrl) {
             hasAtlas = true;
             body.classList.add('has-atlas');
-            const reticle = document.createElement('div');
-            reticle.className = 'loupe-reticle';
-            atlasViewport.appendChild(reticle);
+
+            // Wrap atlasCanvas inside a 3D camera rig centered at (camX, camY)
+            atlasCamera = document.createElement('div');
+            atlasCamera.className = 'atlas-camera';
+            atlasViewport.insertBefore(atlasCamera, atlasCanvas);
+            atlasCamera.appendChild(atlasCanvas);
+
+            loupeReticle = document.createElement('div');
+            loupeReticle.className = 'loupe-reticle';
+            atlasViewport.appendChild(loupeReticle);
 
             fetch(atlasUrl)
                 .then(r => r.text())
                 .then(svgText => {
                     atlasCanvas.innerHTML = svgText;
-                    if (currentStep) updateAtlasCamera(currentStep);
+                    wakeFlight(true);
                 })
                 .catch(err => console.error('Atlas SVG load error:', err));
         }
     }
 
     function updateAtlasCamera(target) {
-        if (!hasAtlas || !atlasCanvas || !target) return;
-        const vw = window.innerWidth;
-        const vh = window.innerHeight;
-        const isDesktop = vw >= 1024;
+        if (!hasAtlas || !target) return;
         const isHero = target.classList.contains('hero');
-
         if (isHero) {
             body.classList.add('atlas-hero-view');
         } else {
             body.classList.remove('atlas-hero-view');
         }
-
-        const camX = parseFloat(target.getAttribute('data-cam-x')) || 1800;
-        const camY = parseFloat(target.getAttribute('data-cam-y')) || 1200;
-        const camZoom = parseFloat(target.getAttribute('data-cam-zoom')) || 1.0;
-
-        // Fit-base scale so zoom=1.0 frames the whole 3600x2400 Grand Atlas comfortably
-        const baseScale = Math.min(vw / 3600, vh / 2400) * (isHero ? 0.94 : 0.90);
-        const finalScale = baseScale * camZoom;
-
-        // On desktop sections, focus the loupe on the open right stage (68% X); on hero/mobile, center (50% X)
-        const targetScreenX = (isDesktop && !isHero) ? vw * 0.68 : vw * 0.50;
-        const targetScreenY = vh * 0.50;
-
-        const tx = targetScreenX - camX * finalScale;
-        const ty = targetScreenY - camY * finalScale;
-
-        atlasCanvas.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${finalScale.toFixed(4)})`;
-
-        if (scaleMetric) {
-            const narrativeMetric = target.getAttribute('data-metric') || 1;
-            scaleMetric.innerHTML = `LUPA ${camZoom.toFixed(1)}×<br>ESCALA 1:${narrativeMetric}`;
-        }
+        wakeFlight(false);
     }
 
+    window.addEventListener('scroll', () => {
+        if (hasAtlas && !isReadingMode) wakeFlight(false);
+    }, { passive: true });
+
     window.addEventListener('resize', () => {
-        if (hasAtlas && currentStep) updateAtlasCamera(currentStep);
+        if (hasAtlas) wakeFlight(true);
     }, { passive: true });
 
     // Create top reading progress bar
@@ -82,9 +281,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const backdrop = document.createElement('div');
     backdrop.className = 'reading-backdrop';
     document.body.appendChild(backdrop);
-
-    let isReadingMode = false;
-    let activeExpandedBlock = null;
 
     // Smooth logarithmic mapping so kinetic zoom-in / zoom-out feels deep & dramatic
     // without ever pixelating the background plate or breaking layout!

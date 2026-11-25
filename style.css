@@ -754,6 +754,16 @@ body.is-reading-mode .atlas-viewport {
     transition: opacity 0.8s ease, color 0.75s ease;
 }
 
+.atlas-camera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
 .atlas-canvas {
     position: absolute;
     top: 0;
@@ -761,7 +771,6 @@ body.is-reading-mode .atlas-viewport {
     width: 3600px;
     height: 2400px;
     transform-origin: 0 0;
-    transition: transform 1.45s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform;
 }
 
@@ -769,6 +778,7 @@ body.is-reading-mode .atlas-viewport {
     display: block;
     width: 100%;
     height: 100%;
+    shape-rendering: geometricPrecision;
 }
 
 /* Optical loupe reticle ring in the open viewport area */
@@ -787,7 +797,8 @@ body.is-reading-mode .atlas-viewport {
     transition: left 1.2s cubic-bezier(0.22, 1, 0.36, 1),
                 width 1.2s cubic-bezier(0.22, 1, 0.36, 1),
                 height 1.2s cubic-bezier(0.22, 1, 0.36, 1),
-                opacity 0.8s ease,
+                transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.55s ease,
                 border-color 0.75s ease;
 }
 
@@ -809,6 +820,12 @@ body.is-reading-mode .atlas-viewport {
 body.atlas-hero-view .loupe-reticle {
     left: 50%;
     opacity: 0.14;
+}
+
+.loupe-reticle.is-flying {
+    transform: translate(-50%, -50%) scale(1.16);
+    opacity: 0.22;
+    border-style: dashed;
 }
 
 body.has-atlas .bg-layer.plate,
