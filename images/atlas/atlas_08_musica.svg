@@ -164,13 +164,13 @@
   <circle cx="1619.8" cy="1547.6" r="4.5" fill="currentColor" opacity="0.6"/>
 </g>
 <g id="topo-labels" fill="currentColor" font-family="JetBrains Mono, Menlo, monospace" font-size="13" letter-spacing="2" opacity="0.45">
-  <text x="640" y="2088" text-anchor="middle" transform="rotate(-10 640 1860)">01 // COTA +112 · MONOCORDIO</text>
-  <text x="2940" y="718" text-anchor="middle" transform="rotate(12 2940 490)">02 // COTA +440 · SERIE ARMÓNICA</text>
-  <text x="2660" y="2148" text-anchor="middle" transform="rotate(-14 2660 1920)">03 // COTA -023 · COMA PITAGÓRICA</text>
-  <text x="760" y="768" text-anchor="middle" transform="rotate(11 760 540)">04 // COTA +880 · ESPECTRO</text>
-  <text x="3080" y="1508" text-anchor="middle" transform="rotate(-8 3080 1280)">05 // COTA +10⁵ · ESCALA LOG</text>
-  <text x="1520" y="2228" text-anchor="middle" transform="rotate(7 1520 2000)">06 // COTA 000 · CÁMARA ANECOICA</text>
-  <text x="1840" y="1368" text-anchor="middle" transform="rotate(0 1840 1140)">07 // COTA ∞ · HÉLICE TONAL</text>
+  <text x="640" y="2132" text-anchor="middle" transform="rotate(-10 640 1860)">01 // COTA +112 · MONOCORDIO</text>
+  <text x="2940" y="762" text-anchor="middle" transform="rotate(12 2940 490)">02 // COTA +440 · SERIE ARMÓNICA</text>
+  <text x="2660" y="2192" text-anchor="middle" transform="rotate(-14 2660 1920)">03 // COTA -023 · COMA PITAGÓRICA</text>
+  <text x="760" y="812" text-anchor="middle" transform="rotate(11 760 540)">04 // COTA +880 · ESPECTRO</text>
+  <text x="3080" y="1552" text-anchor="middle" transform="rotate(-8 3080 1280)">05 // COTA +10⁵ · ESCALA LOG</text>
+  <text x="1520" y="2272" text-anchor="middle" transform="rotate(7 1520 2000)">06 // COTA 000 · CÁMARA ANECOICA</text>
+  <text x="1840" y="1412" text-anchor="middle" transform="rotate(0 1840 1140)">07 // COTA ∞ · HÉLICE TONAL</text>
 </g>
   <g id="placed-station-1" transform="translate(640, 1860) rotate(-10) scale(0.92) translate(-620, -560)">
     <g id="station-1" stroke="currentColor" fill="none">

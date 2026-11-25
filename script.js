@@ -160,23 +160,35 @@ document.addEventListener("DOMContentLoaded", () => {
         camTarget.baseScale = lerp(a.baseScale, b.baseScale, easePos);
     }
 
-    function renderAtlasCamera() {
+    function renderAtlasCamera(isSettled = false) {
         if (!hasAtlas || !atlasViewport || !atlasCanvas) return;
         const finalScale = camState.baseScale * camState.zoom;
         const pitch = Math.abs(camState.pitch) < 0.08 ? 0 : camState.pitch;
         const bank = Math.abs(camState.bank) < 0.05 ? 0 : camState.bank;
         const zLift = Math.abs(camState.zLift) < 0.5 ? 0 : camState.zLift;
 
-        // Perspective lives on the parent viewport, centered on the exact focal point
-        atlasViewport.style.perspectiveOrigin = `${camState.screenX.toFixed(1)}px ${camState.screenY.toFixed(1)}px`;
+        const is3D = !isSettled && (pitch > 0 || zLift > 0);
 
-        // Right-to-left: shift focal point (camX, camY) to origin -> scale -> bank -> pitch 3D -> lift in -Z -> place at screen focus
-        atlasCanvas.style.transform =
-            `translate3d(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px, ${(-zLift).toFixed(1)}px) ` +
-            `rotateX(${pitch.toFixed(2)}deg) ` +
-            `rotateZ(${bank.toFixed(2)}deg) ` +
-            `scale(${finalScale.toFixed(4)}) ` +
-            `translate3d(${(-camState.x).toFixed(1)}px, ${(-camState.y).toFixed(1)}px, 0)`;
+        if (is3D) {
+            // Active 3D aerial overflight: GPU-accelerated perspective
+            atlasViewport.style.perspective = '680px';
+            atlasViewport.style.perspectiveOrigin = `${camState.screenX.toFixed(1)}px ${camState.screenY.toFixed(1)}px`;
+            atlasCanvas.style.transform =
+                `translate3d(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px, ${(-zLift).toFixed(1)}px) ` +
+                `rotateX(${pitch.toFixed(2)}deg) ` +
+                `rotateZ(${bank.toFixed(2)}deg) ` +
+                `scale(${finalScale.toFixed(4)}) ` +
+                `translate3d(${(-camState.x).toFixed(1)}px, ${(-camState.y).toFixed(1)}px, 0)`;
+        } else {
+            // Zenithal landing: drop 3D GPU layer so the browser re-rasterizes inline SVG vectors at native Retina sharpness
+            atlasViewport.style.perspective = 'none';
+            const rotPart = bank !== 0 ? `rotate(${bank.toFixed(2)}deg) ` : '';
+            atlasCanvas.style.transform =
+                `translate(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px) ` +
+                rotPart +
+                `scale(${finalScale.toFixed(4)}) ` +
+                `translate(${(-camState.x).toFixed(1)}px, ${(-camState.y).toFixed(1)}px)`;
+        }
 
         const isFlying = pitch > 3.0;
         if (loupeReticle) {
@@ -213,8 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
         camState.screenY = lerp(camState.screenY, camTarget.screenY, k);
         camState.baseScale = lerp(camState.baseScale, camTarget.baseScale, k);
 
-        renderAtlasCamera();
-
         const settled =
             Math.abs(camState.x - camTarget.x) < 0.4 &&
             Math.abs(camState.y - camTarget.y) < 0.4 &&
@@ -226,10 +236,11 @@ document.addEventListener("DOMContentLoaded", () => {
             Math.abs(camState.screenY - camTarget.screenY) < 0.4;
 
         if (!settled) {
+            renderAtlasCamera(false);
             flightRaf = requestAnimationFrame(tickFlight);
         } else {
             Object.assign(camState, camTarget);
-            renderAtlasCamera();
+            renderAtlasCamera(true);
             flightRaf = null;
             lastFrameTime = 0;
         }
@@ -241,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (snap || !flightInitialized) {
             Object.assign(camState, camTarget);
             flightInitialized = true;
-            renderAtlasCamera();
+            renderAtlasCamera(true);
             return;
         }
         if (!flightRaf) {

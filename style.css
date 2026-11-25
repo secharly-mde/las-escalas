@@ -751,8 +751,6 @@ body.is-reading-mode .atlas-viewport {
     pointer-events: none;
     overflow: hidden;
     color: var(--text-color);
-    perspective: 680px;
-    perspective-origin: 68% 50%;
     transition: opacity 0.8s ease, color 0.75s ease;
 }
 
@@ -764,7 +762,6 @@ body.is-reading-mode .atlas-viewport {
     height: 2400px;
     transform-origin: 0 0;
     backface-visibility: visible;
-    will-change: transform;
 }
 
 .atlas-canvas svg {
