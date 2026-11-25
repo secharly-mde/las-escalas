@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             x: parseFloat(step.getAttribute('data-cam-x')) || 1800,
             y: parseFloat(step.getAttribute('data-cam-y')) || 1200,
             zoom: parseFloat(step.getAttribute('data-cam-zoom')) || 1.0,
+            rot: parseFloat(step.getAttribute('data-cam-rot')) || 0,
             isHero,
             screenX: (isDesktop && !isHero) ? vw * 0.68 : vw * 0.50,
             screenY: vh * 0.50,
@@ -125,15 +126,31 @@ document.addEventListener("DOMContentLoaded", () => {
             ? baseZoom
             : lerp(baseZoom, cruiseZoom, arc);
 
-        // Unmistakable vintage 3D vector flight-sim overflight pitch (rotateX) + aircraft bank (rotateZ) + Z-altitude lift
+        // Unmistakable vintage 3D vector flight-sim overflight pitch (rotateX) + heading/bank (rotateZ) + Z-altitude lift
         const maxPitch = (a.isHero || b.isHero) ? 54 : (54 + distFactor * 10);
         const pitch = shouldFly ? maxPitch * arc : 0;
         const bankDir = clamp(dx / 1200, -1, 1);
-        const bank = shouldFly ? (-bankDir * 14.0 * arc) : 0;
+        const headingRot = lerp(a.rot, b.rot, easePos);
+        const bank = headingRot + (shouldFly ? (-bankDir * 14.0 * arc) : 0);
         const zLift = shouldFly ? (220 * distFactor * arc) : 0;
 
-        camTarget.x = lerp(a.x, b.x, easePos);
-        camTarget.y = lerp(a.y, b.y, easePos);
+        // Curved quadratic Bezier overflight trajectory (sweeps around terrain ridges instead of straight rails)
+        let targetX = lerp(a.x, b.x, easePos);
+        let targetY = lerp(a.y, b.y, easePos);
+        if (shouldFly && dist > 120 && !a.isHero && !b.isHero) {
+            const side = ((idxA - 1) % 2 === 0) ? 1 : -1;
+            const nx = -dy / dist;
+            const ny = dx / dist;
+            const bow = dist * 0.14 * side;
+            const ctrlX = (a.x + b.x) * 0.5 + nx * bow;
+            const ctrlY = (a.y + b.y) * 0.5 + ny * bow;
+            const inv = 1 - easePos;
+            targetX = inv * inv * a.x + 2 * inv * easePos * ctrlX + easePos * easePos * b.x;
+            targetY = inv * inv * a.y + 2 * inv * easePos * ctrlY + easePos * easePos * b.y;
+        }
+
+        camTarget.x = targetX;
+        camTarget.y = targetY;
         camTarget.zoom = finalZoom;
         camTarget.pitch = pitch;
         camTarget.bank = bank;
