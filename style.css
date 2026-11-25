@@ -751,17 +751,9 @@ body.is-reading-mode .atlas-viewport {
     pointer-events: none;
     overflow: hidden;
     color: var(--text-color);
+    perspective: 680px;
+    perspective-origin: 68% 50%;
     transition: opacity 0.8s ease, color 0.75s ease;
-}
-
-.atlas-camera {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    transform-style: preserve-3d;
-    will-change: transform;
 }
 
 .atlas-canvas {
@@ -771,6 +763,7 @@ body.is-reading-mode .atlas-viewport {
     width: 3600px;
     height: 2400px;
     transform-origin: 0 0;
+    backface-visibility: visible;
     will-change: transform;
 }
 

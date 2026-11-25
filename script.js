@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeExpandedBlock = null;
     let hasAtlas = false;
     let currentStep = null;
-    let atlasCamera = null;
     let loupeReticle = null;
     let flightRaf = null;
     let lastFrameTime = 0;
@@ -28,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         zoom: 1.0,
         pitch: 0,
         bank: 0,
+        zLift: 0,
         screenX: window.innerWidth * 0.5,
         screenY: window.innerHeight * 0.5,
         baseScale: 0.35
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const a = getStepCam(steps[idxA], vw, vh);
         const b = getStepCam(steps[idxB], vw, vh);
 
-        // Landing dwell zone: flat & zenithal while centered on a section
-        const dwell = 0.14;
+        // Short landing dwell zone so the camera lifts off immediately as you scroll away
+        const dwell = 0.08;
         let u = 0;
         if (idxA === idxB || rawT <= dwell) {
             u = 0;
@@ -114,47 +114,51 @@ document.addEventListener("DOMContentLoaded", () => {
         const shouldFly = !prefersReducedMotion && (dist > 60 || zoomDiff > 0.35);
 
         const rawArc = shouldFly ? Math.sin(Math.PI * u) : 0;
-        const arc = rawArc > 0 ? Math.pow(rawArc, 0.82) : 0;
+        const arc = rawArc > 0 ? Math.pow(rawArc, 0.72) : 0;
 
-        const distFactor = clamp(dist / 2200, 0.45, 1.15);
+        const distFactor = clamp(dist / 2200, 0.5, 1.2);
         const baseZoom = lerp(a.zoom, b.zoom, easePos);
 
-        // Lift off to aerial altitude mid-flight, then dive zenithally onto the target
-        const cruiseZoom = Math.min(baseZoom, Math.max(0.92, 1.48 - distFactor * 0.42));
+        // Climb to aerial altitude mid-flight, then dive zenithally onto the target
+        const cruiseZoom = Math.min(baseZoom, Math.max(0.82, 1.28 - distFactor * 0.38));
         const finalZoom = (a.isHero && b.isHero)
             ? baseZoom
             : lerp(baseZoom, cruiseZoom, arc);
 
-        // Retro 3D overflight pitch (rotateX) + gentle aircraft bank (rotateZ)
-        const maxPitch = (a.isHero || b.isHero) ? 38 : (38 + distFactor * 14);
+        // Unmistakable vintage 3D vector flight-sim overflight pitch (rotateX) + aircraft bank (rotateZ) + Z-altitude lift
+        const maxPitch = (a.isHero || b.isHero) ? 54 : (54 + distFactor * 10);
         const pitch = shouldFly ? maxPitch * arc : 0;
-        const bankDir = clamp(dx / 1400, -1, 1);
-        const bank = shouldFly ? (-bankDir * 9.5 * arc) : 0;
+        const bankDir = clamp(dx / 1200, -1, 1);
+        const bank = shouldFly ? (-bankDir * 14.0 * arc) : 0;
+        const zLift = shouldFly ? (220 * distFactor * arc) : 0;
 
         camTarget.x = lerp(a.x, b.x, easePos);
         camTarget.y = lerp(a.y, b.y, easePos);
         camTarget.zoom = finalZoom;
         camTarget.pitch = pitch;
         camTarget.bank = bank;
+        camTarget.zLift = zLift;
         camTarget.screenX = lerp(a.screenX, b.screenX, easePos);
-        camTarget.screenY = lerp(a.screenY, b.screenY, easePos) + (vh * 0.045 * arc);
+        camTarget.screenY = lerp(a.screenY, b.screenY, easePos) + (vh * 0.06 * arc);
         camTarget.baseScale = lerp(a.baseScale, b.baseScale, easePos);
     }
 
     function renderAtlasCamera() {
-        if (!hasAtlas || !atlasCamera || !atlasCanvas) return;
+        if (!hasAtlas || !atlasViewport || !atlasCanvas) return;
         const finalScale = camState.baseScale * camState.zoom;
         const pitch = Math.abs(camState.pitch) < 0.08 ? 0 : camState.pitch;
         const bank = Math.abs(camState.bank) < 0.05 ? 0 : camState.bank;
+        const zLift = Math.abs(camState.zLift) < 0.5 ? 0 : camState.zLift;
 
-        atlasCamera.style.transform =
-            `translate3d(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px, 0) ` +
-            `perspective(1100px) ` +
+        // Perspective lives on the parent viewport, centered on the exact focal point
+        atlasViewport.style.perspectiveOrigin = `${camState.screenX.toFixed(1)}px ${camState.screenY.toFixed(1)}px`;
+
+        // Right-to-left: shift focal point (camX, camY) to origin -> scale -> bank -> pitch 3D -> lift in -Z -> place at screen focus
+        atlasCanvas.style.transform =
+            `translate3d(${camState.screenX.toFixed(1)}px, ${camState.screenY.toFixed(1)}px, ${(-zLift).toFixed(1)}px) ` +
             `rotateX(${pitch.toFixed(2)}deg) ` +
             `rotateZ(${bank.toFixed(2)}deg) ` +
-            `scale(${finalScale.toFixed(4)})`;
-
-        atlasCanvas.style.transform =
+            `scale(${finalScale.toFixed(4)}) ` +
             `translate3d(${(-camState.x).toFixed(1)}px, ${(-camState.y).toFixed(1)}px, 0)`;
 
         const isFlying = pitch > 3.0;
@@ -181,12 +185,13 @@ document.addEventListener("DOMContentLoaded", () => {
             computeFlightTarget();
         }
 
-        const k = 1 - Math.exp(-dt * 6.8);
+        const k = 1 - Math.exp(-dt * 6.2);
         camState.x = lerp(camState.x, camTarget.x, k);
         camState.y = lerp(camState.y, camTarget.y, k);
         camState.zoom = lerp(camState.zoom, camTarget.zoom, k);
         camState.pitch = lerp(camState.pitch, camTarget.pitch, k);
         camState.bank = lerp(camState.bank, camTarget.bank, k);
+        camState.zLift = lerp(camState.zLift, camTarget.zLift, k);
         camState.screenX = lerp(camState.screenX, camTarget.screenX, k);
         camState.screenY = lerp(camState.screenY, camTarget.screenY, k);
         camState.baseScale = lerp(camState.baseScale, camTarget.baseScale, k);
@@ -199,6 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Math.abs(camState.zoom - camTarget.zoom) < 0.002 &&
             Math.abs(camState.pitch - camTarget.pitch) < 0.05 &&
             Math.abs(camState.bank - camTarget.bank) < 0.05 &&
+            Math.abs(camState.zLift - camTarget.zLift) < 0.5 &&
             Math.abs(camState.screenX - camTarget.screenX) < 0.4 &&
             Math.abs(camState.screenY - camTarget.screenY) < 0.4;
 
@@ -232,12 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (atlasUrl) {
             hasAtlas = true;
             body.classList.add('has-atlas');
-
-            // Wrap atlasCanvas inside a 3D camera rig centered at (camX, camY)
-            atlasCamera = document.createElement('div');
-            atlasCamera.className = 'atlas-camera';
-            atlasViewport.insertBefore(atlasCamera, atlasCanvas);
-            atlasCamera.appendChild(atlasCanvas);
 
             loupeReticle = document.createElement('div');
             loupeReticle.className = 'loupe-reticle';
